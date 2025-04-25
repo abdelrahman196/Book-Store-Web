@@ -41,7 +41,8 @@
     text-overflow:  ellipsis;
     overflow:hidden;
     max-lines: 5;
-    font-size: 18px;;
+    font-size: 18px;
+    max-height: 90px;
 }
 @media (max-width:1300px){
     .books_grid{
@@ -131,7 +132,8 @@
     color:rgb(171, 170, 170)
 }
 .price_text{
-    color:rgb(171, 170, 170)
+    color:rgb(171, 170, 170);
+    font-size: 30px;
 }
 .line1{
     background-color: rgb(50, 50, 50);
