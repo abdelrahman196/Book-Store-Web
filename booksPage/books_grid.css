@@ -11,12 +11,39 @@
     background-color: rgb(90, 80, 80);
     margin:10px;
     min-height:350px;
-    max-height: 500px;
+    max-height: 450px;
     shape-rendering: auto;
 }
 .book_img{
     height:70%;
     background-color: rgb(62, 62, 62);
+    position: relative;
+}
+.rate{
+    position: absolute;
+    top:8px;
+    left:10px;
+    width:50px;
+    justify-content: center;
+    align-items: center;
+    height:20px;
+}
+.rate_value{
+    width:20px;
+    display: inline-block;
+
+}
+.rating{
+    display: inline-block;
+    width:8px;
+    font-size: 22px;
+    color:rgb(152, 130, 7);
+}
+.rate_icon{
+
+    padding-top:5px;
+    width:24px;
+    display: inline-block;
 }
 .details{
     display: grid;
@@ -25,19 +52,19 @@
 }
 .book_title{
     background-color: aliceblue;
-    height:35px;
+    height:40px;
     justify-content: center;
     align-items: center;
     display:grid;
 }
 .book_author{
-    height:35px;
+    height:40px;
     justify-content: center;
     align-items: center;
     display:grid;
 }
 .book_price{
-    height:35px;
+    height:40px;
     justify-content: center;
     align-items: center;
     display:grid;
