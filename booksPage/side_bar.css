@@ -44,6 +44,7 @@
     border-color: black;
     border-radius:20px;
     height:25px;
+    transition: background-color .7s;
 }
 .check_text{
     display: inline-block;
@@ -54,4 +55,7 @@
 .side_check{
     border-radius:200px;
     width:30px;
+}
+.check:hover{
+    background-color: black;
 }
