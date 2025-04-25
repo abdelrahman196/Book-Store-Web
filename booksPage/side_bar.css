@@ -21,6 +21,8 @@
     border-radius: 3px;
     margin-left:10px;
     box-shadow: 10px 0px 8px rgba(0,0,0,.4);
+    display: flex;
+    align-items: center;
 }
 .line{
     margin-top:10px;
@@ -48,9 +50,9 @@
     height:25px;
     transition: background-color .7s;
     display: flex;
+    align-items: center;
 }
 .check_text{
-    align-items: center;
     display: inline-block;
     margin-left:0px;
     font-size:20px;
