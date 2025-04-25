@@ -1,12 +1,13 @@
 .books_grid{
     margin-right:242px;
-    background-color: rgb(184, 180, 180);
+    background-color: #f3d4c6;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap:20px;
+    margin-right: 270px;
 }
 .book{
-    background-color: rgb(102, 102, 102);
+    background-color: #946659;
     margin:10px;
     aspect-ratio: 4/7;
     position:relative;
