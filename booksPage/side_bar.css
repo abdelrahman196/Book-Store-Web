@@ -1,10 +1,11 @@
 .side_bar{
     position:fixed;
     right:0px;
-    top:80px;
+    top:100px;
     background-color: gray;
     width:250px;
     height:670px;
+    z-index: 100;
 }
 .side_header{
     margin:10px;
@@ -30,6 +31,7 @@
     border-color:rgb(60, 60, 60);
     height: 1px;
     background-color: black;
+    z-index: 50;
 }
 .side_header_text{
     font-size:30px;
