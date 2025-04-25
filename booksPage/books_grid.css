@@ -144,7 +144,7 @@
 }
 .book:hover .book_img{
  opacity: .4;
- box-shadow: 0px 170px 10px rgba(0,0,0,.6);
+ box-shadow: 0px 150px 10px rgba(0,0,0,.6);
 }
 .book:hover .details{
     opacity: .4;

@@ -47,8 +47,10 @@
     border-radius:20px;
     height:25px;
     transition: background-color .7s;
+    display: flex;
 }
 .check_text{
+    align-items: center;
     display: inline-block;
     margin-left:0px;
     font-size:20px;
@@ -56,7 +58,9 @@
 }
 .side_check{
     border-radius:200px;
-    width:30px;
+    width:15px;
+    margin-right:20px;
+    margin-left:10px;
 }
 .check:hover{
     background-color: black;
