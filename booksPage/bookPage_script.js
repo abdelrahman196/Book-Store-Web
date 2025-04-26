@@ -6,13 +6,23 @@ document.addEventListener("DOMContentLoaded", function() {
     const booksA = books.length;
     const books_categories=document.querySelectorAll(`.category`);
     const number_categorys=books_categories.length;
-    for(let i=0;i<length;i++){
-        if(books_categories[i].textContent==='none'){
-            books_categories[i].style.display='none';
+    const books_images = document.querySelectorAll(`.image`);
+    const ratings = document.querySelectorAll(`.rating`);
+    const intros = document.querySelectorAll(`.intro`);
+    const titles = document.querySelectorAll(`.title_text`);
+    const authors = document.querySelectorAll(`.author_text`);
+    const prices = document.querySelectorAll(`.price_text`);
+    const clearNone = function(){
+        for(let i=0;i<booksA*3;i++){
+            if(books_categories[i].textContent==='none'){
+                books_categories[i].style.display='none';
+            }
+            else{
+                books_categories[i].style.display='';
+            }
         }
     }
-
-    let len=0;
+    clearNone();
     check_all.checked = true;
     sort_none.checked = true;
     const checks =document.querySelectorAll(".check");
@@ -104,5 +114,36 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     } )
 }
-
-  });
+const switchT=function(first,secoand){
+    tmp=first.textContent;
+    first.textContent=secoand.textContent;
+    secoand.textContent=tmp;
+}
+const switchI = function(i,x){
+    switchT(books_categories[(i*3)-3],books_categories[(x*3)-3]);
+    switchT(books_categories[(i*3)-2],books_categories[(x*3)-2]);
+    switchT(books_categories[(i*3)-1],books_categories[(x*3)-1]);
+    if(i===1){
+        i=0;
+    }
+    if(x===1){
+        x=0;
+    }
+    tmp=books_images[i].src;
+    books_images[i].src=books_images[x].src;
+    books_images[x].src=tmp;
+    if(i===0){
+        i=1;
+    }
+    if(x===0){
+        x=1;
+    }
+    switchT(ratings[i-1],ratings[x-1]);
+    switchT(titles[i-1],titles[x-1]);
+    switchT(intros[i-1],intros[x-1]);
+    switchT(authors[i-1],authors[x-1]);
+    switchT(prices[i-1],prices[x-1]);
+}
+switchI(1,2);
+clearNone();
+});
