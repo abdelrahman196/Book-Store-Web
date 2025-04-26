@@ -87,7 +87,8 @@ document.addEventListener("DOMContentLoaded", function() {
     checks[i].addEventListener("click", function() {
         if(i<4){
             side_checks[i].checked=true;
-            if(i==0){reset_books();}
+            if(i===0){reset_books();}
+            if(i===2){sort_rate();}
         }
         else{
             if(i===4){
@@ -138,29 +139,19 @@ const switchT=function(first,secoand){
     secoand.textContent=tmp;
 }
 const switchI = function(i,x){
-    switchT(books_categories[(i*3)-3],books_categories[(x*3)-3]);
-    switchT(books_categories[(i*3)-2],books_categories[(x*3)-2]);
-    switchT(books_categories[(i*3)-1],books_categories[(x*3)-1]);
-    if(i===1){
-        i=0;
-    }
-    if(x===1){
-        x=0;
-    }
-    tmp=books_images[i].src;
-    books_images[i].src=books_images[x].src;
-    books_images[x].src=tmp;
-    if(i===0){
-        i=1;
-    }
-    if(x===0){
-        x=1;
-    }
-    switchT(ratings[i-1],ratings[x-1]);
-    switchT(titles[i-1],titles[x-1]);
-    switchT(intros[i-1],intros[x-1]);
-    switchT(authors[i-1],authors[x-1]);
-    switchT(prices[i-1],prices[x-1]);
+    console.log(i,x);
+    if(x===i){return;}
+    switchT(books_categories[(i*3)],books_categories[(x*3)]);
+    switchT(books_categories[(i*3)+1],books_categories[(x*3)+1]);
+    switchT(books_categories[(i*3)+2],books_categories[(x*3)+2]);
+    tmp=books_images[i*2].src;
+    books_images[i*2].src=books_images[x*2].src;
+    books_images[x*2].src=tmp;
+    switchT(ratings[i],ratings[x]);
+    switchT(titles[i],titles[x]);
+    switchT(intros[i],intros[x]);
+    switchT(authors[i],authors[x]);
+    switchT(prices[i],prices[x]);
     clearNone();
 }
 const reset_books = function(){
@@ -173,13 +164,20 @@ const reset_books = function(){
         titles[i].textContent = titlesM[i]; 
         authors[i].textContent = authorsM[i];
         prices[i].textContent = pricesM[i];
-        if(i===0){books_images[i].src=`books_images/book-${i+1}.jpg`;
-            continue;}
-        books_images[i+1].src=`books_images/book-${i+1}.jpg`;
+        books_images[i*2].src=`books_images/book-${i+1}.jpg`;
 
         clearNone();
     }
 }
 switchI(1,2);
 clearNone();
+const sort_rate=function(){
+    for(let i =0;i<booksA-1;i++){
+        let chosen = i;
+        for(let x = i + 1;x<booksA;x++){
+            if(Number(ratings[chosen].textContent)<Number(ratings[x].textContent)){chosen=x;}
+        }
+        switchI(i,chosen);
+    }
+}
 });
