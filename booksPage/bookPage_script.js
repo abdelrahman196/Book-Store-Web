@@ -4,14 +4,31 @@ document.addEventListener("DOMContentLoaded", function() {
     const sort_none= document.querySelector(".none_check");
     const books = document.querySelectorAll(`.book`);
     const booksA = books.length;
-    const books_categories=document.querySelectorAll(`.category`);
-    const number_categorys=books_categories.length;
     const books_images = document.querySelectorAll(`.image`);
+    const books_categories=document.querySelectorAll(`.category`);
+    const number_categorys=books_categories.length; 
     const ratings = document.querySelectorAll(`.rating`);
     const intros = document.querySelectorAll(`.intro`);
     const titles = document.querySelectorAll(`.title_text`);
     const authors = document.querySelectorAll(`.author_text`);
     const prices = document.querySelectorAll(`.price_text`);
+    let book_categoriesM = new Array(booksA*3);
+    let ratingsM = new Array(booksA);
+    let introsM = new Array(booksA);
+    let titlesM = new Array(booksA);
+    let authorsM = new Array(booksA);
+    let pricesM = new Array(booksA);
+    for(let i=0;i<booksA;i++){
+        book_categoriesM[(i*3)] = books_categories[(i*3)].textContent;
+        book_categoriesM[(i*3)+1] = books_categories[(i*3)+1].textContent; 
+        book_categoriesM[(i*3)+2] = books_categories[(i*3)+2].textContent; 
+        ratingsM[i] = ratings[i].textContent;
+        introsM[i] = intros[i].textContent;
+        titlesM[i] = titles[i].textContent;
+        authorsM[i] = authors[i].textContent;
+        pricesM[i] = prices[i].textContent;
+    }
+
     const clearNone = function(){
         for(let i=0;i<booksA*3;i++){
             if(books_categories[i].textContent==='none'){
@@ -70,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
     checks[i].addEventListener("click", function() {
         if(i<4){
             side_checks[i].checked=true;
+            if(i==0){reset_books();}
         }
         else{
             if(i===4){
@@ -143,6 +161,24 @@ const switchI = function(i,x){
     switchT(intros[i-1],intros[x-1]);
     switchT(authors[i-1],authors[x-1]);
     switchT(prices[i-1],prices[x-1]);
+    clearNone();
+}
+const reset_books = function(){
+    for(let i=0;i<booksA;i++){
+        books_categories[(i*3)].textContent = book_categoriesM[(i*3)];
+        books_categories[(i*3)+1].textContent  = book_categoriesM[(i*3)+1];
+        books_categories[(i*3)+2].textContent = book_categoriesM[(i*3)+2];
+        ratings[i].textContent = ratingsM[i]; 
+        intros[i].textContent = introsM[i];
+        titles[i].textContent = titlesM[i]; 
+        authors[i].textContent = authorsM[i];
+        prices[i].textContent = pricesM[i];
+        if(i===0){books_images[i].src=`books_images/book-${i+1}.jpg`;
+            continue;}
+        books_images[i+1].src=`books_images/book-${i+1}.jpg`;
+
+        clearNone();
+    }
 }
 switchI(1,2);
 clearNone();
