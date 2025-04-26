@@ -6,51 +6,89 @@
                 background-color: aquamarine;
                 height: 100px;
                 width: 100%;
-                margin-bottom: 0px;
+                margin-bottom: 10px;
             }
             .sidebar{
                 border-color: black;
+                border-right: 10px;
                 border-width: 30px;
                 background-color: rgb(199, 194, 194);
                 width: 300px;
-                height: 460px;
+                height: 500px;
                 position: fixed;
+                row-gap: 10px;
             }
             .book_img{
                 width: 260px;
                 padding-left: 20px;
+                margin-bottom: 10px;
+                padding-bottom: 0px;
+                display: flex;
             }
             .book_price{
-                 font:bold;
+                font:bold;
+                margin-top: 0px;
+                height: 20px;
+                margin-bottom: 10px;
+                font-size: 25px;
+                font-weight: 300px;
+                background-color: pink;
+                align-items: center;
             }
-
-
+            .buy_button{
+                margin-left: 20px;
+                margin-bottom: 50px;
+                background-color: blue;
+                
+            }
+            .old_price{
+                margin-right: 5px;
+                margin-left: 20px;
+                
+            }
 
 
 
             .book_details{
                 background-color: rgb(199, 194, 194);
-                border: 30px;
+                border: solid;
+                border-color: red;
+                border-width: 8px;
+                border-bottom-width: 100px;
                 height: 500px;
                 width: 1fr;
                 margin-left: 315px;
-                
+                flex-direction: column;
+                display: flex;
+                border-top: 50px;
             }
             .book_name{
                 font:bold;
                 font-size: 25px;
                 margin-left: 8px;
                 margin-top: 8px;
+                margin-bottom: 0px;
+                display: flex;
+                background-color: green;
             }
             .auther{
                 font:bold;
                 font-size: 20px;
+                width: 100px;
+                height: 100px;
                 margin-left: 8px;
+                display: flex;
+                background-color: yellow;
             }
             .info{
                 font:bold;
                 font-size: 20px;
                 margin-left: 8px;
+                border-width: 10px;
+                border-color: red;
+                border: solid;
+                display: flex;
+                background-color: green;
             }
         </style>
     </head>
@@ -62,22 +100,16 @@
                     <img class="book_img" src="books_images/book-1.jpg" alt="book-1">
                 </div>
                 <div class="book_price">
-                    <p> <del>750 EGP</del>  500 EGP</p>
+                    <p style="margin-top: 0px;"> <del class="old_price">750 EGP</del>  500 EGP</p>
                 </div>
                 <div class="buy">
                     <button class="buy_button">add to cart</button>
                 </div>
             </div>
-
-
-
             <div class="book_details">
-                <div>
-                    <div class="book_name">Book name: Sahlap</div>
+                    <div class="book_name">Sahlap</div>
                     <div class="auther">auther: Meme</div>
-                    <div></div>
                     <div class="info">introduction about the book</div>
-                </div>
             </div>
         </div>
     </body>
