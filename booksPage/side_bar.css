@@ -4,8 +4,9 @@
     top:100px;
     background-color: #e8b097;
     width:250px;
-    height:670px;
+    height:1000px;
     z-index: 100;
+    box-shadow: -2px 0px 5px rgba(0,0,0,.3);
 }
 .side_header{
     margin:10px;
