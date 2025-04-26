@@ -84,14 +84,14 @@ display: none;
   width:20px;
   display: inline-block;
   position: absolute;
-  top:4px;
+  top:1px;
   left:0px;
 }
 .rating{
   display: inline-block;
   width:8px;
   font-size: 20px;
-  color:rgb(152, 130, 7);
+  color:white;
 }
 .rate_icon{
   position: absolute;
@@ -147,12 +147,12 @@ display: none;
   font-size: 25px;
 }
 .line1{
-  background-color: rgb(50, 50, 50);
+  background-color: #b38570;
   height: 2px;
   margin-top: 5px;
   margin-left:10px;
   margin-right:10px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   box-shadow: 0px 5px 5px rgba(0,0,0,.5);   
 }
 .book:hover .book_img{
