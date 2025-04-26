@@ -2,28 +2,82 @@
 <html>
     <head>
         <style>
+            .header{
+                background-color: aquamarine;
+                height: 100px;
+                width: 100%;
+                margin-bottom: 0px;
+            }
             .sidebar{
                 border-color: black;
                 border-width: 30px;
-                margin-left: 15px;
-                margin-top: 15px;
                 background-color: rgb(199, 194, 194);
-                position: fixed;
                 width: 300px;
-                height: 400px;
+                height: 460px;
+                position: fixed;
+            }
+            .book_img{
+                width: 260px;
+                padding-left: 20px;
+            }
+            .book_price{
+                 font:bold;
+            }
+
+
+
+
+
+            .book_details{
+                background-color: rgb(199, 194, 194);
+                border: 30px;
+                height: 500px;
+                width: 1fr;
+                margin-left: 315px;
+                
+            }
+            .book_name{
+                font:bold;
+                font-size: 25px;
+                margin-left: 8px;
+                margin-top: 8px;
+            }
+            .auther{
+                font:bold;
+                font-size: 20px;
+                margin-left: 8px;
+            }
+            .info{
+                font:bold;
+                font-size: 20px;
+                margin-left: 8px;
             }
         </style>
     </head>
-    <body >
-        hi
-        <div class="sidebar">
-            <div>
+    <body>
+        <div class="header" ></div>
+        <div class="page">
+            <div class="sidebar">
+                <div>
+                    <img class="book_img" src="books_images/book-1.jpg" alt="book-1">
                 </div>
-            <div>
-
+                <div class="book_price">
+                    <p> <del>750 EGP</del>  500 EGP</p>
+                </div>
+                <div class="buy">
+                    <button class="buy_button">add to cart</button>
+                </div>
             </div>
-            <div>
-                
+
+
+
+            <div class="book_details">
+                <div>
+                    <div class="book_name">Book name: Sahlap</div>
+                    <div class="auther">auther: Meme</div>
+                    <div></div>
+                    <div class="info">introduction about the book</div>
+                </div>
             </div>
         </div>
     </body>
