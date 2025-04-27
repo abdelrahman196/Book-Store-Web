@@ -17,15 +17,15 @@
                 border-color: black;
                 border-right: 10px;
                 border-width: 30px;
-                /* background-color: rgb(199, 194, 194); */
-                width: 300px;
+                background-color: rgb(199, 194, 194);
+                width: 260px;
                 height: 500px;
                 position: fixed;
                 row-gap: 10px;
+                margin-left: 20px;
             }
             .book_img{
                 width: 260px;
-                padding-left: 20px;
                 margin-bottom: 10px;
                 padding-bottom: 0px;
                 display: flex;
@@ -50,12 +50,13 @@
                 width: 100px;
                 font-size: medium;
                 font: 400;
-
+            }
+            .buy_button:hover{
+                
             }
             .old_price{
                 margin-right: 5px;
                 margin-left: 20px;
-                
             }
 
 
@@ -65,7 +66,7 @@
                 border: solid;
                 border-color:rgb(199, 194, 194);
                 border-width: 5px;
-                height: 600px;
+                height: 800px;
                 width: 1fr;
                 margin-left: 315px;
                 flex-direction: column;
@@ -100,13 +101,75 @@
                 border: solid;
                 display: flex;
                 background-color: green;
-                margin-left: 0px;
+                text-overflow: ellipsis;
+                overflow: scroll;
+                max-lines: 5;
+                box-shadow: 0px -5px 10px inset;
+                border: none;
+                padding: 7px;
+                padding-bottom: 10px;
+                margin-top: 60px;
+                margin-bottom: 40px;
+            }
+            .info::-webkit-scrollbar{
+                display: none;
+            }
+            .more_info{
+                display: block;
+                justify-items: start;
+                justify-content: space-between;
             }
             .categories{
-                width: 200px;
-                display: flex;
                 border: solid;
                 border-color: red;
+                font-size: 30px;
+
+            }
+            .publisher{
+                border: solid;
+                border-color: red;
+                font-size: 30px;
+                margin-top: 15px;
+            }
+            .date{
+                font-size: 30px;
+                border: solid;
+                border-color: red;
+                margin-top: 15px;
+            }
+            .star{
+                width:30px ;
+            }
+            .comment_box{
+                margin-top: 18px;
+                width: 1fr;
+                height: 300px;
+                background-color:rgb(199, 194, 194) ;
+                margin-left: 315px;
+            }
+            .comment{
+                
+            }
+            .comment_head{
+                display: flex;
+            }
+            .comment_pic{
+                background-color: red;
+                display: inline-block;
+            }
+            .comment_pp{
+
+            }
+            .comment_name{
+                width: 100px;
+                display: inline-block;
+                background-color: green;
+            }
+            .comment_star{
+                
+            }
+            .comment_text{
+                
             }
         </style>
     </head>
@@ -118,7 +181,7 @@
                     <img class="book_img" src="books_images/book-1.jpg" alt="book-1">
                 </div>
                 <div class="book_price">
-                    <p style="margin-top: 0px;"> <del class="old_price">500$ </del>  300$</p>
+                    <p style="margin-top: 0 px;"> <del class="old_price">500$ </del>  300$</p>
                 </div>
                 <div class="buy">
                     <button class="buy_button">Add to cart</button>
@@ -127,23 +190,63 @@
             <div class="book_details">
                     <div class="book_name">Romantic Comedy</div>
                     <div class="auther">author: sofa lotfy</div>
-                    <div></div>
-                    <div class="info">NEW YORK TIMES BESTSELLER • REESE’S BOOK CLUB PICK • A comedy writer thinks she’s sworn off love, until a dreamy pop star flips the script on all her assumptions—a “smart, sophisticated, and fun” (Oprah Daily) novel from the author of Eligible, Rodham, and Prep.
-
-                        Sally Milz is a sketch writer for The Night Owls, a late-night live comedy show that airs every Saturday. With a couple of heartbreaks under her belt, she’s long abandoned the search for love, settling instead for the occasional hook-up, career success, and a close relationship with her stepfather to round out a satisfying life.
+                    <div class="rate">
+                        <img class="star" src="icons/star_filled.png" alt="star">
+                        <img class="star" src="icons/star_filled.png" alt="star">
+                        <img class="star" src="icons/star_filled.png" alt="star">
+                        <img class="star" src="icons/star_filled.png" alt="star">
+                        <img class="star" src="icons/star_empty.png" alt="star">
+                    </div>
+                    <div class="more_info">
+                        <div class="categories">categories: Comedy,Romantic</div>
+                        <div class="publisher">
+                            publisher: hetlar
+                        </div>
+                        <div class="date">date: 2011</div>
+                    </div>
+                    
+                    <div class="info">NEW YORK TIMES BESTSELLER • REESE’S BOOK CLUB PICK • A comedy writer thinks she’s sworn off love, until a dreamy pop star flips the script on all her assumptions—a “smart, sophisticated, and fun” (Oprah Daily) novel from the author of Eligible, Rodham, and Prep.<br>
+                        Sally Milz is a sketch writer for The Night Owls, a late-night live comedy show that airs every Saturday.<br>
+                        With a couple of heartbreaks under her belt, she’s long abandoned the search for love, settling instead for the occasional hook-up, career success, and a close relationship with her stepfather to round out a satisfying life.<br>
                         
-                        But when Sally’s friend and fellow writer Danny Horst begins dating Annabel, a glamorous actress who guest-hosted the show, he joins the not-so-exclusive group of talented but average-looking and even dorky men at the show—and in society at large—who’ve gotten romantically involved with incredibly beautiful and accomplished women. Sally channels her annoyance into a sketch called the Danny Horst Rule, poking fun at this phenomenon while underscoring how unlikely it is that the reverse would ever happen for a woman.
+                        But when Sally’s friend and fellow writer Danny Horst begins dating Annabel, a glamorous actress who guest-hosted the show, he joins the not-so-exclusive group of talented but average-looking and even dorky men at the show—and in society at large—who’ve gotten romantically involved with incredibly beautiful and accomplished. <br>
+                        Sally channels her annoyance into a sketch called the Danny Horst Rule, poking fun at this phenomenon while underscoring how unlikely it is that the reverse would ever happen for a woman.<br>
                         
-                        Enter Noah Brewster, a pop music sensation with a reputation for dating models, who signed on as both host and musical guest for this week’s show. Dazzled by his charms, Sally hits it off with Noah instantly, and as they collaborate on one sketch after another, she begins to wonder if there might actually be sparks flying. But this isn’t a romantic comedy—it’s real life. And in real life, someone like him would never date someone like her … right?
+                        Enter Noah Brewster, a pop music sensation with a reputation for dating models, who signed on as both host and musical guest for this week’s show. 
+                        <br>
+                        Dazzled by his charms, Sally hits it off with Noah instantly, and as they collaborate on one sketch after another, she begins to wonder if there might actually be sparks flying.<br>
+                        But this isn’t a romantic comedy—it’s real life. 
+                        <br>
+                        And in real life, someone like him would never date someone like her … right?<br>
                         
                         With her keen observations and trademark ability to bring complex women to life on the page, Curtis Sittenfeld explores the neurosis-inducing and heart-fluttering wonder of love, while slyly dissecting the social rituals of romance and gender relations in the modern age.</p></div>
-                    <div class="more_info">
-                        <div class="categories"> Comedy,Romantic</div>
-                        <div class="publisher">
-                        </div>
-                        <div class="date">date:2011</div>
                     </div>
             </div>
         </div>
+        <div class="comment_box">
+            <div class="comment">
+                <div class="comment_head">
+                    <div class="comment_pic"><img class="comment_pp" src="profile_images/pp1.jpeg" alt="pp1"></div>
+                    <div class="comment_name"> </div>
+                    <div class="comment_star"></div>
+                </div>
+                <div class="comment_text"> </div>
+            </div>
+            <div class="comment">
+                <div class="comment_head">
+                    <div class="comment_pic"></div>
+                    <div class="comment_name"> </div>
+                    <div class="comment_star"></div>
+                </div>
+                <div class="comment_text"> </div>
+            </div>
+            <div class="comment">
+                <div class="comment_head">
+                    <div class="comment_pic"></div>
+                    <div class="comment_name"> </div>
+                    <div class="comment_star"></div>
+                </div>
+                <div class="comment_text"> </div>
+            </div>
     </body>
 </html>
