@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
   const activeCategory = function (name) {
+    name = name.toLowerCase();
     let len = 0;
     for (let x = 0; x < booksA; x++) {
       let book_categories = books[x].querySelectorAll(`.category`);
@@ -65,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
   const deactiveCategory = function (name) {
+    name = name.toLowerCase();
     let len = 0;
     for (let x = 0; x < booksA; x++) {
       let book_categories = books[x].querySelectorAll(`.category`);
