@@ -42,7 +42,7 @@
   color: rgb(244, 241, 234);
   padding: 10px;
   text-overflow: ellipsis;
-  overflow: scroll;
+  overflow: hidden;
   max-lines: 5;
   font-size: 18px;
   max-height: 200px;
