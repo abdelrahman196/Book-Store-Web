@@ -2,10 +2,10 @@
   position: fixed;
   background-color: rgb(213, 193, 170);
   right: 25px;
-  top: 220px;
+  top: 165px;
   z-index: 100;
   width: 320px;
-  height: 450px;
+  height: 460px;
   padding: 0;
   border-width: 2px;
   border-color: rgb(213, 193, 170);
