@@ -12,6 +12,7 @@
   aspect-ratio: 4/7;
   position: relative;
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .more_details {
