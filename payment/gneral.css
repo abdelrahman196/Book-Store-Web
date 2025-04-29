@@ -1,5 +1,7 @@
-body
-{
+body {
   background-color: white;
   height: 3000px;
+}
+p {
+  margin: 0;
 }
