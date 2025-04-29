@@ -5,9 +5,10 @@
             body{
                 width: 100%;
                 height: 300vh;
+                background-color: rgb(244, 241, 234);
             }
             .header{
-                background-color: aquamarine;
+                background-color: rgb(213, 193, 170);
                 height: 100px;
                 width: 100%;
                 margin-bottom: 10px;
@@ -17,7 +18,7 @@
                 border-color: black;
                 border-right: 10px;
                 border-width: 30px;
-                background-color: rgb(255, 255, 255);
+                background-color: rgb(244, 241, 234);
                 width: 260px;
                 height: 500px;
                 position: fixed;
@@ -33,28 +34,43 @@
                 border-radius: 10px;
             }
             .book_price{
-                font:bold;
-                margin-top: 0px;
+                margin-top: 15px;
+                margin-right: 4px;
                 height: 40px;
                 margin-bottom: 10px;
+                padding-bottom: 5px;
+                padding-left: 6px;
                 font-size: 30px;
                 font-weight: 300px;
                 /* background-color: pink; */
+                display: flex;
                 justify-self: center;
+                align-items: center;
+                background-color: rgb(56, 33, 16);
+                color: rgb(244, 241, 234);
+                width: 247px;
+                border-radius: 50px;
             }
             .buy{
                 justify-self: center;
             }
             .buy_button{
                 margin-bottom: 50px;
-                background-color: rgb(0, 255, 98);
-                height: 35px;
-                width: 100px;
+                background-color: rgb(56, 33, 16);
+                color: rgb(244, 241, 234);
+                height: 40px;
+                width: 250px;
                 font-size: medium;
                 font: 400;
+                border-radius: 40px;
+                border:none;
+                
             }
             .buy_button:hover{
-                
+              background-color: #ba4828;
+            }
+            .buy_button:active{
+              opacity: 0.8;
             }
             .old_price{
                 margin-right: 5px;
@@ -64,9 +80,9 @@
 
 
             .book_details{
-                background-color: rgb(199, 194, 194);
+                background-color: rgb(213, 193, 170);
                 border: solid;
-                border-color:rgb(199, 194, 194);
+                border-color:rgb(213, 193, 170);
                 border-width: 5px;
                 height: 800px;
                 width: 1fr;
@@ -77,20 +93,18 @@
                 border-radius: 2px;
             }
             .book_name{
-                font:bold;
+                font-weight: 700;
                 font-size: 40px;
                 margin-bottom: 0px;
                 display: flex;
-                background-color: green;
                 margin-top: 10px;
                 margin-left: 0px;
             }
             .auther{
-                font:bold;
+                font-weight: 500;
                 font-size: 28px;
                 width: 1fr;
                 display: flex;
-                background-color: yellow;
                 margin-top: -10px;
                 margin-left: 0px;
             }
@@ -99,10 +113,10 @@
                 font-size: 20px;
                 margin-left: 0px;
                 border-width: 10px;
-                border-color: red;
                 border: solid;
                 display: flex;
-                background-color: green;
+                background-color: rgb(56, 33, 16);
+                color: rgb(244, 241, 234);
                 text-overflow: ellipsis;
                 overflow: scroll;
                 max-lines: 5;
@@ -122,22 +136,18 @@
                 justify-content: space-between;
             }
             .categories{
+                font-weight: 500; 
                 margin-top: 8px;
-                border: solid;
-                border-color: red;
                 font-size: 30px;
-
             }
             .publisher{
-                border: solid;
-                border-color: red;
+                font-weight: 500; 
                 font-size: 30px;
                 margin-top: 15px;
             }
             .date{
+                font-weight: 500;              
                 font-size: 30px;
-                border: solid;
-                border-color: red;
                 margin-top: 15px;
             }
             .star{
@@ -147,11 +157,11 @@
                 margin-top: 18px;
                 width: 1fr;
                 height: 300px;
-                background-color:rgb(199, 194, 194) ;
+                background-color: rgb(244, 241, 234);
                 margin-left: 315px;
             }
             .comment{
-                background-color:white;
+                background-color: rgb(244, 241, 234);
                 column-gap: 10px;
                 height: 110px;
                 margin-top: 30px;
@@ -160,7 +170,7 @@
                 display: flex;
                 flex-direction: row;
                 /* align-items: center; */
-                background-color: darkblue;
+                background-color: rgb(213, 193, 170);
                 /* justify-content: space-between; */
             }
             .comment_pic{
@@ -179,8 +189,9 @@
                 width: 600px;
                 margin-top: 12px;
                 margin-left: 10px;
-                background-color: rgb(255, 7, 7);
+                color: rgb(56, 33, 16);
                 font-size: 30px;
+                font-weight: 500;
             }
             .comment_rate{
                 display: flex;
@@ -192,7 +203,8 @@
                 
             }
             .comment_text{
-                background-color: blue;
+                background-color: rgb(56, 33, 16);
+                color: rgb(244, 241, 234);
                 margin-left: 0px;
                 display: block;
                 font-size: 30px;
@@ -200,25 +212,26 @@
                 padding-top: 10px;
             }
             .author_books{
-                background-color: white;
+                background-color: rgb(213, 193, 170);
                 width: 300px;
                 height: 50px;
                 border: solid;
                 font-size: 40px;
-                border-color: red;
+                font-weight: 500;
+                border: none;
                 margin-top: 35px;
                 padding-left: 5px;
                 padding-bottom: 5px;
             }
             .author_books_div{
-                background-color: green;
+                background-color: rgb(213, 193, 170);
                 margin-top: 12px;
                 width: 1fr;
                 height: 350px;
                 padding-top: 12px;
             }
             .book_author{
-                background-color: red;
+                background-color: rgb(56, 33, 16);
                 width: 220px;
                 height: 300px;
                 margin-top: 12px;
@@ -236,7 +249,7 @@
                     <img class="book_img" src="books_images/book-1.jpg" alt="book-1">
                 </div>
                 <div class="book_price">
-                    <p style="margin-top: 0 px;"> <del class="old_price">500$ </del>  300$</p>
+                    <pre style="margin-top: 0 px;">     300$</pre>
                 </div>
                 <div class="buy">
                     <button class="buy_button">Add to cart</button>
@@ -246,11 +259,11 @@
                     <div class="book_name">Romantic Comedy</div>
                     <div class="auther">author: sofa lotfy</div>
                     <div class="rate">
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
                         <span style="color: black;font-size: xxx-large">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large">&#9734;</span>
                     </div>
                     <div class="more_info">
                         <div class="categories">categories: Comedy,Romantic</div>
@@ -284,11 +297,11 @@
                     <div class="comment_pic"><img class="comment_pp" src="profile_images/pp1.jpeg" alt="pp1"></div>
                     <div class="comment_name">Hany </div>
                     <div class="comment_rate">
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
                     </div>
                 </div>
                 <div class="comment_text">fantastic </div>
@@ -298,11 +311,11 @@
                     <div class="comment_pic"><img class="comment_pp" src="profile_images/download.png" alt="pp1"></div>
                     <div class="comment_name">ali</div>
                     <div class="comment_rate">
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
                     </div>
                 </div>
                 <div class="comment_text">fantastic  </div>
@@ -312,11 +325,11 @@
                     <div class="comment_pic"><img class="comment_pp" src="profile_images/images.png" alt="pp1"></div>
                     <div class="comment_name">sama</div>
                     <div class="comment_rate">
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
+                        <span style="color: black;font-size: xxx-large;">&#9733;</span>
                     </div>
                 </div>
                 <div class="comment_text"> fantastic </div>
