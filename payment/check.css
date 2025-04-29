@@ -1,30 +1,30 @@
 .check {
   position: fixed;
-  background-color: aliceblue;
-  right: 15px;
+  background-color: rgb(213, 193, 170);
+  right: 25px;
   top: 220px;
   z-index: 100;
   width: 320px;
   height: 450px;
   padding: 0;
   border-width: 2px;
-  border-color: rgb(157, 161, 161);
+  border-color: rgb(213, 193, 170);
   border-radius: 4px;
   border-style: solid;
 }
 .details {
   margin: 0;
-  background-color: antiquewhite;
+  background-color: rgb(213, 193, 170);
   width: 100%;
   height: 70%;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: gray;
+  border-bottom-color: rgb(213, 193, 170);
 }
 .check_header {
   display: flex;
   height: 30%;
-  background-color: aqua;
+  background-color: rgb(213, 193, 170);
   justify-content: left;
   align-items: center;
 }
@@ -33,32 +33,45 @@
   padding-left: 50px;
   padding-bottom: 20px;
   padding-right: 20px;
+  font-family: arial;
+  font-weight: 700;
+  font-size: 30px;
 }
 .items {
   display: flex;
   height: 20%;
-  background-color: aqua;
+  background-color: rgb(213, 193, 170);
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
   align-items: center;
   margin-bottom: 46px;
+  font-size: 20px;
 }
 .values {
   display: flex;
   height: 15%;
-  background-color: aqua;
+  background-color: rgb(213, 193, 170);
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 40px;
   align-items: center;
+  font-size: 20px;
+}
+.line
+{
+  background-color: rgb(56, 33, 16);
+  height: 4px;
+  width: 270px;
+  margin-left: 25px;
 }
 .summary {
   height: 30%;
   width: 100%;
   border-top: none;
-  background-color: bisque;
+  background-color: rgb(213, 193, 170);
   border-radius: 4px;
+  font-size: 20px;
 }
 .total {
   height: 45%;
@@ -68,7 +81,7 @@
   padding-left: 10px;
   padding-right: 10px;
   border-bottom-width: 2px;
-  border-color: azure;
+  border-color: rgb(213, 193, 170);
   border-bottom-style: solid;
 }
 .order_total {
@@ -86,19 +99,20 @@
   justify-content: center;
 }
 .con_button {
+  font-weight: bold;
   height: 35px;
   width: 80%;
   border-radius: 18px;
-  background-color: rgb(23, 209, 23);
+  background-color:  rgb(56, 33, 16);
+  color: rgb(244, 241, 234);
   font-size: 20px;
-  border-width: 2px;
-  border-color: brown;
+  border: none;
 }
 .con_button:hover {
-  background-color: rgb(42, 236, 42);
+  background-color: #ba4828;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
-.con_button:click {
-  background-color: rgb(42, 236, 42);
+.con_button:active {
+  opacity: 0.7;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0);
 }
