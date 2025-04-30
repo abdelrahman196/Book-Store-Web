@@ -11,8 +11,7 @@
 .side_header {
   margin: 10px;
   width: 150px;
-  background-color: rgb(56, 33, 16);
-  color: rgb(244, 241, 234);
+  background-color: rgb(85, 50, 25);
   height: 30px;
   justify-content: center;
   align-items: center;
@@ -20,7 +19,7 @@
   border-style: solid;
   border-width: 2px;
   border-color: rgb(56, 33, 16);
-  border-radius: 3px;
+  border-radius: 8px;
   margin-left: 10px;
   box-shadow: 10px 0px 8px rgba(24, 24, 24, 0.1);
   display: flex;
@@ -35,13 +34,13 @@
   border-width: 4px;
   border-color: rgb(56, 33, 16);
   color: rgb(56, 33, 16);
-  height: 1px;
+  height: 3px;
   background-color: rgb(56, 33, 16);
   z-index: 50;
 }
 .side_header_text {
-  font-size: 30px;
-  color: rgb(244, 241, 234);
+  font-size: 26px;
+  color: white;
 }
 .check {
   margin: 7px;
@@ -53,7 +52,7 @@
   border-color: rgb(56, 33, 16);
   border-radius: 20px;
   height: 25px;
-  transition: background-color 0.7s;
+  transition: background-color 0.2s;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -71,5 +70,5 @@
   margin-left: 10px;
 }
 .check:hover {
-  background-color: #ba4828;
+  background-color: rgb(85, 50, 25);
 }

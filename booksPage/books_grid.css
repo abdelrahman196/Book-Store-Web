@@ -1,15 +1,18 @@
 .books_grid {
   margin-top: 100px;
-  background-color: rgb(244, 241, 234);
+  background-color: rgb(56, 33, 16);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   margin-right: 260px;
 }
 .book {
-  background-color: rgb(56, 33, 16);
+  background-color: rgb(213, 193, 170);
+  border-color: rgba(0, 0, 0, 0.6);
+  border-width: 4px;
+  border-style: initial;
   margin: 10px;
-  aspect-ratio: 4/7;
+  aspect-ratio: 6/10;
   position: relative;
   margin-right: 30px;
   cursor: pointer;
@@ -23,8 +26,10 @@
   right: 0px;
   justify-items: center;
   align-content: center;
+  max-height: 150px;
   opacity: 0;
   transition: opacity 0.4s;
+  background-color: rgba(85, 50, 25, 0.35);
 }
 .category {
   margin-top: 10px;
@@ -40,16 +45,13 @@
   font-size: 20px;
 }
 .intro {
-  color: rgb(244, 241, 234);
+  color: black;
   padding: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
-  max-lines: 5;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 500;
   max-height: 200px;
-}
-.intro::-webkit-scrollbar {
-  display: none;
 }
 @media (max-width: 1300px) {
   .books_grid {
@@ -103,7 +105,7 @@
 }
 .details {
   border-width: 2px;
-  border-color: rgb(56, 33, 16);
+  border-color: rgb(213, 193, 170);
   border-style: solid;
   border-top-style: none;
   height: 30%;
@@ -132,7 +134,7 @@
   padding-bottom: 10px;
 }
 .title_text {
-  color: rgb(244, 241, 234);
+  color: rgb(56, 33, 16);
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
@@ -140,14 +142,17 @@
   font-size: 20px;
 }
 .author_text {
-  color: rgb(244, 241, 234);
+  color: rgb(56, 33, 16);
+  font-weight: 400px;
+  font-size: 20px;
 }
 .price_text {
-  color: rgb(244, 241, 234);
+  color: rgb(56, 33, 16);
   font-size: 25px;
+  font-weight: 500;
 }
 .line1 {
-  background-color: rgb(244, 241, 234);
+  background-color: rgb(56, 33, 16);
   height: 4px;
   margin-top: 5px;
   margin-left: 10px;

@@ -11,6 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const titles = document.querySelectorAll(`.title_text`);
   const authors = document.querySelectorAll(`.author_text`);
   const prices = document.querySelectorAll(`.price_text`);
+  const switchT = function (first, secoand) {
+    tmp = first.textContent;
+    first.textContent = secoand.textContent;
+    secoand.textContent = tmp;
+  };
+  for (let i = 1; i<number_categorys; i+=3){
+    if(books_categories[i].textContent==="science fiction"){
+      switchT(books_categories[i], books_categories[i-1]);
+    }
+  }
   let book_categoriesM = new Array(booksA * 3);
   let ratingsM = new Array(booksA);
   let introsM = new Array(booksA);
@@ -139,11 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-  const switchT = function (first, secoand) {
-    tmp = first.textContent;
-    first.textContent = secoand.textContent;
-    secoand.textContent = tmp;
-  };
   const switchI = function (i, x) {
     if (x === i) {
       return;
