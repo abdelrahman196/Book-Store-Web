@@ -15,6 +15,7 @@
 }
 .order-details
 {
+  position: relative;
   border-color: #d5c1aa;
   background-color: #d5c1aa;
   border-width: 3px;
@@ -39,33 +40,30 @@
 }
 .book-name
 {
-  margin-top: 5px;
-  width: 400px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
-  display: block;
+  position: absolute;
 }
 .rating
 {
   display: flex;
   align-items: center;
-  margin-top: 60px;
   font-size: 50px;
-  margin-left: -400px;
+  position: absolute;
+  left: 320px;
+  bottom: 230px;
 }
 .price-details
 {
-  margin-left: -250px;
-  margin-top: 150px;
-  display: flex;
-  justify-content: center;
-  width: 250px;
   color: black;
   padding: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 40px;
   font-weight: 700;
+  position: absolute;
+  left: 265px;
+  bottom: 110px;
 }
 .delete-button
 {
@@ -77,8 +75,9 @@
   background-color: #d5c1aa;
   color: rgb(210, 47, 47);
   border: none;
-  margin-top: 300px;
-  margin-left: 40px;
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
 }
 .delete-button:hover
 {
