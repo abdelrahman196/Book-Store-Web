@@ -12,6 +12,11 @@
   border-radius: 4px;
   border-style: solid;
 }
+.check:hover
+{
+  top: 160px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
 .details {
   margin: 0;
   background-color: rgb(213, 193, 170);
