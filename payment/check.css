@@ -15,7 +15,7 @@
 .check:hover
 {
   top: 160px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 7px 7px rgba(213, 193, 170, 0.6);
 }
 .details {
   margin: 0;
@@ -114,7 +114,7 @@
   border: none;
 }
 .con_button:hover {
-  background-color: #ba4828;
+  background-color: rgb(85, 50, 25);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 .con_button:active {

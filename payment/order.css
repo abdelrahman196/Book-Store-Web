@@ -1,6 +1,6 @@
 .review-your-order
 {
-  background-color: #d5c1aa;
+  background-color: rgb(213, 193, 170);
   color: black;
   margin-top: 150px;
   margin-left: 70px;
@@ -16,8 +16,8 @@
 .order-details
 {
   position: relative;
-  border-color: #d5c1aa;
-  background-color: #d5c1aa;
+  border-color: rgb(213, 193, 170);
+  background-color: rgb(213, 193, 170);
   border-width: 3px;
   border-style: solid;
   width: 650px;
@@ -31,9 +31,9 @@
 }
 .order-details:hover
 {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-left: 65px;
-  box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 8px 8px 4px rgba(213, 193, 170, 0.4);
 }
 
 .book-image
