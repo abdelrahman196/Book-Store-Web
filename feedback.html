@@ -12,15 +12,84 @@
     </div>
     <div class="feedback_box">
       <div class="feedback_question">how much do u like the design?</div>
-      <div class="feedback_answer"></div>
-    </div>
-    <div class="feedback_box">
-      <div class="feedback_question">how much do u like the content?</div>
-      <div class="feedback_answer"></div>
+      <div class="feedback_answer">
+        <form action="/action_page.php" target="_blank" method="POST" autocomplete="on" novalidate="">
+          <div class="feedback">
+            <input type="radio" id="bad" name="like" value="bad">
+          <label class="feedback_e" for="bad">bad</label></div>
+          <div class="feedback">
+            <input type="radio" id="not bad" name="like" value="not bad">
+          <label class="feedback_e" for="not bad">not bad</label>
+          </div>
+          <div class="feedback">
+          <input type="radio" id="good" name="like" value="good">
+          <label class="feedback_e" for="good">good</label>
+          </div>
+          <div class="feedback"> 
+          <input type="radio" id="very good" name="like" value="very good">
+          <label class="feedback_e" for="very good">very good</label>
+          </div>
+          <div class="feedback">
+          <input type="radio" id="excellent" name="like" value="excellent">
+          <label class="feedback_e" for="excellent">excellent</label>
+        </div>
+        </form>
+      </div>
     </div>
     <div class="feedback_box">
       <div class="feedback_question">how much do u like the prices?</div>
-      <div class="feedback_answer"></div>
+      <div class="feedback_answer">
+        <div class="feedback">
+          <input type="radio" id="badp" name="likep" value="badp">
+        <label class="feedback_e" for="badp">bad</label></div>
+        <div class="feedback">
+          <input type="radio" id="not badp" name="likep" value="not badp">
+        <label class="feedback_e" for="not badp">not bad</label>
+        </div>
+        <div class="feedback">
+        <input type="radio" id="goodp" name="likep" value="goodp">
+        <label class="feedback_e" for="goodp">good</label>
+        </div>
+        <div class="feedback"> 
+        <input type="radio" id="very goodp" name="likep" value="very goodp">
+        <label class="feedback_e" for="very goodp">very good</label>
+        </div>
+        <div class="feedback">
+        <input type="radio" id="excellentp" name="likep" value="excellentp">
+        <label class="feedback_e" for="excellentp">excellent</label>
+      </div>
+      </form>
+      </div>
+    </div>
+
+
+    
+    <div class="feedback_box">
+      <div class="feedback_question">how much do u like the content?</div>
+      <div class="feedback_answer">
+        <div class="feedback">
+          <input type="radio" id="badc" name="likec" value="badc">
+          <label class="feedback_e" for="badc">bad</label>
+        </div>
+      <div class="feedback">
+        <input type="radio" id="not badc" name="likec" value="not badc">
+      <label class="feedback_e" for="not badc">not bad</label>
+      </div>
+
+      <div class="feedback" >
+      <input type="radio" id="goodc" name="likec" value="good" class="goodc">
+      <label class="feedback_e" for="goodc">good</label>
+      </div>
+
+      <div class="feedback"> 
+      <input type="radio" id="very goodc" name="likec" value="very goodc">
+      <label class="feedback_e" for="very goodc">very good</label>
+      </div>
+      <div class="feedback">
+      <input type="radio" id="excellentc" name="likec" value="excellentc">
+      <label class="feedback_e" for="excellentc">excellent</label>
+    </div>
+    </form></div>
     </div>
   </body>
 </html>
