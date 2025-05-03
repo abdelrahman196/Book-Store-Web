@@ -1,53 +1,47 @@
 function log1() {
-    ret=true;
-    u = document.getElementById('username').value;
-    p = document.getElementById('password').value;
-    phone = document.getElementById('username').value;
-    n = document.getElementsById('username').value;
-    if (u==''){
-        alert('username cannot be empty');
-       // alert('Email cannot be empty')
-        ret=false;
-    }
-    if (n==''){
-        document.getElementById("myerror1").innerHTML='*username cannot be empty*';
-        // alert('username cannot be empty')
+    let ret = true;
+
+    // Clear previous error messages
+    document.getElementById("myerror1").innerHTML = '';
+    document.getElementById("myerror2").innerHTML = '';
+    document.getElementById("myerror3").innerHTML = '';
+    document.getElementById("myerror4").innerHTML = '';
+
+    let u = document.getElementById('username').value;
+    let p = document.getElementById('password').value;
+    let phone = document.getElementById('phonenum').value;
+    let e = document.getElementById('email').value;
+
+    // Username check
+    if (u === '') {
+        document.getElementById("myerror1").innerHTML = '*Username cannot be empty*';
         ret = false;
     }
-    if(phone==''){
-        document.getElementById("myerror1").innerHTML='*phone number cannot be empty*'
-        ret=false;
-    }
-    if(p==''){
-        document.getElementById("myerror2").innerHTML='*password cannot be empty';
-        //alert('password cannot be empty')
-        ret=false;
-    }
-    else if(u != 'youssef@gmail.com' && u!="hany@gmail.com" && u!="mostafa@gmail.com" && u !="ayman@gmail.com") {
-        document.getElementById("myerror1").innerHTML='*Incorrect Email';
-        //alert('Incorrect username');
+
+    // Password check
+    if (p === '') {
+        document.getElementById("myerror2").innerHTML = '*Password cannot be empty*';
         ret = false;
     }
-    else if (u == 'youssef@gmail.com' && p == 'gindy123') {
-        document.querySelector('form').action = "useradmin.php";
-    }
-    else if (u == 'hany@gmail.com' && p == 'ashraf123'){
-        document.querySelector('form').action = "customers.php";
-    }
-    else if(u == 'mostafa@gmail.com' && p == 'lotfy123') {
-        document.querySelector('form').action = "dashboard.php";
-    }
-    else if(u =='abdallah@gmail.com'&& p =='ayman123'){
-        document.querySelector('form').action = "dashboard.php";   
 
-
-    }
-
-    
-    else{
-        document.getElementById("myerror2").innerHTML='*Incorrect password';
-        //alert('Incorrect password');
+    // Email check
+    if (e === '') {
+        document.getElementById("myerror3").innerHTML = '*Email cannot be empty*';
         ret = false;
-    }
-return ret;
+    } else {
+        let validEmails = ["youssef@gmail.com", "hany@gmail.com", "mostafa@gmail.com", "ayman@gmail.com"];
+        if (!validEmails.includes(e)) {
+            document.getElementById("myerror3").innerHTML = '*Incorrect Email*';
+            ret = false;
+        }
+    }
+
+    // Phone check
+    if (phone === '') {
+        document.getElementById("myerror4").innerHTML = '*Phone number cannot be empty*';
+        ret = false;
+    }
+
+    return ret;
 }
+
