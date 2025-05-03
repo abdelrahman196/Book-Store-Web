@@ -1,8 +1,6 @@
-white
-rgb(244, 241, 234)
-rgb(213, 193, 170)
-rgb(56, 33, 16)
-#ba4828
-rgb(0, 99, 93)
-rgb(30, 25, 21)
+white book intro
+#E8E0D5   background color 
+rgb(213, 193, 170)   header color
+rgba(213, 193, 170, 0.65)   sidebar color 
+#4a3728   sidebar buttoms and book description
 black
