@@ -1,4 +1,4 @@
-.review-your-order
+.review_your_order
 {
   background-color: rgb(213, 193, 170);
   color: black;
@@ -13,12 +13,12 @@
   justify-content: center;
   align-items: center;
 }
-.order-details
+.order_details
 {
   position: relative;
   border-color: rgb(213, 193, 170);
   background-color: rgb(213, 193, 170);
-  border-width: 3px;
+  border-width: 6px;
   border-style: solid;
   width: 650px;
   margin-top: 15px;
@@ -29,14 +29,14 @@
   justify-content: start;
   padding-right: 150px;
 }
-.order-details:hover
+.order_details:hover
 {
   margin-top: 8px;
   margin-left: 65px;
   box-shadow: 8px 8px 4px rgba(213, 193, 170, 0.4);
 }
 
-.book-image
+.book_image
 {
   margin-top: 5px;
   margin-left: 40px;
@@ -45,7 +45,7 @@
   height: 390px;
   display: inline-block;
 }
-.book-name
+.book_name
 {
   font-size: 30px;
   font-weight: 700;
@@ -60,7 +60,7 @@
   left: 320px;
   bottom: 230px;
 }
-.price-details
+.price_details
 {
   color: black;
   padding: 40px;
@@ -72,7 +72,7 @@
   left: 265px;
   bottom: 110px;
 }
-.delete-button
+.delete_button
 {
   font-size: 35px;
   font-weight: 700;
@@ -86,12 +86,12 @@
   right: 0px;
   bottom: 20px;
 }
-.delete-button:hover
+.delete_button:hover
 {
   color: rgb(162, 1, 1);
   cursor: pointer;
 }
-.delete-button:active
+.delete_button:active
 {
   opacity: 0.5;
 }
