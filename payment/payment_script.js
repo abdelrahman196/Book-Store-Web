@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function (){
     values[0].textContent = values[1].textContent = price_sum() + "$";
     values[2].textContent = String(tax*price_sum()) + "$";
     total_value.textContent = String((tax+1)*price_sum()) + "$";
-
   }
   assign_values();
 })
