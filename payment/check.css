@@ -108,16 +108,16 @@
   height: 35px;
   width: 80%;
   border-radius: 18px;
-  background-color:  rgb(56, 33, 16);
+  background-color:  #4a3728;
   color: rgb(244, 241, 234);
   font-size: 20px;
   border: none;
 }
 .con_button:hover {
-  background-color: rgb(85, 50, 25);
+  opacity: 0.8;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 .con_button:active {
-  opacity: 0.7;
+  opacity: 0.5;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0);
 }
