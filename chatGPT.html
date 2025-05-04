@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        .label {
+        color: black;
+        cursor: pointer;
+        }
+
+        .label.clicked {
+        color: red;
+        }
+  </style>
+  </head>
+  <body>
+
+    <label id="myLabel" class="label">اضغط هنا</label>
+
+    <input class="abdo" type="radio" id="not badd" name="liked" value="not badd">
+    <label class="feedback_e" for="not badd">not bad</label>
+
+
+
+    <script>
+      const label = document.getElementById('myLabel');
+      label.addEventListener('click', function() {
+          label.classList.toggle('clicked');
+      });
+    </script>
+
+  </body>
+</html>
