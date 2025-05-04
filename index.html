@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>profile page</title>
+    <link rel="stylesheet" href="css/master.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+    <ul>
+    <li><i class="fas fa-wallet"></i>fund wallet</li>
+    <li><i class="fas fa-bell"></i>notifications</li>
+    <li><i class="fas fa-cog"></i> Settings</li>
+    <li><i class="fas fa-home"></i> Home</li>
+    <li><i class="fas fa-book"></i> Browse Books</li>
+    <li><i class="fas fa-folder-open"></i> Categories</li>
+    <li><i class="fas fa-trophy"></i> Best Sellers</li>
+    <li><i class="fas fa-shopping-cart"></i> Cart</li>
+    </ul>
+</aside>
+
+<!-- Header -->
+<header class="top-header">
+    <i class="fas fa-bars" id="menu-toggle"></i>
+    <img src="image/logo c.jpg" id="logo" alt="Book Store Logo">
+    <div class="header-right">
+    <i class="fas fa-bell"></i>
+    <span class="user-name">Jason Mark</span>
+    </div>
+</header>
+    
+<!--Background -->
+<div class="top-bg">
+    <img src="image/background 1.png" class="bg-img"></img>
+</div>
+    
+<!-- Main Layout -->
+<main class="main-container">
+
+<div class="profile-container">
+    <span class="pic-cont">
+        <img src="image/profile image.png" alt="profile pic" id="profilepic"/>
+    </span>
+    <label for="file-input" id="edit-icon"><i class="fas fa-pencil-alt"></i></label>
+    <input type="file" id="file-input" accept="image" hidden>
+</div>
+
+<form >
+    <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" id="username" placeholder="jason mark" required disabled>
+    </div>
+
+    <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="(123)-456-3485" required disabled>
+    </div>
+
+    <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="jasonmark@gmail.com" required disabled>
+    </div>
+
+    <div class="button-group">
+    <button type="button" class="signout-btn">Sign Out</button>
+    <button type="button" class="delete-btn">Delete Account</button>
+    </div>
+</form>
+
+<button class="history-btn">Show Purchase History</button>
+
+<div class="history-table-container" style="display: none;">
+<table>
+    <thead>
+    <tr>
+        <th>Book Cover</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Date Ordered</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><img src="image/book-1.jpg" alt="book 1" class="book-cover"></td>
+        <td>Awareness To Action</td>
+        <td>$15.99</td>
+        <td>2025-04-10</td>
+        <td class="delivered">Delivered</td>
+    </tr>
+    <tr>
+        <td><img src="image/book-2.jpg" alt="Book 2" class="book-cover"></td>
+        <td>The Light Of All That Falls</td>
+        <td>$12.50</td>
+        <td>2025-04-06</td>
+        <td class="on-the-way">On the way</td>
+    </tr>
+    <tr>
+        <td><img src="image/book-3.jpg" alt="Book 3" class="book-cover"></td>
+        <td>The Gilded Ones</td>
+        <td>$9.99</td>
+        <td>2025-04-02</td>
+        <td class="delivered">Delivered</td>
+    </tr>
+    <tr>
+        <td><img src="image/book-4.jpg" alt="Book 4" class="book-cover"></td>
+        <td>No-Drama Discpline</td>
+        <td>$22.75</td>
+        <td>2025-03-25</td>
+        <td class="delivered">Delivered</td>
+    </tr>
+    <tr>
+        <td><img src="image/book-5(1).jpg" alt="Book 5" class="book-cover"></td>
+        <td>Jonathan Coe</td>
+        <td>$18.40</td>
+        <td>2025-03-20</td>
+        <td class="on-the-way">On the way</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+
+<script src="JS/main.js" ></script>
+</body>
+</html>
