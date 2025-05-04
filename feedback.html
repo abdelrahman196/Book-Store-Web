@@ -93,5 +93,45 @@
     </div>
     </form></div>
     </div>
+    <div class="feedback_box">
+      <div class="feedback_question">Leave your opinion</div>
+      <div class="feedback_answer">
+      <button class="button_e" onclick="openpopupmenu('popup_pg1')">recommend book</button>
+      <button class="button_e" onclick="openpopupmenu('popup_pg2')">report issue</button>
+      <button class="button_e" onclick="openpopupmenu('popup_pg3')">suggestion</button>
+      <div id="popup_pg1">
+        <div id="popup_main_div1">
+          <button class="closepopupmenu" onclick="closepopupmenu('popup_pg1')">x</button>
+          <div class="recommend_book_feedback">recommend book</div>
+          <div class="font_feedback">author
+            <input class="input_feedback" placeholder="Enter The author " type="text" title="hello">
+          </div>
+          <div class="font_feedback">title
+            <input class="input_feedback" placeholder="Enter The Book Name"type="text" title="hello">
+          </div>
+        </div>
+        </div>
+        <div id="popup_pg2">
+          <div id="popup_main_div2">
+            <button class="closepopupmenu" onclick="closepopupmenu('popup_pg2')">x</button>
+            <div class="report_issue_feedback">report issue</div>
+            <input class="comment_feedback"placeholder="Enter Your Issue" type="text" title="hello">
+          </div>
+          </div>
+          <div id="popup_pg3">
+            <div id="popup_main_div3">
+              <button class="closepopupmenu" onclick="closepopupmenu('popup_pg3')">x</button>
+              <div class="suggestion_feedback">suggestion</div>
+              <input class="comment_feedback" placeholder="Enter Your Suggestion" type="text" title="hello">
+            </div>
+      </div>
+      <script type="text/javascript">
+        function openpopupmenu(id){
+          document.getElementById(id).style.display="block"
+        }
+        function closepopupmenu(id){
+          document.getElementById(id).style.display="none"
+        }
+      </script>
   </body>
 </html>
