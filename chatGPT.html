@@ -2,31 +2,27 @@
 <html>
   <head>
     <style>
-        .label {
-        color: black;
-        cursor: pointer;
-        }
+input[type="radio"]:checked + label {
+  background-color: #4caf50; /* لون الخلفية عند التحديد /
+  color: white;              / لون النص */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
-        .label.clicked {
-        color: red;
-        }
   </style>
   </head>
   <body>
 
-    <label id="myLabel" class="label">اضغط هنا</label>
-
-    <input class="abdo" type="radio" id="not badd" name="liked" value="not badd">
-    <label class="feedback_e" for="not badd">not bad</label>
-
-
-
-    <script>
-      const label = document.getElementById('myLabel');
-      label.addEventListener('click', function() {
-          label.classList.toggle('clicked');
-      });
-    </script>
+    <div class="feedback">
+      <input class="abdo" type="radio" id="badd" name="liked" value="badd">
+      <label class="feedback_e" for="badd">bad</label>
+    </div>
+    <div class="feedback">
+      <input class="abdo" type="radio" id="notbadd" name="liked" value="notbadd">
+      <label class="feedback_e" for="notbadd">not bad</label>
+    </div>
+    <!-- كرر الباقي بنفس الطريقة -->
+    
 
   </body>
 </html>
