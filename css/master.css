@@ -8,14 +8,14 @@ black */
 body {
     font-family: sans-serif;
     margin:0;
-    background-color: #fefcfb;
+    background-color: #E8E0D5;
 }
 
 .top-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #c2966d;
+    background-color: rgb(213, 193, 170);
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
@@ -146,11 +146,11 @@ body {
     font-size: 14px;
 }
 .signout-btn {
-    background-color: #d8b89d;
-    color: #5c3a2e;
+    background-color: rgb(213, 193, 170);
+    color: #4a3728;
 }
 .delete-btn {
-    background-color: #a47148;
+    background-color: #4a3728;
     color: #fffaf6;
 }
 

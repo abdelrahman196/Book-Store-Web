@@ -31,13 +31,13 @@
   }
   
   .header {
-    width: 100%;
+    width: 100%;;
   }
   /* Top Barrrrrrrrr */
   
   .top-bar {
-    background-color:#4a3728   ;
-    
+    background-color:#4a3728  ;
+    display: none;
   }
   
   .top-bar__content {
@@ -60,7 +60,8 @@
   }
     /* Bottom Barrrrrrrrr */
   .bottom-bar {
-    background-color:rgb(244, 241, 234) ;
+    background-color: rgb(213, 193, 170);
+    height: 65px;
   }
   
   .bottom-bar__content {
