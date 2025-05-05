@@ -146,11 +146,11 @@ body {
     font-size: 14px;
 }
 .signout-btn {
-    background-color: #d8b89d;
-    color: #5c3a2e;
+    background-color: rgb(213, 193, 170) ;
+    color: #4a3728;
 }
 .delete-btn {
-    background-color: #a47148;
+    background-color: #4a3728;
     color: #fffaf6;
 }
 
