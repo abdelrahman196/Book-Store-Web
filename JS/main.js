@@ -1,5 +1,5 @@
 document.getElementById("logo").addEventListener("click",function(){
-    window.location.href="home page url";});
+    window.location.href="./file.html";});
 
 
 document.querySelector('.signout-btn').addEventListener('click', () => {
