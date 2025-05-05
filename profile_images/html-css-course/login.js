@@ -1,41 +1,39 @@
 function log() {
-    ret=true;
-    u = document.getElementById('username').value;
-    p = document.getElementById('password').value;
-    if (u==''){
-        document.getElementById("myerror1").innerHTML='*Email cannot be empty';
-       // alert('Email cannot be empty')
-        ret=false;
-    }
-   
-    if(p==''){
-        document.getElementById("myerror2").innerHTML='*password cannot be empty';
-        //alert('password cannot be empty')
-        ret=false;
-    }
-    else if(u != 'youssef@gmail.com' && u!="hany@gmail.com" && u!="mostafa@gmail.com" && u !="ayman@gmail.com") {
-        document.getElementById("myerror1").innerHTML='*Incorrect Email';
-        //alert('Incorrect username');
-        ret = false;
-    }
-    else if (u == 'youssef@gmail.com' && p == 'gindy123') {
-        document.querySelector('form').action = "useradmin.php";
-    }
-    else if (u == 'hany@gmail.com' && p == 'ashraf123'){
-        document.querySelector('form').action = "customers.php";
-    }
-    else if(u == 'mostafa@gmail.com' && p == 'lotfy123') {
-        document.querySelector('form').action = "dashboard.php";
-    }
-    else if(u =='abdallah@gmail.com'&& p =='ayman123'){
-        document.querySelector('form').action = "dashboard.php";   
+    let ret = true;
+
+    let u = document.getElementById('username').value.trim();
+    let p = document.getElementById('password').value.trim();
+
+    
+    document.getElementById("myerror1").innerHTML = '';
+    document.getElementById("myerror2").innerHTML = '';
 
 
-    } 
-    else{
-        document.getElementById("myerror2").innerHTML='*Incorrect password';
-        //alert('Incorrect password');
+    const validPasswords = [
+        "gindy123", "ashraf123", "lotfy123",
+        "ayman123", "helmy123", "meridean123",
+        "wael123", "tarek123"
+    ];
+
+    
+    if (u === '') {
+        document.getElementById("myerror1").innerHTML = '*Email cannot be empty';
         ret = false;
-    }
-return ret;
+    } else if (!u.endsWith('@gmail.com')) {
+        document.getElementById("myerror1").innerHTML = '*Email must end with @gmail.com';
+        ret = false;
+    }
+
+    if (p === '') {
+        document.getElementById("myerror2").innerHTML = '*Password cannot be empty';
+        ret = false;
+    } else if (!validPasswords.includes(p)) {
+        document.getElementById("myerror2").innerHTML = 'Incorrect password';
+        ret = false;
+    }
+    if (ret) {
+        document.querySelector('form').action = "your-homepage-link.html";//  put homepage link here
+    }
+
+    return ret;
 }
