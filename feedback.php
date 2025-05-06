@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>feedback</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="footer/feedback.css">
+  </head>
+  <body>
+    <div class="feedback_header">
+      <button class="back_button"><span style="font-size: xxx-large; margin-right: 15px;color: black;">&#8678;</span> back</button>
+      <div class="title">Feedback</div>
+    </div>
+    <div class="feedback_box">
+      <form action="/action_page.php" target="_blank" method="POST" autocomplete="on" novalidate=""></form>
+      <div class="feedback_question">how much do u like the design?</div>
+      <div class="feedback_answer">
+          <div class="feedback">
+            <input class="abdo" type="radio" id="badd" name="liked" value="badd" >
+          <label class="feedback_e" for="badd" >bad</label></div>
+          <div class="feedback">
+            <input class="abdo" type="radio" id="not badd" name="liked" value="not badd">
+          <label class="feedback_e" for="not badd">not bad</label>
+          </div>
+          <div class="feedback">
+          <input class="abdo" type="radio" id="goodd" name="liked" value="goodd">
+          <label class="feedback_e" for="goodd">good</label>
+          </div>
+          <div class="feedback"> 
+          <input class="abdo" type="radio" id="very goodd" name="liked" value="very goodd">
+          <label class="feedback_e" for="very goodd">very good</label>
+          </div>
+          <div class="feedback">
+          <input class="abdo" type="radio" id="excellentd" name="liked" value="excellentd">
+          <label class="feedback_e" for="excellentd">excellent</label>
+          
+        </div>
+        </form>
+      </div>
+    </div>
+    <div class="feedback_box">
+      <div class="feedback_question">how much do u like the prices?</div>
+      <div class="feedback_answer">
+        <div class="feedback">
+          <input class="abdo" type="radio" id="badp" name="likep" value="badp">
+        <label class="feedback_e" for="badp">bad</label></div>
+        <div class="feedback">
+          <input class="abdo" type="radio" id="not badp" name="likep" value="not badp">
+        <label class="feedback_e" for="not badp">not bad</label>
+        </div>
+        <div class="feedback">
+        <input class="abdo" type="radio" id="goodp" name="likep" value="goodp">
+        <label class="feedback_e" for="goodp">good</label>
+        </div>
+        <div class="feedback"> 
+        <input class="abdo" type="radio" id="very goodp" name="likep" value="very goodp">
+        <label class="feedback_e" for="very goodp">very good</label>
+        </div>
+        <div class="feedback">
+        <input class="abdo" type="radio" id="excellentp" name="likep" value="excellentp">
+        <label class="feedback_e" for="excellentp">excellent</label>
+      </div>
+      </form>
+      </div>
+    </div>
+
+
+    
+    <div class="feedback_box">
+      <div class="feedback_question">how much do u like the content?</div>
+      <div class="feedback_answer">
+        <div class="feedback">
+          <input class="abdo" type="radio" id="badc" name="likec" value="badc">
+          <label class="feedback_e" for="badc">bad</label>
+        </div>
+      <div class="feedback">
+        <input class="abdo" type="radio" id="not badc" name="likec" value="not badc">
+      <label class="feedback_e" for="not badc">not bad</label>
+      </div>
+
+      <div class="feedback" >
+      <input class="abdo" type="radio" id="goodc" name="likec" value="good" class="goodc">
+      <label class="feedback_e" for="goodc">good</label>
+      </div>
+
+      <div class="feedback"> 
+      <input class="abdo" type="radio" id="very goodc" name="likec" value="very goodc">
+      <label class="feedback_e" for="very goodc">very good</label>
+      </div>
+      <div class="feedback">
+      <input class="abdo" type="radio" id="excellentc" name="likec" value="excellentc">
+      <label class="feedback_e" for="excellentc">excellent</label>
+    </div>
+    </form></div>
+    </div>
+    <div class="feedback_box">
+      <div class="feedback_question">Leave your opinion</div>
+      <div class="feedback_answer">
+      <button class="button_e" onclick="openpopupmenu('popup_pg1')">recommend book</button>
+      <button class="button_e" onclick="openpopupmenu('popup_pg2')">report issue</button>
+      <button class="button_e" onclick="openpopupmenu('popup_pg3')">suggestion</button>
+      <div id="popup_pg1">
+        <div id="popup_main_div1">
+          <button class="closepopupmenu" onclick="closepopupmenu('popup_pg1')">x</button>
+          <div class="recommend_book_feedback">recommend book</div>
+          <div class="font_feedback">Author
+            <input class="input_feedback" placeholder="Enter The Book's Author " type="text" title="hello">
+          </div>
+          <div class="font_feedback">Title
+            <input class="input_feedback" placeholder="Enter The Book's Name"type="text" title="hello">
+          </div>
+        </div>
+        </div>
+        <div id="popup_pg2">
+          <div id="popup_main_div2">
+            <button class="closepopupmenu" onclick="closepopupmenu('popup_pg2')">x</button>
+            <div class="report_issue_feedback">report issue</div>
+            <input class="comment_feedback"placeholder="Enter Your Issue" type="text" title="hello">
+          </div>
+          </div>
+          <div id="popup_pg3">
+            <div id="popup_main_div3">
+              <button class="closepopupmenu" onclick="closepopupmenu('popup_pg3')">x</button>
+              <div class="suggestion_feedback">suggestion</div>
+              <input class="comment_feedback" placeholder="Enter Your Suggestion" type="text" title="hello">
+            </div>
+      </div>
+      <script type="text/javascript">
+        var choosen=ActiveXObject(id);
+        
+        function choosen(id){
+          document.getElementById(id).style.backgroundColor="blue"
+        }
+        
+        function openpopupmenu(id){
+          document.getElementById(id).style.display="block"
+        }
+        function closepopupmenu(id){
+          document.getElementById(id).style.display="none"
+        }
+      </script>
+  </body>
+</html>

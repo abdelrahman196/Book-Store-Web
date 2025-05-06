@@ -1,0 +1,10 @@
+body {
+  background-color: #e8e0d5;
+  height: 400px;
+}
+p {
+  margin: 0;
+}
+.php {
+  display: none;
+}

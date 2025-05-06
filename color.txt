@@ -1,6 +1,0 @@
-white                               book intro
-#E8E0D5                             background color 
-rgb(213, 193, 170)                  header color
-rgba(213, 193, 170, 0.65)           sidebar color 
-#4a3728                             sidebar buttons color
-black

@@ -1,0 +1,51 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    session_start();
+
+    require_once "db_link.php"; // Ensure this path is correct
+
+    // Get the length and IDs as a comma-separated string
+    $len = $_POST["ar_len"];
+    $id_str = $_POST["id_Arr"]; // Assuming this is a comma-separated string of IDs
+
+    // Convert the string to an array
+    $id_arr = explode(',', $id_str);
+
+    // Fetch current 'BOUGHT' value for the user
+    $query = "SELECT BOUGHT FROM users WHERE ID = :id;";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(":id", $_SESSION["ID"]);
+    $stmt->execute();
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    if (!empty($results) && !empty($results[0]["BOUGHT"])) {
+        // Append to the existing bought items if not empty
+        $previous = $results[0]["BOUGHT"];
+        $id_str = $previous . ',' . $id_str;  // Ensure it's a comma-separated format
+    }
+
+    // Update the BOUGHT value
+    $query = "UPDATE users SET BOUGHT = :bought WHERE ID = :user;";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(":bought", $id_str);
+    $stmt->bindParam(":user", $_SESSION["ID"]);
+    $stmt->execute();
+
+    // Clear the cart for specified book IDs
+    for ($i = 0; $i < $len; $i++) {
+        if (isset($id_arr[$i]) && is_numeric($id_arr[$i])) { // Validate the ID
+            $query = "UPDATE books SET CART = 0 WHERE ID = :id;";
+            $stmt = $pdo->prepare($query);
+            $stmt->bindParam(":id", (int)$id_arr[$i]);
+            $stmt->execute();
+        }
+    }
+
+    // Redirect or send a success message
+    header("Location: ../success_page.php"); // Change to the success page
+    exit; // Stop further execution
+} else {
+    print $_SERVER["REQUEST_METHOD"];
+    header("Location: ../login.php");
+    exit; // Stop further execution
+}
