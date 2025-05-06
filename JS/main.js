@@ -1,5 +1,10 @@
-document.getElementById("logo").addEventListener("click",function(){
-    window.location.href="./file.html";});
+document.addEventListener("DOMContentLoaded", function() {
+    const logo = document.getElementById("logo");
+      logo.addEventListener("click", function() {
+          window.location.href = "./file.html"; 
+        })
+    });
+
 
 
 document.querySelector('.signout-btn').addEventListener('click', () => {
