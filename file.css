@@ -173,6 +173,12 @@
     opacity: 0.8;
     transition: all 0.3s ease-in-out;
   }
+  .profile-img
+  {
+    width: 36px;
+    border-radius: 20px;
+    top: 20px;
+  }
   
   /* For JS */
   .nav--open {
