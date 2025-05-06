@@ -10,7 +10,12 @@
   <body> 
     <?php
       session_start();
-      $S_T = $_SESSION["S_T"];
+      if(isset($_SESSION["S_T"])){
+        $S_T = $_SESSION["S_T"];
+      }
+      else{
+        $S_T = "";
+      }
       print '<p class="php s_t">' . $S_T . '</p>';
       unset($_SESSION['S_T']);
     ?>
@@ -32,8 +37,9 @@
 
     <div class="bottom-bar">
       <div class="bottom-bar__content">
-        <a href="file.php" class="logo">
+        <a href="#" class="logo">
           <img class="logo__img" src="books_images/Logo.png" alt="logo">
+        
         </a>
     
         <nav class="nav">

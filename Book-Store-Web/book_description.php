@@ -136,7 +136,7 @@
         <div class="comment_box">
             <div class="comment">
                 <div class="comment_head">
-                    <div class="comment_pic"><img class="comment_pp" src="pp1.jpeg" alt="pp1"></div>
+                    <div class="comment_pic"><img class="comment_pp" src="profile_images/pp1.jpeg" alt="pp1"></div>
                     <div class="comment_name">Hany </div>
                     <div class="comment_rate">
                         <span style="color: gold;font-size: xxx-large;">&#9733;</span>
@@ -150,7 +150,7 @@
             </div>
             <div class="comment">
                 <div class="comment_head">
-                    <div class="comment_pic"><img class="comment_pp" src="icon.png" alt="pp1"></div>
+                    <div class="comment_pic"><img class="comment_pp" src="profile_images/download.png" alt="pp1"></div>
                     <div class="comment_name">abdelrahman</div>
                     <div class="comment_rate">
                         <span style="color: gold;font-size: xxx-large;">&#9733;</span>
@@ -164,7 +164,7 @@
             </div>
             <div class="comment">
                 <div class="comment_head">
-                    <div class="comment_pic"><img class="comment_pp" src="images.png" alt="pp1"></div>
+                    <div class="comment_pic"><img class="comment_pp" src="profile_images/images.png" alt="pp1"></div>
                     <div class="comment_name">sama</div>
                     <div class="comment_rate">
                         <span style="color: gold;font-size: xxx-large;">&#9733;</span>
