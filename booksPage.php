@@ -32,9 +32,8 @@
 
     <div class="bottom-bar">
       <div class="bottom-bar__content">
-        <a href="#" class="logo">
+        <a href="file.php" class="logo">
           <img class="logo__img" src="books_images/Logo.png" alt="logo">
-        
         </a>
     
         <nav class="nav">
