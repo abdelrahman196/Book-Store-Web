@@ -11,6 +11,7 @@
   <body> 
     <?php
       session_start();
+      print '<p class="php cart_ad">' . $_SESSION["CART_A"] . '</P>';
       if(isset($_SESSION["S_T"])){
         $S_T = $_SESSION["S_T"];
       }
@@ -21,7 +22,7 @@
       unset($_SESSION['S_T']);
     ?>
     <script src="booksPage/bookPage_script.js"></script>
-    <script src="header/main1.js"></script>
+    <script src="header/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <div class="top-bar">
       <div class="top-bar__content">

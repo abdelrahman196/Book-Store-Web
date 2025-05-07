@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cat2 = document.querySelector("#cat2");
   const cat3 = document.querySelector("#cat3");
   const buy = document.querySelector("#buy");
-  document.querySelector(`.cart_a`).textContent =
-    document.querySelector(".cart_ad").textContent;
+
   book_img.src = "books_images/book-" + data[8].textContent + ".jpg"; //img <------
   title.textContent = data[0].textContent; //name <------
   author.textContent = data[1].textContent; //author <------

@@ -162,10 +162,10 @@ body {
   color: black;
 }
 
-#cart_li{
+#cart_li {
   position: relative;
 }
-.cart_a{
+.cart_a {
   position: absolute;
   top: -9px;
   right: -15px;

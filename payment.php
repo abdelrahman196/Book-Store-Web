@@ -11,10 +11,11 @@
   </head>
   <body>
   <script src="payment/payment_script.js"></script>
-  <script src="header/main1.js"></script>
+  <script src="header/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <?php
       session_start();
+      print '<p class="php cart_ad">' . $_SESSION["CART_A"] . '</P>';
       require_once "include/db_link.php";
       $query ="SELECT * FROM books;";
       $stmt = $pdo->prepare($query);

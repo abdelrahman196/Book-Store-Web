@@ -16,8 +16,15 @@
 </head>
 
 <body>
-<script src="header/main1.js"></script>
-<div class="top-bar">
+<script src="header/main.js"></script>
+<?php
+      session_start();
+      print '<p class="php cart_ad">' . $_SESSION["CART_A"] . '</P>';
+?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="header/main.js"></script>
+<header class="header">
+    <div class="top-bar">
       <div class="top-bar__content">
         <section class="phone">
           <i class="fa-solid fa-phone icon"></i>
@@ -36,7 +43,7 @@
           <img class="logo__img" src="books_images/Logo.png" alt="logo">
         
         </a>
-    
+      
         <nav class="nav">
           <ul class="nav__list">
            
@@ -58,7 +65,7 @@
             </li>
             <li class="search-container">
                 <input class="search_text" type="text" placeholder="Search..." />
-                <button class="sub" type="submit">
+                <button class="sub"type="submit">
                    <i class="fas fa-search"></i>
                 </button>
             </li>

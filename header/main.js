@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(`.cart_a`).textContent =
+    document.querySelector(".cart_ad").textContent;
   const sub = document.querySelector(`.sub`);
   sub.addEventListener("click", function () {
     const search_text = document.querySelector(`.search_text`).value;
     if (search_text === "") {
       return;
     }
-
     $.ajax({
       type: "POST",
       url: "include/search.php",
