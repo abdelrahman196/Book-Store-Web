@@ -91,7 +91,10 @@
       <label class="feedback_e" for="excellentc">excellent</label>
     </div>
     </div>
-    <input type="reset" class="submit_buttom" value="submit">
+    <!-- <input type="reset" class="submit_buttom" value="submit"> -->
+
+    <button class="submit_buttom" id="reset" onclick="openpopupmenu('popup_pg4')" >submit</button>
+
     </form></div>
     <div class="feedback_box">
       <div class="feedback_question">Leave your opinion</div>
@@ -127,9 +130,18 @@
               <input class="comment_feedback" placeholder="Enter Your Suggestion" type="text" title="hello">
               <input type="reset" class="submit1_buttom" onclick="closepopupmenu('popup_pg3')" value="submit">
             </div>
-      </div>
+          </div>
+
+          <div id="popup_pg4">
+            <div id="popup_main_div4">
+              <button class="closepopupmenu" onclick="closepopupmenu('popup_pg4')">x</button>
+              <div class="submit_thanks">We appreciate your opinion</div>
+              <input type="reset" class="ok_buttom" onclick="closepopupmenu('popup_pg4')" value="ok ">
+            </div>
+          </div>
+
       <script type="text/javascript">
-        var choosen=ActiveXObject(id);
+        // var choosen=ActiveXObject(id);
         
         function choosen(id){
           document.getElementById(id).style.backgroundColor="blue"
@@ -141,6 +153,16 @@
         function closepopupmenu(id){
           document.getElementById(id).style.display="none"
         }
+
+        const resetb = document.getElementById("reset");
+        const radioButton = document.querySelectorAll(".abdo");
+        resetb.addEventListener("click",function(){
+          for(let i=0;i<(radioButton.length);i++){
+            radioButton[i].checked = false;
+          }
+        });
+
+
       </script>
   </body>
 </html>
