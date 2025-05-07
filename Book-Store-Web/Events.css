@@ -43,8 +43,6 @@ main {
 }
 
 .header30_content {
-  justify-content: center;
-  align-items: center;
   min-height: 80svh;
   max-height: 60rem;
   display: flex;
