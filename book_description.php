@@ -13,6 +13,7 @@
     <?php
         session_start();
         $id=$_SESSION["B_ID"];
+        print '<p class="php cart_ad">' . $_SESSION["CART_A"] . '</P>';
         require_once "include/db_link.php";
         $query1 = "SELECT * FROM books WHERE ID = :id;";
         $stmt1 = $pdo->prepare($query1);

@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
   $stmt->execute();
   $results  =  $stmt->fetchALL(PDO::FETCH_ASSOC);
   $_SESSION["ID"]= $results[0]["ID"];
+  $_SESSION["CART_A"]= 0;
   header("location: ../file.php");
 }
 else{
