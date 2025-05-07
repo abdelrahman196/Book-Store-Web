@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="payment/order.css" />
     <link rel="stylesheet" href="payment/gneral.css" />
     <link rel="stylesheet" href="payment/check1.css" />
@@ -79,7 +80,7 @@
                 </button>
             </li>
             <div class="profile-pic">
-                <img id="profile-img" src="books_images/icon.jpg" alt="Profile">
+                <img id="profile-img" src="icon.jpg" alt="Profile">
             </div>
           </ul>
         

@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="events.css" rel="stylesheet" >
     <link href="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/css/storyline-312089.webflow.7e60f716a.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -59,7 +60,7 @@
                 </button>
             </li>
             <div class="profile-pic">
-                <img id="profile-img" src="books_images/icon.jpg" alt="Profile">
+                <img id="profile-img" src="icon.jpg" alt="Profile">
             </div>
           </ul>
         

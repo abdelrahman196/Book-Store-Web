@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="booksPage/side_bar1.css" />
     <link rel="stylesheet" href="booksPage/general1.css" />
     <link rel="stylesheet" href="booksPage/books_grid1.css" />
@@ -65,7 +66,7 @@
                 </button>
             </li>
             <div class="profile-pic">
-                <img id="profile-img" src="books_images/icon.jpg" alt="Profile">
+                <img id="profile-img" src="icon.jpg" alt="Profile">
             </div>
           </ul>
         
