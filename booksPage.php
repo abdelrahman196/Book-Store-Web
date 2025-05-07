@@ -2,10 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="booksPage/side_bar1.css" />
+    <link rel="stylesheet" href="booksPage/side_bar.css" />
     <link rel="stylesheet" href="booksPage/general1.css" />
-    <link rel="stylesheet" href="booksPage/books_grid1.css" />
-    <link rel="stylesheet" href="header/header.css" />
+    <link rel="stylesheet" href="booksPage/books_grid.css" />
+    <link rel="stylesheet" href="header/header1.css" />
     <title>books</title>
   </head>
   <body> 
@@ -20,7 +20,7 @@
       print '<p class="php s_t">' . $S_T . '</p>';
       unset($_SESSION['S_T']);
     ?>
-    <script src="booksPage/bookPage_script1.js"></script>
+    <script src="booksPage/bookPage_script.js"></script>
     <script src="header/main1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <div class="top-bar">
@@ -457,7 +457,7 @@
         </div>
         <div class="details">
           <div class="book_title">
-            <p class="title_text">Bromance Book Club</p>
+            <p class="title_text">The Bromance Book Club</p>
           </div>
           <div class="book_author">
             <p class="author_text">Yousef Elgendy</p>
@@ -943,7 +943,7 @@
         </div>
         <div class="details">
           <div class="book_title">
-            <p class="title_text">Light of All That Falls</p>
+            <p class="title_text">The light of all that falls</p>
           </div>
           <div class="book_author">
             <p class="author_text">Lama Wael</p>
@@ -1045,7 +1045,7 @@
         </div>
         <div class="details">
           <div class="book_title">
-            <p class="title_text">Black Prism</p>
+            <p class="title_text">The Black Prism</p>
           </div>
           <div class="book_author">
             <p class="author_text">Lama Wael</p>
@@ -1167,7 +1167,7 @@
         </div>
         <div class="details">
           <div class="book_title">
-            <p class="title_text">Gilded Ones</p>
+            <p class="title_text">The Gilded Ones</p>
           </div>
           <div class="book_author">
             <p class="author_text">Abdallah Ayman</p>
@@ -1329,7 +1329,7 @@
         </div>
         <div class="details">
           <div class="book_title">
-            <p class="title_text">Short History of Trains</p>
+            <p class="title_text">A Short History of Trains</p>
           </div>
           <div class="book_author">
             <p class="author_text">Yousef Elgendy</p>

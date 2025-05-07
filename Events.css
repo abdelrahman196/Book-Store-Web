@@ -45,7 +45,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 80svh;
-  max-height: 60rem;
+  max-height: 80rem;
   display: flex;
 }
 
@@ -156,9 +156,9 @@ img {
 }
 
 .padding-bottom {
-  padding-top: 0rem !important;
-  padding-right: 0rem !important;
-  padding-left: 0rem !important;
+  padding-top: 0rem ;
+  padding-right: 0rem ;
+  padding-left: 0rem ;
 }
 
 @media screen and (max-width: 991px) {
@@ -430,13 +430,4 @@ strong {
   .event4_heading-wrapper {
     display: none;
   }
-}
-
-footer {
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
-  height: 100px;
-  z-index: 100;
-  background-color: rgb(213, 193, 170);
 }

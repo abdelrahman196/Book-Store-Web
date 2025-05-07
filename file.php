@@ -94,34 +94,34 @@
             <!-- This example shows 6 products, but you can add as many as you need -->
             <div class="product-card">
                 <img src="books_images/book-11.jpg" alt="Book Title 1" class="product-image">
-                <div class="product-name">The Avengers</div>
-                <div class="product-price">$5.00</div>
+                <div class="product-name">Marvel Action: Avengers 3</div>
+                <div class="product-price">$25.00</div>
             </div>
             <div class="product-card">
                 <img src="books_images/book-14.jpg" alt="Book Title 1" class="product-image">
                 <div class="product-name">Awareness To Action</div>
-                <div class="product-price">$6.00</div>
+                <div class="product-price">$30.00</div>
             </div>
             <div class="product-card">
                 <img src="books_images/book-16.jpg" alt="Book Title 1" class="product-image">
                 <div class="product-name">Fragonard</div>
-                <div class="product-price">$7.00</div>
+                <div class="product-price">$10.00</div>
             </div>
             <div class="product-card">
                 <img src="books_images/book-19.jpg" alt="Book Title 1" class="product-image">
 
                 <div class="product-name">The Gilded Ones</div>
-                <div class="product-price">$8.00</div>
+                <div class="product-price">$30.00</div>
             </div>
             <div class="product-card">
                 <img src="books_images/book-21.jpg" alt="Book Title 1" class="product-image">
                 <div class="product-name">Battles That Changed History</div>
-                <div class="product-price">$9.00</div>
+                <div class="product-price">$20.00</div>
             </div>
             <div class="product-card">
                 <img src="books_images/book-22.jpg" alt="Book Title 1" class="product-image">
                 <div class="product-name">A Short History Of The Train</div>
-                <div class="product-price">$10.00</div>
+                <div class="product-price">$16.00</div>
             </div>
         </div>
         <section class="Best-Sellers">
@@ -137,33 +137,33 @@
                 <div class="product-card">
                     <img src="books_images/book-25.jpg" alt="Book Title 1" class="product-image">
                     <div class="product-name">No drama discipline</div>
-                    <div class="product-price">$16.00</div>
+                    <div class="product-price">$10.00</div>
                 </div>
                 <div class="product-card">
                     <img src="books_images/book-18.jpg" alt="Book Title 1" class="product-image">
                     <div class="product-name">Beast made of night</div>
-                    <div class="product-price">$10.00</div>
+                    <div class="product-price">$50.00</div>
                 </div>
                 <div class="product-card">
                     <img src="books_images/book-10.jpg" alt="Book Title 1" class="product-image">
                     <div class="product-name">Bridgerton</div>
-                    <div class="product-price">$6.00</div>
+                    <div class="product-price">$60.00</div>
                 </div>
                 <div class="product-card">
                     <img src="books_images/book-1.jpg" alt="Book Title 1" class="product-image">
     
-                    <div class="product-name">Curtis Sittenfeld</div>
-                    <div class="product-price">$5.00</div>
+                    <div class="product-name">Romantic Comedy</div>
+                    <div class="product-price">$30.00</div>
                 </div>
                 <div class="product-card">
                     <img src="books_images/book-24.jpg" alt="Book Title 1" class="product-image">
                     <div class="product-name">What is history now?</div>
-                    <div class="product-price">$20.00</div>
+                    <div class="product-price">$30.00</div>
                 </div>
                 <div class="product-card">
                     <img src="books_images/book-15.jpg" alt="Book Title 1" class="product-image">
                     <div class="product-name">The light of all that falls</div>
-                    <div class="product-price">$13.00</div>
+                    <div class="product-price">$50.00</div>
                 </div>
             </div> 
             <section class="Last-Relases">
@@ -179,33 +179,33 @@
                     <div class="product-card">
                         <img src="books_images/book-23.jpg" alt="Book Title 1" class="product-image">
                         <div class="product-name">Making History</div>
-                        <div class="product-price">$11.00</div>
+                        <div class="product-price">$20.00</div>
                     </div>
                     <div class="product-card">
                         <img src= "books_images/book-13.jpg" alt="Book Title 1" class="product-image">
                         <div class="product-name"> Marvel Action: Avengers 3</div>
-                        <div class="product-price">$15.00</div>
+                        <div class="product-price">$25.00</div>
                     </div>
                     <div class="product-card">
                         <img src="books_images/book-26.jpg" alt="Book Title 1" class="product-image">
                         <div class="product-name">Drama Free</div>
-                        <div class="product-price">$21.00</div>
+                        <div class="product-price">$18.00</div>
                     </div>
                     <div class="product-card">
                         <img src="books_images/book-6.jpg" alt="Book Title 1" class="product-image">
         
                         <div class="product-name">The Bromance Book Club</div>
-                        <div class="product-price">$8.00</div>
+                        <div class="product-price">$35.00</div>
                     </div>
                     <div class="product-card">
                         <img src="books_images/book-17.jpg"alt="Book Title 1" class="product-image">
                         <div class="product-name">The black prism</div>
-                        <div class="product-price">$10.00</div>
+                        <div class="product-price">$80.00</div>
                     </div>
                     <div class="product-card">
                         <img src= "books_images/book-2.jpg"alt="Book Title 1" class="product-image">
-                        <div class="product-name">Dante</div>
-                        <div class="product-price">$14.00</div>
+                        <div class="product-name">The Divine Comedy</div>
+                        <div class="product-price">$10.00</div>
                     </div>
                 </div>
 

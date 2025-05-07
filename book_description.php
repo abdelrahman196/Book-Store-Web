@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="book_description/book_description.css">
+        <link rel="stylesheet" href="book_description/book_description1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="book_description/general.css">
-        <link rel="stylesheet" href="header/header.css" />
+        <link rel="stylesheet" href="header/header1.css" />
     </head>
     <body>
     <script src="book_description/book_description1.js"></script>
@@ -27,15 +28,16 @@
         print '<p class="php data">' . $results1[0]["CATEGORY2"] . '</p>';
         print '<p class="php data">' . $results1[0]["CATEGORY3"] . '</p>';
         print '<p class="php data">' . $id . '</p>';
-        $query = "SELECT ID,title FROM books WHERE CATEGORY1 = '" . $results1[0]["CATEGORY1"] . "' OR CATEGORY2 = '" . $results1[0]["CATEGORY1"] . "' OR CATEGORY3 = '" . $results1[0]["CATEGORY1"] . "';";
+        $query = "SELECT ID,title FROM books WHERE (CATEGORY1 = '" . $results1[0]["CATEGORY1"] . "' OR CATEGORY2 = '" . $results1[0]["CATEGORY1"] . "' OR CATEGORY3 = '" . $results1[0]["CATEGORY1"] . "') AND ID <> " .$id.";";
         $stmt = $pdo->prepare($query);
         $stmt->execute();
         $results  =  $stmt->fetchALL(PDO::FETCH_ASSOC);
         for($i=0;$i<4;$i++){
           print '<p class="php data">' . $results[$i]["ID"] . '</p>';
           print '<p class="php data">' . $results[$i]["title"] . '</p>';
+
         }
-        $query = "SELECT ID,title FROM books WHERE AUTHOR = '" . $results1[0]["AUTHOR"] . "';";
+        $query = "SELECT ID,title FROM books WHERE AUTHOR = '" . $results1[0]["AUTHOR"] . "' AND ID <> " .$id.";";
         $stmt = $pdo->prepare($query);
         $stmt->execute();
         $results  =  $stmt->fetchALL(PDO::FETCH_ASSOC);
@@ -89,7 +91,7 @@
                 </button>
             </li>
             <div class="profile-pic">
-                <img id="profile-img" src="books_images/icon.jpg" alt="Profile">
+                <img id="profile-img" src="icon.jpg" alt="Profile">
             </div>
           </ul>
         
@@ -124,11 +126,11 @@
                         <div id="rate" class="rate_progress1">
 
                         <div class="rate_star">
-                            <img class="img_star" src="icons/tstar.png" alt="star">
-                            <img class="img_star" src="icons/tstar.png" alt="star">
-                            <img class="img_star" src="icons/tstar.png" alt="star">
-                            <img class="img_star" src="icons/tstar.png" alt="star">
-                            <img class="img_star" src="icons/tstar.png" alt="star">
+                            <img class="img_star" src="icons1/tstar.png" alt="star">
+                            <img class="img_star" src="icons1/tstar.png" alt="star">
+                            <img class="img_star" src="icons1/tstar.png" alt="star">
+                            <img class="img_star" src="icons1/tstar.png" alt="star">
+                            <img class="img_star" src="icons1/tstar.png" alt="star">
                         </div></div></div>
 
 

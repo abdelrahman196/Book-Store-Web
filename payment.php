@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="payment/order.css" />
     <link rel="stylesheet" href="payment/gneral.css" />
     <link rel="stylesheet" href="payment/check1.css" />
-    <link rel="stylesheet" href="header/header.css" />
+    <link rel="stylesheet" href="header/header1.css" />
 
   </head>
   <body>

@@ -11,7 +11,7 @@
     <link href="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/css/storyline-312089.webflow.7e60f716a.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link rel="stylesheet" href="header/file.css" />
+    <link rel="stylesheet" href="header/file1.css" />
     <title>BookStore</title>
 </head>
 
@@ -404,7 +404,5 @@
   </div>
 
 </body>
-
-<footer></footer>
 
 </html>

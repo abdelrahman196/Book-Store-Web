@@ -1,3 +1,15 @@
+.search-container button {
+  background-color: #4a3728;
+  color: white;
+  border: none;
+  padding: 13px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +38,6 @@ body {
   min-height: 500vh;
   margin: 0;
   overflow-y: auto;
-  width: 100%;
 }
 
 .header {
@@ -36,7 +47,7 @@ body {
 
 .top-bar {
   background-color: #4a3728;
-  z-index: 250;
+  z-index: 550;
   position: fixed;
   top: 0px;
   right: 0px;
@@ -64,13 +75,13 @@ body {
 
 /* Bottom Barrrrrrrrr */
 .bottom-bar {
+  background-color: rgb(213, 193, 170);
+  height: 65px;
   position: fixed;
   top: 30px;
   right: 0px;
   left: 0px;
-  background-color: rgb(213, 193, 170);
-  height: 65px;
-  z-index: 150;
+  z-index: 500;
 }
 
 .bottom-bar__content {
@@ -180,6 +191,7 @@ body {
   border-radius: 20px;
   top: 20px;
 }
+
 /* For JS */
 .nav--open {
   left: 50% !important;
@@ -426,6 +438,7 @@ body {
   display: flex;
   gap: 20px;
   padding: 20px;
+  padding-right: 220px;
   font-family: Arial, sans-serif;
   justify-content: center;
 }
@@ -486,6 +499,8 @@ body {
 .why-us {
   text-align: center;
   padding: 60px 0;
+  padding-right: 200px;
+  z-index: 200;
 }
 
 .why-us h2 {
@@ -493,6 +508,7 @@ body {
   margin-bottom: 50px;
   color: #4a3728;
   text-transform: uppercase;
+  z-index: 200;
 }
 
 .features {
@@ -500,6 +516,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  z-index: 200;
 }
 
 .feature {
@@ -511,27 +528,32 @@ body {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  z-index: 200;
 }
 
 .feature:hover {
   transform: translateY(-10px);
+  z-index: 200;
 }
 
 .feature-icon {
   font-size: 2.5rem;
   color: #4a3728;
   margin-bottom: 20px;
+  z-index: 200;
 }
 
 .feature h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: #4a3728;
+  z-index: 200;
 }
 
 .feature p {
   color: #666;
   font-size: 1rem;
+  z-index: 200;
 }
 
 .social-media {
@@ -540,6 +562,9 @@ body {
   align-items: center;
   font-family: Arial, sans-serif;
   justify-content: center;
+  z-index: 200;
+  padding-right: 220px;
+  margin-bottom: 50px;
 }
 .social-item {
   display: flex;
@@ -548,15 +573,19 @@ body {
   text-decoration: none;
   color: #4a3728;
   transition: transform 0.3s;
+  z-index: 200;
 }
 .social-item:hover {
   transform: translateY(-3px);
+  z-index: 200;
 }
 .social-icon {
   font-size: 24px;
   margin-bottom: 5px;
+  z-index: 200;
 }
 .social-username {
   font-size: 12px;
   font-style: oblique;
+  z-index: 200;
 }
