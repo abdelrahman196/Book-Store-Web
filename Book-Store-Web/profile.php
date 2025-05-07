@@ -54,7 +54,7 @@
 <!-- Header -->
 <header class="top-header">
     <i class="fas fa-bars" id="menu-toggle"></i>
-    <img src="Logo.png" id="logo" alt="Book Store Logo">
+    <img src="Logo c.jpg" id="logo" alt="Book Store Logo">
     <div class="header-right">
     <i class="fas fa-bell"></i>
     <span class="user-name">Jason Mark</span>
