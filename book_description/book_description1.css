@@ -307,6 +307,9 @@ body{
     font-size: 20px;
     text-align: center;
     font-weight: bold ;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
 .buttom{
     background-color: black;
