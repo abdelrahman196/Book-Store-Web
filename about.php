@@ -14,7 +14,7 @@
     <title>BookStore</title>
 </head>
 
-s
+
 <body class="body">
     <div class="header">
         <a href="file.php" class="logo">
