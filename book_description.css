@@ -64,11 +64,12 @@ body{
     font: 400;
     border-radius: 40px;
     border:none;
-    
+    cursor: pointer;
+    transition: 0.8s; /*<------ recommended to be changed*/
 }
-.buy_button:hover{
+/* .buy_button:hover{
     background-color: #ba4828;
-}
+} */
 .buy_button:active{
     opacity: 0.8;
 }
@@ -288,6 +289,10 @@ body{
     height: 350px;
     padding-top: 12px;
     border-radius: 5px;
+    overflow: scroll;
+}
+.author_books_div::-webkit-scrollbar{
+    display: none;
 }
 .book_author{
     background-color: rgb(56, 33, 16);
@@ -297,6 +302,18 @@ body{
     margin-left: 18px;
     padding-top: 12px;
     display: inline-block;
+}
+.recommend_book{
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.book_author_name{
+    color:rgb(222, 219, 210) ;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold ;
 }
 .buttom{
     background-color: black;
