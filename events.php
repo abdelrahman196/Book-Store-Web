@@ -59,7 +59,7 @@
                 </button>
             </li>
             <div class="profile-pic">
-                <img id="profile-img" src="icon.jpg" alt="Profile">
+                <img id="profile-img" src="books_images/icon.jpg" alt="Profile">
             </div>
           </ul>
         
@@ -404,5 +404,6 @@
 
 </body>
 
+<footer></footer>
 
 </html>

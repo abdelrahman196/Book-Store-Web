@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 50px;
+  z-index: 100;
+  background-color: rgb(213, 193, 170);
+}
 
 body {
   background-color: rgb(56, 33, 16) !important;
@@ -431,4 +440,13 @@ strong {
   .event4_heading-wrapper {
     display: none;
   }
+}
+
+footer {
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 100px;
+  z-index: 100;
+  background-color: rgb(213, 193, 170);
 }

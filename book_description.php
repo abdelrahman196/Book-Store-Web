@@ -7,26 +7,44 @@
     </head>
     <body>
     <script src="book_description/books_decription.js"></script>
+    <script src="book_description/book_description1.js"></script>
     <script src="header/main1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <?php
         session_start();
         $id=$_SESSION["B_ID"];
         require_once "include/db_link.php";
-        $query = "SELECT * FROM books WHERE ID = :id;";
+        $query1 = "SELECT * FROM books WHERE ID = :id;";
+        $stmt1 = $pdo->prepare($query1);
+        $stmt1->bindParam(":id",$id);
+        $stmt1->execute();
+        $results1  =  $stmt1->fetchALL(PDO::FETCH_ASSOC);
+        print '<p class="php data">' . $results1[0]["title"] . '</p>';
+        print '<p class="php data">' . $results1[0]["AUTHOR"] . '</p>';
+        print '<p class="php data">' . $results1[0]["PRICE"] . '</p>';
+        print '<p class="php data">' . $results1[0]["INTRO"] . '</p>';
+        print '<p class="php data">' . $results1[0]["RATING"] . '</p>';
+        print '<p class="php data">' . $results1[0]["CATEGORY1"] . '</p>';
+        print '<p class="php data">' . $results1[0]["CATEGORY2"] . '</p>';
+        print '<p class="php data">' . $results1[0]["CATEGORY3"] . '</p>';
+        print '<p class="php data">' . $id . '</p>';
+        $query = "SELECT ID,title FROM books WHERE CATEGORY1 = '" . $results1[0]["CATEGORY1"] . "' OR CATEGORY2 = '" . $results1[0]["CATEGORY1"] . "' OR CATEGORY3 = '" . $results1[0]["CATEGORY1"] . "';";
         $stmt = $pdo->prepare($query);
-        $stmt->bindParam(":id",$id);
         $stmt->execute();
         $results  =  $stmt->fetchALL(PDO::FETCH_ASSOC);
-        print '<p class="php data">' . $results[0]["title"] . '</p>';
-        print '<p class="php data">' . $results[0]["AUTHOR"] . '</p>';
-        print '<p class="php data">' . $results[0]["PRICE"] . '</p>';
-        print '<p class="php data">' . $results[0]["INTRO"] . '</p>';
-        print '<p class="php data">' . $results[0]["RATING"] . '</p>';
-        print '<p class="php data">' . $results[0]["CATEGORY1"] . '</p>';
-        print '<p class="php data">' . $results[0]["CATEGORY2"] . '</p>';
-        print '<p class="php data">' . $results[0]["CATEGORY3"] . '</p>';
-        print '<p class="php data">' . $id . '</p>';
+        for($i=0;$i<4;$i++){
+          print '<p class="php data">' . $results[$i]["ID"] . '</p>';
+          print '<p class="php data">' . $results[$i]["title"] . '</p>';
+        }
+        $query = "SELECT ID,title FROM books WHERE AUTHOR = '" . $results1[0]["AUTHOR"] . "';";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute();
+        $results  =  $stmt->fetchALL(PDO::FETCH_ASSOC);
+        for($i=0;$i<4;$i++){
+          print '<p class="php data">' . $results[$i]["ID"] . '</p>';
+          print '<p class="php data">' . $results[$i]["title"] . '</p>';
+        }
+
       ?>
 
    <div class="top-bar">
@@ -72,7 +90,7 @@
                 </button>
             </li>
             <div class="profile-pic">
-                <img id="profile-img" src="icon.jpg" alt="Profile">
+                <img id="profile-img" src="books_images/icon.jpg" alt="Profile">
             </div>
           </ul>
         
@@ -86,50 +104,46 @@
       </div>
     </div>
         <div class="page">
-            <div class="sidebar">
+        <div class="sidebar">
                 <div>
-                    <img class="book_img" src="books_images/book-1.jpg" alt="book-1">
+                    <img class="book_img" id="bi" src="" alt="book-img">
                 </div>
                 <div class="book_price">
-                    <pre style="margin-top: 0 px;">     300$</pre>
+                    <pre style="margin-top: 0 px;">     <span id="bp"></span>$</pre>
                 </div>
                 <div class="buy">
-                    <button class="buy_button">Add to cart</button>
+                    <button class="buy_button" id="buy">Add to cart</button>
                 </div>
             </div>
             <div class="book_details">
-                    <div class="book_name">Romantic Comedy</div>
-                    <div class="auther">Author: Sofa Lotfy</div>
+                    <div class="book_name" ><span id="bn"></span></div>
+                    <div class="auther" >Author: <span id="ba"></span></div>
                     <div class="rate">
-                        <span style="color: gold;font-size: xxx-large;">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large">&#9733;</span>
-                        <span style="color: gold;font-size: xxx-large">&#9733;</span>
-                        <span style="color: black;font-size: xxx-large">&#9733;</span>
+
+
+                        <div class="rate_progress2">
+                        <div id="rate" class="rate_progress1">
+
+                        <div class="rate_star">
+                            <img class="img_star" src="icons/tstar.png" alt="star">
+                            <img class="img_star" src="icons/tstar.png" alt="star">
+                            <img class="img_star" src="icons/tstar.png" alt="star">
+                            <img class="img_star" src="icons/tstar.png" alt="star">
+                            <img class="img_star" src="icons/tstar.png" alt="star">
+                        </div></div></div>
+
+
                     </div>
                     <div class="more_info">
-                        <div class="categories">Comedy</div>
-                        <div class="categories">Romantic</div>
+                        <div class="categories" id="cat1"></div>
+                        <div class="categories" id="cat2"></div>
+                        <div class="categories" id="cat3"></div>
                         <div class="book_stat">
-                            <div class="publisher">Publisher: Hetlar</div>
-                            <div class="date">Date: 2011</div>
+                            <div class="publisher">Publisher: IT team</div>
+                            <div class="date">Date: 2025</div>
                         </div>
                     </div>
-                    <div class="info">NEW YORK TIMES BESTSELLER • REESE’S BOOK CLUB PICK • A comedy writer thinks she’s sworn off love, until a dreamy pop star flips the script on all her assumptions—a “smart, sophisticated, and fun” (Oprah Daily) novel from the author of Eligible, Rodham, and Prep.<br>
-                        Sally Milz is a sketch writer for The Night Owls, a late-night live comedy show that airs every Saturday.<br>
-                        With a couple of heartbreaks under her belt, she’s long abandoned the search for love, settling instead for the occasional hook-up, career success, and a close relationship with her stepfather to round out a satisfying life.<br>
-                        
-                        But when Sally’s friend and fellow writer Danny Horst begins dating Annabel, a glamorous actress who guest-hosted the show, he joins the not-so-exclusive group of talented but average-looking and even dorky men at the show—and in society at large—who’ve gotten romantically involved with incredibly beautiful and accomplished. <br>
-                        Sally channels her annoyance into a sketch called the Danny Horst Rule, poking fun at this phenomenon while underscoring how unlikely it is that the reverse would ever happen for a woman.<br>
-                        
-                        Enter Noah Brewster, a pop music sensation with a reputation for dating models, who signed on as both host and musical guest for this week’s show. 
-                        <br>
-                        Dazzled by his charms, Sally hits it off with Noah instantly, and as they collaborate on one sketch after another, she begins to wonder if there might actually be sparks flying.<br>
-                        But this isn’t a romantic comedy—it’s real life. 
-                        <br>
-                        And in real life, someone like him would never date someone like her … right?<br>
-                        
-                        With her keen observations and trademark ability to bring complex women to life on the page, Curtis Sittenfeld explores the neurosis-inducing and heart-fluttering wonder of love, while slyly dissecting the social rituals of romance and gender relations in the modern age.</p></div>
+                    <div class="info"><span id="bd"></span></div>
                     </div>
             </div>
         </div>
@@ -179,35 +193,33 @@
                 <div class="author_books">author books</div>
                 <div class="author_books_div">
                     <div class="book_author">
-                        <div class="book_author_image"></div>
-                        <div class="book_author_name"></div>
-                    </div>
-                    <div class="book_author">
-                        <div class="book_author_image"></div>
-                        <div class="book_author_name"></div>
+                        <div class="book_author_image"><img id="abi1" class="recommend_book" src="" alt="recommended-book"></div>
+                        <div class="book_author_name" id="abn1"></div>
                     </div><div class="book_author">
-                        <div class="book_author_image"></div>
-                        <div class="book_author_name"></div>
+                        <div class="book_author_image"><img id="abi2" class="recommend_book" src="" alt="recommended-book"></div>
+                        <div class="book_author_name" id="abn2"></div>
                     </div><div class="book_author">
-                        <div class="book_author_image"></div>
-                        <div class="book_author_name"></div>
+                        <div class="book_author_image"><img id="abi3" class="recommend_book" src="" alt="recommended-book"></div>
+                        <div class="book_author_name" id="abn3"></div>
+                    </div><div class="book_author">
+                        <div class="book_author_image"><img id="abi4" class="recommend_book" src="" alt="recommended-book"></div>
+                        <div class="book_author_name" id="abn4"></div>
                     </div>
                 </div>
                 <div class="author_books">categorie books</div>
                 <div class="author_books_div">
                     <div class="book_author">
-                        <div class="book_author_image"></div>
-                        <div class="book_author_name"></div>
-                    </div>
-                    <div class="book_author">
-                        <div class="book_author_image"></div>
-                        <div class="book_author_name"></div>
+                        <div class="book_author_image"><img id="sbi1" class="recommend_book" src="" alt="recommended-book"></div>
+                        <div class="book_author_name" id="sbn1"></div>
                     </div><div class="book_author">
-                        <div class="book_author_image"></div>
-                        <div class="book_author_name"></div>
+                        <div class="book_author_image"><img id="sbi2" class="recommend_book" src="" alt="recommended-book"></div>
+                        <div class="book_author_name" id="sbn2"></div>
                     </div><div class="book_author">
-                        <div class="book_author_image"></div>
-                        <div class="book_author_name"></div>
+                        <div class="book_author_image"><img id="sbi3" class="recommend_book" src="" alt="recommended-book"></div>
+                        <div class="book_author_name" id="sbn3"></div>
+                    </div><div class="book_author">
+                        <div class="book_author_image"><img id="sbi4" class="recommend_book" src="" alt="recommended-book"></div>
+                        <div class="book_author_name" id="sbn4"></div>
                     </div>
                 </div>
                 <section class="why-us">

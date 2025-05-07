@@ -11,6 +11,7 @@
   <title>book store</title>
 </head>
 <body>
+<script src="homePage/home.js"></script>
 <script src="header/main1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <header class="header">
@@ -57,7 +58,7 @@
                 </button>
             </li>
             <div class="profile-pic">
-                <img id="profile-img" src="icon.jpg" alt="Profile">
+                <img id="profile-img" src="books_images/icon.jpg" alt="Profile">
             </div>
           </ul>
         
