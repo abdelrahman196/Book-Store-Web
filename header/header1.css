@@ -173,6 +173,20 @@ body {
   color: black;
 }
 
+#cart_li{
+  position: relative;
+}
+.cart_a{
+  position: absolute;
+  top: -9px;
+  right: -15px;
+  background-color: rgba(255, 94, 0, 0.533);
+  color: rgb(117, 43, 0);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
 .hamburger {
   cursor: pointer;
   display: none;

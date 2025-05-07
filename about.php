@@ -6,17 +6,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="footer/AboutUs.css" rel="stylesheet" >
+    <link href="footer/AboutUs1.css" rel="stylesheet" >
     <link href="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/css/storyline-312089.webflow.7e60f716a.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link rel="stylesheet" href="header/header1.css"/>
     <title>BookStore</title>
 </head>
 
 
 <body class="body">
-    <div>
-        <div class="header"></div>
+    <div class="header">
+        <a href="file.php" class="logo">
+          <img class="logo__img" src="books_images/Logo.png" alt="logo">
+        </a>
     </div>
     <div class="page-wrapper">
     </div>
@@ -203,8 +206,6 @@
 
 </body>
 
-
-<footer></footer> 
 
 
 </html>

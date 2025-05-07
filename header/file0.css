@@ -65,11 +65,11 @@ body {
 /* Bottom Barrrrrrrrr */
 .bottom-bar {
   position: fixed;
-  top: 20px;
+  top: 30px;
   right: 0px;
   left: 0px;
   background-color: rgb(213, 193, 170);
-  height: 75px;
+  height: 65px;
   z-index: 150;
 }
 

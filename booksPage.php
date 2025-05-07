@@ -56,8 +56,11 @@
             <li class="nav__item">
               <a class="nav__link" href="events.php">Events</a>
             </li>
-            <li class="nav__item">
+            <li id="cart_li" class="nav__item">
                 <a class="nav__link" href="payment.php">Cart</a>
+                <div class="cart_a">
+                  3
+                </div>
             </li>
             <li class="search-container">
                 <input class="search_text" type="text" placeholder="Search..." />
