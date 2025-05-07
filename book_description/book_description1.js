@@ -30,6 +30,20 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("rate").style.width = rating + "px";
   buy.addEventListener("click", function () {
     if (buy.textContent === "Remove from cart") {
+      const id = Number(data[8].textContent);
+      $.ajax({
+        type: "POST",
+        url: "include/del_c.php",
+        data: {
+          b_id: id,
+        },
+        success: function (response) {
+          // do something on success response
+        },
+        error: function (response) {
+          // do something on error response
+        },
+      });
       buy.style.backgroundColor = "rgb(56, 33, 16)";
       buy.textContent = "Add to cart";
     } else {
@@ -37,6 +51,20 @@ document.addEventListener("DOMContentLoaded", function () {
         buy.style.backgroundColor = "#ba4828";
         // buy.style.backgroundColor="rgb(105, 28, 28)";
         buy.textContent = "Remove from cart";
+        const id = Number(data[8].textContent);
+        $.ajax({
+          type: "POST",
+          url: "include/add_cart.php",
+          data: {
+            b_id: id,
+          },
+          success: function (response) {
+            // do something on success response
+          },
+          error: function (response) {
+            // do something on error response
+          },
+        });
       }
     }
   });
