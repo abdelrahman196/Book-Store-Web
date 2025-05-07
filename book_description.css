@@ -124,12 +124,15 @@ body{
     margin: 0px;
     display:inline-block;
 }
+/* down here too */
 .rate_star{
     margin: 0px;
     /* background-color: red; */
-    position: absolute;
+    /* position: absolute; */
     display: inline-block;
+    width: 290px;
 }
+/* until here */
 .img_star{
     height: 50px;
     width: 60px;
@@ -294,14 +297,22 @@ body{
 .author_books_div::-webkit-scrollbar{
     display: none;
 }
+/* from here */
 .book_author{
-    background-color: rgb(56, 33, 16);
+    background-color: rgb(132, 116, 99);
     width: 220px;
     height: 300px;
     margin-top: 12px;
     margin-left: 18px;
     padding-top: 12px;
     display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.book_author:hover{
+    border-bottom: 5px solid rgba(56, 33, 16, 1);
+    border-right: 5px solid rgba(56, 33, 16, 1);
+    margin-left: 14px;
 }
 .recommend_book{
     width: 200px;
@@ -311,10 +322,12 @@ body{
 }
 .book_author_name{
     color:rgb(222, 219, 210) ;
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
-    font-weight: bold ;
+    font-weight:600 ;
+    overflow:hidden;
 }
+/* to here */
 .buttom{
     background-color: black;
 }
