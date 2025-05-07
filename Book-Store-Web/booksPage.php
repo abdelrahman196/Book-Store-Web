@@ -188,7 +188,7 @@
               <p class="rating">4.3</p>
             </div>
             <div class="rate_icon">
-              <img src="icons/star-icon-png-2.png" class="image" />
+              <img src="icon-png-2.png" class="image" />
             </div>
           </div>
         </div>
@@ -235,7 +235,7 @@
               <p class="rating">4.0</p>
             </div>
             <div class="rate_icon">
-              <img src="icons/star-icon-png-2.png" class="image" />
+              <img src="icon-png-2.png" class="image" />
             </div>
           </div>
         </div>
@@ -279,7 +279,7 @@
               <p class="rating">4.2</p>
             </div>
             <div class="rate_icon">
-              <img src="icons/star-icon-png-2.png" class="image" />
+              <img src="icon-png-2.png" class="image" />
             </div>
           </div>
         </div>
@@ -325,7 +325,7 @@
               <p class="rating">4.6</p>
             </div>
             <div class="rate_icon">
-              <img src="icons/star-icon-png-2.png" class="image" />
+              <img src="icon-png-2.png" class="image" />
             </div>
           </div>
         </div>
