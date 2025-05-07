@@ -216,6 +216,47 @@
     
                 <div class="video-container">
                     <!-- Video 1 - Embedded YouTube/Vimeo -->
+                    <div class="video-container">
+                    <!-- Video 1 - Embedded YouTube/Vimeo -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/3B3Cd7gaAus?si=l0HGo4T24Uy79Cep"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                        </div>
+                    </div>
+                    
+                    <!-- Video 2 - HTML5 Video -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/Ls2ynrMv10A?si=TRHdSIdbeLlk5vy3"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                        </div>
+                    </div>
+                    
+                    <!-- Video 3 - With Special Info -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/pRTWFqhEDeo?si=B-Y2DDKlXVRusU2H" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                        </div>
+                    </div>
+                    
+                    <!-- Video 4 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/UmSL2s0uDcg?si=FWEeq6m39cnBT7Xq"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                        </div>
+                    </div>
+                </div>
 
                       <!--         WHY US PARAGRAPH      -->
                 <section class="why-us">
