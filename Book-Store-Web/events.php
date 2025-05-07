@@ -404,6 +404,5 @@
 
 </body>
 
-<footer></footer>
 
 </html>

@@ -43,6 +43,8 @@ main {
 }
 
 .header30_content {
+  justify-content: center;
+  align-items: center;
   min-height: 80svh;
   max-height: 60rem;
   display: flex;
@@ -429,13 +431,4 @@ strong {
   .event4_heading-wrapper {
     display: none;
   }
-}
-
-footer {
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
-  height: 100px;
-  z-index: 100;
-  background-color: rgb(213, 193, 170);
 }
