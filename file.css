@@ -151,6 +151,45 @@
     background-color: #732e0e;
   }
   
+  /* -------------- BUTTON -------------- */
+  .btn {
+    background-color:rgb(244, 241, 234);
+    width: 4em;
+    height: 2em;
+    border-radius: 10em;
+    padding: 0 0.5em;
+    box-shadow: inset 0 8px 60px rgba(0,0,0, .1),
+                inset 0 8px 8px rgba(0,0,0, .1),
+                inset 0 -4px 4px rgba(0,0,0, .1);
+    position: relative;
+    left:30px ;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .btn__indicator {
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.5em;
+    box-shadow: 0 8px 40px rgba(0,0,0, .2);
+    transition: transform 0.3s ease;
+  }
+  .btn__indicator:hover {
+    background-color: #999898;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+  
+  /* -------------- ANIMATION ------------ */
+  .btn.active .btn__indicator {
+    transform: translateX(1.7em);
+  }
+  
+  
   
   .nav__link {
     color: #4a3728 ;
@@ -185,22 +224,6 @@
     top: 20px;
   }
   
-  /* For JS */
-  .nav--open {
-    left: 50% !important;
-  }
-  
-  .hamburger--open .bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-  
-  .hamburger--open .bar:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger--open .bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
   
   /* MEDIA QUERIES */
   @media (max-width: 650px) {
