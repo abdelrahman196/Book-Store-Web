@@ -59,6 +59,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
     $stmt->bindParam(":id",$id_arr[$i]);
     $stmt->execute();
   }
+  $_SESSION["CART_A"] = 0;
 }
 else{
   print $_SERVER["REQUEST_METHOD"];

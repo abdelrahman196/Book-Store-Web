@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="header/header1.css" />
     </head>
     <body>
-    <script src="book_description/book_description1.js"></script>
+    <script src="book_description/book_description.js"></script>
     <script src="header/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <?php
@@ -20,6 +20,7 @@
         $stmt1->bindParam(":id",$id);
         $stmt1->execute();
         $results1  =  $stmt1->fetchALL(PDO::FETCH_ASSOC);
+        print '<p class="php cart">' . $results1[0]["CART"] . '</p>';
         print '<p class="php data">' . $results1[0]["title"] . '</p>';
         print '<p class="php data">' . $results1[0]["AUTHOR"] . '</p>';
         print '<p class="php data">' . $results1[0]["PRICE"] . '</p>';

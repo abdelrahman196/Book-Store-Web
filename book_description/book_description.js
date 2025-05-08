@@ -10,7 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const cat2 = document.querySelector("#cat2");
   const cat3 = document.querySelector("#cat3");
   const buy = document.querySelector("#buy");
-
+  const cart = Number(document.querySelector(`.cart`).textContent);
+  if(cart){
+    buy.style.backgroundColor = "#ba4828";
+    // buy.style.backgroundColor="rgb(105, 28, 28)";
+    buy.textContent = "Remove from cart";
+  }
   book_img.src = "books_images/book-" + data[8].textContent + ".jpg"; //img <------
   title.textContent = data[0].textContent; //name <------
   author.textContent = data[1].textContent; //author <------
@@ -40,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         success: function (response) {
           // do something on success response
+          location.reload();
         },
         error: function (response) {
           // do something on error response
@@ -60,6 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
             b_id: id,
           },
           success: function (response) {
+            location.reload();
+            document.querySelector(`.cart_a`).textContent=Number(  document.querySelector(`.cart_a`).textContent)+1;
             // do something on success response
           },
           error: function (response) {

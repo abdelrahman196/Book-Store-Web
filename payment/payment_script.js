@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       success: function (response) {
         // do something on success response
-        console.log(id.length);
         location.reload();
       },
       error: function (response) {

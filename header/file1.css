@@ -176,10 +176,6 @@ body {
   border-radius: 10px;
 }
 
-.search_text{
-  color: black;
-}
-
 .hamburger {
   cursor: pointer;
   display: none;

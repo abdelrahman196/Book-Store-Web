@@ -1,19 +1,19 @@
-body {
-  margin-left: 0px;
+body{
+  margin-left:30px ;
   background-color: rgb(244, 241, 234);
   height: 1500px;
 }
-.feedback_header {
+.feedback_header{
   background-color: rgb(213, 193, 170);
   position: fixed;
   top: 0;
   display: flex;
   flex-direction: row;
   width: 100%;
-  /* height: 100px; */
+  height: 70px;
 }
-.back_button {
-  border: 2px solid black;
+.back_button{
+  border: 2px solid black; 
   text-align: left;
   text-decoration: none;
   /* display: inline-block; */
@@ -21,10 +21,11 @@ body {
   margin: 4px 2px;
   border-radius: 5px;
   font-size: xx-large;
-  width: 12%;
+  width: 100px;
   margin: 10px 0px 50px 10px;
+  display: none;
 }
-.back_button:hover {
+.back_button:hover{
   background-color: rgb(244, 241, 234);
   color: black;
   cursor: pointer;
@@ -32,32 +33,32 @@ body {
   border: 2px solid black;
   box-shadow: 2px 2px 10px black;
 }
-.title {
+.title{
   background-color: rgb(244, 241, 234);
-  margin-top: 20px;
+  margin-top: 4px;
   /* display: inline-block; */
   border: 2px solid black;
-  padding: 10px;
-  width: 20%;
-  height: 50px;
-  margin-left: 27%;
-  font-size: 40px;
+  padding: 8px;
+  width:12%;
+  height: 30px;
+  margin-left: 43%;
+  font-size: 30px;
   font-weight: 500;
   text-align: center;
   border-radius: 6px;
   color: rgb(56, 33, 16);
   box-shadow: 2px 2px 10px black;
 }
-.feedback_box {
+.feedback_box{
   background-color: rgb(244, 241, 234);
-  margin-top: 200px;
-  margin-left: 9%;
+  margin-top: 80px;
+  margin-left: 0px;
   width: 75%;
 }
-.feedback_question {
+.feedback_question{
   background-color: rgb(244, 241, 234);
   margin-top: 20px;
-  margin-left: 23%;
+  margin-left: 15px;
   width: 60%;
   height: auto;
   min-height: 45px;
@@ -69,8 +70,8 @@ body {
   text-align: center;
   box-shadow: 2px 2px 10px black;
 }
-.feedback {
-  background-color: rgba(56, 33, 16, 0.8);
+.feedback{
+  background-color:  rgba(56, 33, 16, 0.8);
   display: inline-block;
   margin-top: 50px;
   margin-right: 20px;
@@ -82,8 +83,8 @@ body {
   font-size: 20px;
   /* padding-bottom: 10px; */
 }
-.feedback_e {
-  background-color: rgba(56, 33, 16, 0);
+.feedback_e{
+  background-color:  rgba(56, 33, 16, 0);
   display: inline-block;
   /* margin-top: 50px; */
   /* margin-right: 10px; */
@@ -91,49 +92,52 @@ body {
   /* border-radius: 8px; */
   /* width: 130px; */
   /* height: 25px; */
-  width: 100%;
+  width:100%;
   height: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
   text-align: 30px;
   font-size: 2opx;
-  color: rgb(244, 241, 234);
+  color:rgb(244, 241, 234);
   text-align: center;
   cursor: pointer;
+
 }
 input[type="radio"]:checked + label {
-  background-color: rgb(213, 193, 170); /* لون الخلفية عند التحديد */
-  color: white; /* لون النص */
-  /* padding: 5px 10px; */
+  background-color: rgb(213, 193, 170);
+  color: white;
   border-radius: 5px;
   transition: 0.15s;
 }
-.feedback_answer {
-  margin-left: 30px;
+.feedback_answer{
+  margin-left: 5px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  /*justify-content: space-evenly; */
+  /* align-items: center; */
+  padding-left: 0px;
   width: 100%;
 }
-.abdo {
+.abdo{
   display: none;
 }
-.button_e {
+.button_e{
   border: solid;
   border-radius: 8px;
   border-color: black;
-  background-color: rgba(56, 33, 16, 0.8);
+  background-color:  rgba(56, 33, 16,0.8);
   width: 180px;
   height: 50px;
   margin-top: 50px;
+  margin-left: 0px;
   font-size: 20px;
-  color: rgb(244, 241, 234);
+  color:rgb(244, 241, 234);
+  margin-right: 50px;
 }
-.button_e:hover {
+.button_e:hover{
   cursor: pointer;
 }
-#popup_pg1 {
+#popup_pg1{
   position: fixed;
   top: 0;
   left: 0;
@@ -142,7 +146,7 @@ input[type="radio"]:checked + label {
   height: 100%;
   display: none;
 }
-#popup_pg2 {
+#popup_pg2{
   position: fixed;
   top: 0;
   left: 0;
@@ -151,7 +155,7 @@ input[type="radio"]:checked + label {
   height: 100%;
   display: none;
 }
-#popup_pg3 {
+#popup_pg3{
   position: fixed;
   top: 0;
   left: 0;
@@ -160,43 +164,64 @@ input[type="radio"]:checked + label {
   height: 100%;
   display: none;
 }
-#popup_main_div1 {
+#popup_main_div1{
   position: fixed;
   width: 600px;
-  height: 300px;
+  height: 400px;
   border: solid black;
   border-radius: 5px;
   background-color: rgb(213, 193, 170);
   top: 60%;
-  left: 55%;
+  left:55%;
   margin-left: -400px;
   margin-top: -250px;
 }
-#popup_main_div2 {
+#popup_main_div2{
   position: fixed;
   width: 600px;
-  height: 300px;
+  height: 400px;
   border: solid black;
   border-radius: 5px;
   background-color: rgb(213, 193, 170);
   top: 60%;
-  left: 55%;
+  left:55%;
   margin-left: -400px;
   margin-top: -250px;
 }
-#popup_main_div3 {
+#popup_main_div3{
   position: fixed;
   width: 600px;
-  height: 300px;
+  height: 400px;
   border: solid black;
   border-radius: 5px;
   background-color: rgb(213, 193, 170);
   top: 60%;
-  left: 55%;
+  left:55%;
   margin-left: -400px;
   margin-top: -250px;
 }
-.closepopupmenu {
+#popup_pg4{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#popup_main_div4{
+  position: fixed;
+  width: 600px;
+  height: 400px;
+  border: solid black;
+  border-radius: 5px;
+  background-color: rgb(213, 193, 170);
+  top: 60%;
+  left:55%;
+  margin-left: -400px;
+  margin-top: -250px;
+}
+.closepopupmenu{
   position: fixed;
   color: rgb(244, 241, 234);
   font-size: 20px;
@@ -204,15 +229,15 @@ input[type="radio"]:checked + label {
   width: 55px;
   height: 30px;
   border: none;
-  background-color: rgba(56, 33, 16, 0.8);
+  background-color: rgba(56, 33, 16,0.8);
   /* border-top-left-radius: 5px; */
   border-bottom-left-radius: 5px;
   text-align: center;
 }
-.closepopupmenu:hover {
+.closepopupmenu:hover{
   cursor: pointer;
 }
-.input_feedback {
+.input_feedback{
   position: fixed;
   display: inline-block;
   width: 300px;
@@ -222,7 +247,7 @@ input[type="radio"]:checked + label {
   margin-top: -10px;
   background-color: rgb(165, 163, 161);
 }
-.recommend_book_feedback {
+.recommend_book_feedback{
   border-radius: 5px;
   font-size: 26px;
   width: 200px;
@@ -233,10 +258,10 @@ input[type="radio"]:checked + label {
   margin-left: 50px;
   padding-top: 5px;
   padding-left: 8px;
-  background-color: rgba(56, 33, 16, 0.8);
+  background-color: rgba(56, 33, 16,0.8);
   color: rgb(244, 241, 234);
 }
-.report_issue_feedback {
+.report_issue_feedback{
   border-radius: 5px;
   font-size: 26px;
   width: 160px;
@@ -247,10 +272,10 @@ input[type="radio"]:checked + label {
   margin-left: 50px;
   padding-top: 5px;
   padding-left: 32px;
-  background-color: rgba(56, 33, 16, 0.8);
+  background-color: rgba(56, 33, 16,0.8);
   color: rgb(244, 241, 234);
 }
-.suggestion_feedback {
+.suggestion_feedback{
   border-radius: 5px;
   font-size: 26px;
   width: 120px;
@@ -261,10 +286,22 @@ input[type="radio"]:checked + label {
   margin-left: 50px;
   padding-top: 10px;
   padding-left: 10px;
-  background-color: rgba(56, 33, 16, 0.8);
+  background-color: rgba(56, 33, 16,0.8);
   color: rgb(244, 241, 234);
 }
-.font_feedback {
+.submit_thanks{
+  font-size: 30px;
+  width: 500px;
+  display: flex;
+  height: 40px;
+  text-align: center;
+  margin-top: 130px;
+  margin-left: 120px;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: rgba(56, 33, 16,1);
+}
+.font_feedback{
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   font-size: 24px;
@@ -276,10 +313,10 @@ input[type="radio"]:checked + label {
   margin-left: 80px;
   padding-top: 10px;
   padding-left: 45px;
-  background-color: rgba(56, 33, 16, 0.8);
+  background-color: rgba(56, 33, 16,0.8);
   color: white;
 }
-.comment_feedback {
+.comment_feedback{
   position: fixed;
   display: inline-block;
   width: 500px;
@@ -288,4 +325,61 @@ input[type="radio"]:checked + label {
   margin-top: 10px;
   margin-left: 50px;
   background-color: white;
+}
+.submit_buttom{
+  margin-top: 80px;
+  margin-left: 50%;
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  background-color:  rgba(56, 33, 16,0.8);
+  width: 200px;
+  height: 50px;
+  display: block;
+  font-size:25px ;
+  color: rgb(244, 241, 234);
+  cursor: pointer;
+
+}
+.submit1_buttom{
+  margin-top: 200px;
+  margin-left: 34%;
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  background-color:  rgba(56, 33, 16,0.8);
+  width: 180px;
+  height: 50px;
+  display: block;
+  font-size:25px ;
+  color: rgb(244, 241, 234);
+  cursor: pointer;
+}
+.submit2_buttom{
+  margin-top: 45px;
+  margin-left: 34%;
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  background-color:  rgba(56, 33, 16,0.8);
+  width: 180px;
+  height: 50px;
+  display: block;
+  font-size:25px ;
+  color: rgb(244, 241, 234);
+  cursor: pointer;
+}
+.ok_buttom{
+  margin-top: 100px;
+  margin-left: 34%;
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  background-color:  rgba(56, 33, 16,0.8);
+  width: 180px;
+  height: 50px;
+  display: block;
+  font-size:25px ;
+  color: rgb(244, 241, 234);
+  cursor: pointer;
 }

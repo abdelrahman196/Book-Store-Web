@@ -7,6 +7,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
   $stmt = $pdo->prepare($query);
   $stmt->bindParam(":id",$_POST["b_id"]);
   $stmt->execute();
+  $_SESSION["CART_A"]--;
 }
 else{
   print $_SERVER["REQUEST_METHOD"];

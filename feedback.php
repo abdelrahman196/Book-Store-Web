@@ -3,8 +3,9 @@
   <head>
     <title>feedback</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="footer/feedback.css">
+    <link rel="stylesheet" href="footer/feedback1.css">
   </head>
+  
   <body>
     <div class="feedback_header">
       <button class="back_button"><span style="font-size: xxx-large; margin-right: 15px;color: black;">&#8678;</span> back</button>
@@ -62,9 +63,6 @@
       </form>
       </div>
     </div>
-
-
-    
     <div class="feedback_box">
       <div class="feedback_question">how much do u like the content?</div>
       <div class="feedback_answer">
@@ -90,8 +88,12 @@
       <input class="abdo" type="radio" id="excellentc" name="likec" value="excellentc">
       <label class="feedback_e" for="excellentc">excellent</label>
     </div>
-    </form></div>
     </div>
+    <!-- <input type="reset" class="submit_buttom" value="submit"> -->
+
+    <button class="submit_buttom" id="reset" onclick="openpopupmenu('popup_pg4')" >submit</button>
+
+    </form></div>
     <div class="feedback_box">
       <div class="feedback_question">Leave your opinion</div>
       <div class="feedback_answer">
@@ -108,6 +110,7 @@
           <div class="font_feedback">Title
             <input class="input_feedback" placeholder="Enter The Book's Name"type="text" title="hello">
           </div>
+          <input type="reset" class="submit2_buttom" onclick="closepopupmenu('popup_pg1')" value="submit">
         </div>
         </div>
         <div id="popup_pg2">
@@ -115,6 +118,7 @@
             <button class="closepopupmenu" onclick="closepopupmenu('popup_pg2')">x</button>
             <div class="report_issue_feedback">report issue</div>
             <input class="comment_feedback"placeholder="Enter Your Issue" type="text" title="hello">
+            <input type="reset" class="submit1_buttom" onclick="closepopupmenu('popup_pg2')"value="submit">
           </div>
           </div>
           <div id="popup_pg3">
@@ -122,10 +126,20 @@
               <button class="closepopupmenu" onclick="closepopupmenu('popup_pg3')">x</button>
               <div class="suggestion_feedback">suggestion</div>
               <input class="comment_feedback" placeholder="Enter Your Suggestion" type="text" title="hello">
+              <input type="reset" class="submit1_buttom" onclick="closepopupmenu('popup_pg3')" value="submit">
             </div>
-      </div>
+          </div>
+
+          <div id="popup_pg4">
+            <div id="popup_main_div4">
+              <button class="closepopupmenu" onclick="closepopupmenu('popup_pg4')">x</button>
+              <div class="submit_thanks">We appreciate your opinion</div>
+              <input type="reset" class="ok_buttom" onclick="closepopupmenu('popup_pg4')" value="ok ">
+            </div>
+          </div>
+
       <script type="text/javascript">
-        var choosen=ActiveXObject(id);
+        // var choosen=ActiveXObject(id);
         
         function choosen(id){
           document.getElementById(id).style.backgroundColor="blue"
@@ -137,6 +151,16 @@
         function closepopupmenu(id){
           document.getElementById(id).style.display="none"
         }
+
+        const resetb = document.getElementById("reset");
+        const radioButton = document.querySelectorAll(".abdo");
+        resetb.addEventListener("click",function(){
+          for(let i=0;i<(radioButton.length);i++){
+            radioButton[i].checked = false;
+          }
+        });
+
+
       </script>
   </body>
 </html>
