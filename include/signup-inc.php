@@ -21,6 +21,9 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
   $results  =  $stmt->fetchALL(PDO::FETCH_ASSOC);
   $_SESSION["ID"]= $results[0]["ID"];
   $_SESSION["CART_A"]= 0;
+      $query = "UPDATE books SET CART = 0;";
+  $stmt = $pdo->prepare($query);
+  $stmt->execute();
   header("location: ../file.php");
 }
 else{

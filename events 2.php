@@ -6,22 +6,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="events.css" rel="stylesheet" >
+    <link href="Events 2.css" rel="stylesheet" >
     <link href="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/css/storyline-312089.webflow.7e60f716a.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link rel="stylesheet" href="header/file1.css" />
+        <link rel="stylesheet" href="header/file1.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>BookStore</title>
 </head>
 
 <body>
+<script src="header/main 21.js"></script>
 <?php
       session_start();
       print '<p class="php cart_ad">' . $_SESSION["CART_A"] . '</P>';
 ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="header/main.js"></script>
 <header class="header">
     <div class="top-bar">
       <div class="top-bar__content">
@@ -47,17 +47,17 @@
           <ul class="nav__list">
            
             <li class="nav__item">
-              <a class="nav__link" href="file.php">Home</a>
+              <a class="nav__link" href="file 2.php">Home</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="booksPage.php">Books</a>
+              <a class="nav__link" href="booksPage 2.php">Books</a>
             </li>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="events.php">Events</a>
+              <a class="nav__link" href="events 2.php">Events</a>
             </li>
             <li id="cart_li" class="nav__item">
-                <a class="nav__link" href="payment.php">Cart</a>
+                <a class="nav__link" href="payment 2.php">Cart</a>
                 <div class="cart_a">
                   3
                 </div>
@@ -89,6 +89,7 @@
         </div>
       </div>
     </div>
+
     <main class="main-wrapper">
         <header class="section_events-hero">
             <div class="padding-global" >
@@ -98,7 +99,7 @@
                     <div class="text-align-center">
                         <div class="margin-bottom margin-small">
                             <h1>Events</h1>
-                        </div><p>Explore a world of literary wonder at our upcoming events in the heart of our bookstore. Join us for captivating readings, engaging author discussions, and vibrant book swaps - all designed to ignite your passion for literature.</p></div>
+                        </div><p style="color: white;">Explore a world of literary wonder at our upcoming events in the heart of our bookstore. Join us for captivating readings, engaging author discussions, and vibrant book swaps - all designed to ignite your passion for literature.</p></div>
                     </div>
                 </div>
             </div>
@@ -107,7 +108,7 @@
         <div class="events-hero_background-image-wrapper">
                     <div class="events-hero_image-overlay">
                     </div>
-                    <img src="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/66c5538b238a7b6f1814cb96_ATP-1.jpg" class="events-hero_background-image" loading="eager" sizes="100vw" srcset="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/66c5538b238a7b6f1814cb96_ATP-1-p-500.jpg 500w, https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/66c5538b238a7b6f1814cb96_ATP-1-p-800.jpg 800w, https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/66c5538b238a7b6f1814cb96_ATP-1-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/66c5538b238a7b6f1814cb96_ATP-1-p-1600.jpg 1600w, https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/66c5538b238a7b6f1814cb96_ATP-1-p-2000.jpg 2000w, https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/66c5538b238a7b6f1814cb96_ATP-1.jpg 2048w" alt="" >
+                    <img src="https://media.istockphoto.com/id/873507500/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?s=612x612&w=0&k=20&c=clB-tJl5j44IqVLlCELHVP6G-kJjeNt_nNmQi48aEKo%3D" class="events-hero_background-image" loading="eager" sizes="100vw"srcset="https://media.istockphoto.com/id/873507500/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?s=612x612&w=0&k=20&c=clB-tJl5j44IqVLlCELHVP6G-kJjeNt_nNmQi48aEKo%3D 500w, https://media.istockphoto.com/id/873507500/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?s=612x612&w=0&k=20&c=clB-tJl5j44IqVLlCELHVP6G-kJjeNt_nNmQi48aEKo%3D 800w, https://media.istockphoto.com/id/873507500/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?s=612x612&w=0&k=20&c=clB-tJl5j44IqVLlCELHVP6G-kJjeNt_nNmQi48aEKo%3D 1080w, https://media.istockphoto.com/id/873507500/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?s=612x612&w=0&k=20&c=clB-tJl5j44IqVLlCELHVP6G-kJjeNt_nNmQi48aEKo%3D 1600w,https://media.istockphoto.com/id/873507500/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?s=612x612&w=0&k=20&c=clB-tJl5j44IqVLlCELHVP6G-kJjeNt_nNmQi48aEKo%3D2000w, https://media.istockphoto.com/id/873507500/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?s=612x612&w=0&k=20&c=clB-tJl5j44IqVLlCELHVP6G-kJjeNt_nNmQi48aEKo%3D" alt="" >
                 </div>
         </header>
 
@@ -117,7 +118,7 @@
                     <div class="padding-bottom padding-xxlarge">
                         <div class="margin-bottom margin-xxlarge">
                             <div class="text-align-center">
-                                <h4>Upcoming Events</h4>
+                                <h4 style="color:royalblue">Upcoming Events</h4>
                             </div>
                         </div>
                         <div class="event4_component">
@@ -133,7 +134,7 @@
                                             <div class="event4_item-content-left">
                                                 <div class="event4_item-content-top">
                                                     <div class="event4_date-wrapper">
-                                                        <div class="text-size-small event-date">Abril 29, 2025</div>
+                                                        <div class="text-size-small event-date">April 29, 2025</div>
                                                         <div class="div-block-6">
                                                             <div class="text-size-small">6:00 pm</div>
                                                             <div class="text-size-small"> - </div>
@@ -249,7 +250,7 @@
                             </div>
 
 
-                            <div role="listitem" class="event4_item w-dyn-item">
+                            <div class="event4_item w-dyn-item">
                                 <div class="event4_image-wrapper">
                                     <img src="https://cdn.prod.website-files.com/65ea408aa74b2e5d65d52a44/67e6bf36ff59670b3d228e25_book%20clubs%20(IG%20Post)%20(1080%20x%201350%20px)%20(9).jpg" class="event4_image" loading="lazy" width="100" height="100" alt="" >
                                 </div>
@@ -354,10 +355,11 @@
                     <img src="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/6615f877cdcce0a7a8ea5607_Group%201.png" class="image-4" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/6615f877cdcce0a7a8ea5607_Group%201-p-500.png 500w, https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/6615f877cdcce0a7a8ea5607_Group%201-p-800.png 800w, https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/6615f877cdcce0a7a8ea5607_Group%201-p-1080.png 1080w, https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/6615f877cdcce0a7a8ea5607_Group%201.png 1440w" alt="" >
                 </div>
 
+
         </section>
 
     </main>  
-    <section class="why-us">
+        <section class="why-us">
       <div class="container">
           <h2>WHY US?</h2>
           <div class="features">
@@ -397,8 +399,8 @@
   </section>
        <!-- button contact us and feedback   -->
   <div class="button-container">
-  <a href="about.php" class="custom-button contact-btn">About US</a>
-  <a href="feedback.php" class="custom-button feedback-btn">FEEDBACK</a>
+  <a href="about 2.php" class="custom-button contact-btn">About US</a>
+  <a href="feedback 2.php" class="custom-button feedback-btn">FEEDBACK</a>
   </div>
   <div class="social-media">
       <a href="#" class="social-item">
@@ -419,6 +421,8 @@
       </a>
   </div>
 
+
 </body>
+
 
 </html>

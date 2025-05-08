@@ -94,6 +94,13 @@
                 <button class="sub" type="submit">
                    <i class="fas fa-search"></i>
                 </button>
+                <li class="btn">
+                    <span class="btn__indicator">
+                      <span class="btn__icon-container">
+                        <i class="btn__icon fa-solid"></i>
+                      </span>
+                  </span>
+                </li>    
             </li>
             <div class="profile-pic">
                 <img id="profile-img" src="icon.jpg" alt="Profile">

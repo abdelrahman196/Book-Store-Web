@@ -10,7 +10,7 @@
   </head>
   <body style="background-color: #6b7aa1;">
   <script src="payment/payment_script 2.js"></script>
-  <script src="header/main.js"></script>
+  <script src="header/main 21.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <?php
       session_start();
@@ -83,6 +83,13 @@
                 <button class="sub" type="submit">
                    <i class="fas fa-search"></i>
                 </button>
+                <li class="btn">
+                    <span class="btn__indicator">
+                      <span class="btn__icon-container">
+                        <i class="btn__icon fa-solid"></i>
+                      </span>
+                  </span>
+                </li>    
             </li>
             <div class="profile-pic">
                 <img id="profile-img" src="icon.jpg" alt="Profile">

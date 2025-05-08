@@ -37,5 +37,9 @@ btn.addEventListener('click', () => {
   setTimeout(() => {
     icon.classList.remove('animated');
   }, 500);
+    let url = window.location.href
+  url =url.replace(".php","");
+  url =url + "%202.php";
+  window.location.href = url;
 });  
 });

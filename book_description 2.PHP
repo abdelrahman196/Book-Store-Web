@@ -17,7 +17,7 @@
     background-attachment: fixed;
     background-size: cover;">
     <script src="book_description/book_description2.js"></script>
-    <script src="header/main 2.js"></script>
+    <script src="header/main 21.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <?php
         session_start();
@@ -103,6 +103,13 @@
                 <button class="sub" type="submit">
                    <i class="fas fa-search"></i>
                 </button>
+                <li class="btn">
+                    <span class="btn__indicator">
+                      <span class="btn__icon-container">
+                        <i class="btn__icon fa-solid"></i>
+                      </span>
+                  </span>
+                </li>    
             </li>
             <div class="profile-pic">
                 <img id="profile-img" src="icon.jpg" alt="Profile">

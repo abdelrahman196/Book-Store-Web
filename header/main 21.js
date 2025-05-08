@@ -37,5 +37,9 @@ btn.addEventListener('click', () => {
   setTimeout(() => {
     icon.classList.remove('animated');
   }, 500);
+  let url = window.location.href
+  url =url.replace("%202" , "");
+  window.location.href = url;
 });  
+  btn.classList.toggle('active');
   });
