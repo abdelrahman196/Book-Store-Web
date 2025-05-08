@@ -131,7 +131,7 @@ body{
     max-lines: 5;
     box-shadow: 0px -2px 5px inset;
     border-top: 1px solid black;
-    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid black;
     padding: 7px;
     padding-bottom: 10px;
     margin-top: 40px;
@@ -143,15 +143,16 @@ body{
     display: none;
 }
 .sort_filter{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    display: flex;
+    height: 50px;
+    position: relative;
 }
-.sortby {
+
+  .sortby {
     position: relative;
     display: inline-block;
     margin-top: 40px;
-    margin-left: 80%;
+    margin-left: 40%;
   }
   
   .sortby_btn{
@@ -163,7 +164,7 @@ body{
     cursor: pointer;
   }
   
-  /* .sortby_lst {
+  .sortby_lst {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -171,7 +172,7 @@ body{
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  */
+  
   .sortby_lst a {
     color: black;
     padding: 12px 16px;
@@ -183,50 +184,32 @@ body{
     background-color: #ddd;
   }
   
-  /* .sortby:hover .sortby_lst {
+  .sortby:hover .sortby_lst {
     display: block;
   }
-   */
+  
   .sortby:hover .sortby_btn {
     background-color: #2980b9;
   }
-   */
-   .sortby_lst {
-    position: absolute;
-    top: 100%; /* places it just below the button */
-    left: 0;
-    background-color: white;
-    border: 1px solid #ccc;
-    display: none; /* toggle with JS later */
-    z-index: 1001;
-    padding: 10px;
-}
-
-.sortby:hover .sortby_lst {
-    display: block; /* show on hover */
-}
-.filter {
+  .filter {
     position: relative;
     display: inline-block;
-    /* top: 0px; */
     margin-top: 40px;
-    padding-right: 500px;
-    /* margin-left: 50%; */
-
+    margin-left: 20px;
   }
   
   .filter_btn{
     background-color: #3498db;
     color: white;
+    font-size: 30px;
+    width: 80px;
     padding: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
   }
   
-  /* .sortby_lst {
+  .filter_lst {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -234,7 +217,7 @@ body{
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  */
+  
   .filter_lst a {
     color: black;
     padding: 12px 16px;
@@ -246,25 +229,10 @@ body{
     background-color: #ddd;
   }
   
-  /* .sortby:hover .sortby_lst {
+  .filter:hover .filter_lst {
     display: block;
   }
-   */
+  
   .filter:hover .filter_btn {
     background-color: #2980b9;
   }
-   */
-   .filter_lst {
-    position: absolute;
-    top: 100%; /* places it just below the button */
-    left: 0;
-    background-color: white;
-    border: 1px solid #ccc;
-    display: none; /* toggle with JS later */
-    z-index: 1001;
-    padding: 10px;
-}
-
-.filter:hover .filter_lst {
-    display: block; /* show on hover */
-}
