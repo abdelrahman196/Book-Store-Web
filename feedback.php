@@ -3,9 +3,8 @@
   <head>
     <title>feedback</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="footer/feedback1.css">
+    <link rel="stylesheet" href="footer/feedback2.css">
   </head>
-  
   <body>
     <div class="feedback_header">
       <button class="back_button"><span style="font-size: xxx-large; margin-right: 15px;color: black;">&#8678;</span> back</button>
