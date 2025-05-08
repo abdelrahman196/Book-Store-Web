@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+    width: 100%;
+    /* height: 200vh; */
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+}
+.books_grid{
+    margin-top: 60px;
+    width: 100%;
+    margin-left: -10px;
+    height: 900%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: -1000px;
+    margin-bottom: -1000px;
+    background-color: rgb(193, 193, 197);
+}
+.book{
+    width: 500px;
+    height: 393px;
+    margin-left: 15px;
+    display: flex;
+    padding-left:3px ;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    background-color: brown;
+}
+.book_img{
+    display: inline-block;
+    height: 385px;
+    padding-top: 6px;
+    padding-left: 5px;
+}
+.image{
+    display: flex;
+    width: 160px;
+    height: 280px;
+    margin-top: 2px;
+    margin-left: 2px;
+    object-fit: cover;
+}
+.details{
+    background-color: aqua;
+    display: inline-block;
+    width: 270px;
+    height: 385px;
+    margin-top: 8px;
+    margin-left: 2px;
+    padding-left: 5px;
+    font-size: x-large;
+}
+.category{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.book_title{
+    height: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.title_text{
+    margin-top: 8px;
+}
+.book_author{
+    margin-top: 0px;
+    height: 25px;
+}
+.author_text{
+    margin-top: 8px;
+}
+.rate_value{
+    height: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 26px;
+    position: relative;
+}
+.rating{
+    margin-top: 3px;
+    padding-top: -10px;
+    display: flex;
+}
+.rate_icon {
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    width: 24px;
+    display: inline-block;
+}
+.image{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: top;
+}
+.book_price{
+    height: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.price_text{
+    margin-top: 8px;
+}
+.categorys{
+    height: 25px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+}
+.intro{
+    font:bold;
+    font-size: 20px;
+    margin-left: 0px;
+    border-width: 10px;
+    width: 250px;
+    height: 165px;
+    display: flex;
+    background-color: rgba(56, 33, 16, 0);
+    color: rgb(0, 0, 0);
+    text-overflow: ellipsis;
+    overflow: scroll;
+    max-lines: 5;
+    box-shadow: 0px -2px 5px inset;
+    border-top: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    padding: 7px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.intro::-webkit-scrollbar{
+    display: none;
+}
+.sortby {
+    position: relative;
+    display: inline-block;
+    margin-top: 1000px;
+  }
+  
+  .sortby_btn{
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sortby_lst {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .sortby_lst a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .sortby_lstt a:hover {
+    background-color: #ddd;
+  }
+  
+  .sortby:hover .sortby_lst {
+    display: block;
+  }
+  
+  .sortby:hover .sortby_btn {
+    background-color: #2980b9;
+  }
+  
+        </style>
+        <link rel="stylesheet" href="books.css">
+        <title>books</title>
+    </head>
+    <body>
+        <div class="header"> this is header</div>
+        <div class="sortby">
+            <button class="sortby_btn">Sort By</button>
+            <div class="sortby_lst" >
+                <div class="check">
+                    <input type="radio" class="side_check none_check" name="sort" />
+                    <p class="check_text none_check">None</p>
+                </div>
+                <div class="check">
+                    <input type="radio" class="side_check" name="sort" />
+                    <p class="check_text">Price</p>
+                </div>
+                <div class="check">
+                    <input type="radio" class="side_check" name="sort" />
+                    <p class="check_text">Rating</p>
+                </div>
+                <div class="check">
+                    <input type="radio" class="side_check" name="sort" />
+                    <p class="check_text">Alphabeticly</p>
+                </div>
+            </div>
+        </div>
+        <div class="books_grid">
+            <div class="book">
+                <div class="book_img">
+                    <img src="books_images/book-1.jpg" class="image" />
+                    </div>
+                    <div class="details">
+                        <div class="book_title">
+                        <p class="title_text">Romantic Comedy</p>
+                        </div>
+                        <div class="book_author">
+                        <p class="author_text">sofa lotfy</p>
+                        </div>
+                        <div class="rate_value">
+                            <div class="rate_icon">
+                                <img src="icons/star-icon-png-2.png" class="image" />
+                            </div>
+                            <p class="rating"><span>4.3</span></p>
+                        
+                            <!----- use the id for the span of the number to call the variable -------------->
+                        
+                            
+                            
+                        </div>
+                        <div class="book_price">
+                        <p class="price_text">300$</p>
+                        <div class="categorys">
+                            <p class="category">comedy</p>
+                            <p class="category">rommance</p>
+                            <p class="category">none</p>
+                            </div>
+                            <div> 
+                            <p class="intro">
+                                NEW YORK TIMES BESTSELLER • REESE’S BOOK CLUB PICK • A comedy
+                                writer thinks she’s sworn off love, until a dreamy pop star flips
+                                the script on all her assumptions—a “smart, sophisticated, and
+                                fun” (Oprah Daily) novel from the author of Eligible, Rodham, and
+                                Prep. Sally Milz is a sketch writer for The Night Owls, a
+                                late-night live comedy show that airs every Saturday. With a
+                                couple of heartbreaks under her belt, she’s long abandoned the
+                                search for love, settling instead for the occasional hook-up,
+                                career success, and a close relationship with her stepfather to
+                                round out a satisfying life. But when Sally’s friend and fellow
+                                writer Danny Horst begins dating Annabel, a glamorous actress who
+                                guest-hosted the show, he joins the not-so-exclusive group of
+                                talented but average-looking and even dorky men at the show—and in
+                                society at large—who’ve gotten romantically involved with
+                                incredibly beautiful and accomplished women. Sally channels her
+                                annoyance into a sketch called the Danny Horst Rule, poking fun at
+                                this phenomenon while underscoring how unlikely it is that the
+                                reverse would ever happen for a woman. Enter Noah Brewster, a pop
+                                music sensation with a reputation for dating models, who signed on
+                                as both host and musical guest for this week’s show. Dazzled by
+                                his charms, Sally hits it off with Noah instantly, and as they
+                                collaborate on one sketch after another, she begins to wonder if
+                                there might actually be sparks flying. But this isn’t a romantic
+                                comedy—it’s real life. And in real life, someone like him would
+                                never date someone like her … right? With her keen observations
+                                and trademark ability to bring complex women to life on the page,
+                                Curtis Sittenfeld explores the neurosis-inducing and
+                                heart-fluttering wonder of love, while slyly dissecting the social
+                                rituals of romance and gender relations in the modern age.
+                            </p>
+                        </div>
+                    </div>
+                            </div>
+                        </div>
+            <div class="book">
+                <div class="book_img">
+                    <img src="books_images/book-1.jpg" class="image" />
+                    </div>
+                    <div class="details">
+                        <div class="book_title">
+                        <p class="title_text">Romantic Comedy</p>
+                        </div>
+                        <div class="book_author">
+                        <p class="author_text">sofa lotfy</p>
+                        </div>
+                        <div class="rate_value">
+                            <div class="rate_icon">
+                                <img src="icons/star-icon-png-2.png" class="image" />
+                            </div>
+                            <p class="rating"><span>4.3</span></p>
+                        
+                            <!----- use the id for the span of the number to call the variable -------------->
+                        
+                            
+                            
+                        </div>
+                        <div class="book_price">
+                        <p class="price_text">300$</p>
+                        <div class="categorys">
+                            <p class="category">comedy</p>
+                            <p class="category">rommance</p>
+                            <p class="category">none</p>
+                            </div>
+                            <div> 
+                            <p class="intro">
+                                NEW YORK TIMES BESTSELLER • REESE’S BOOK CLUB PICK • A comedy
+                                writer thinks she’s sworn off love, until a dreamy pop star flips
+                                the script on all her assumptions—a “smart, sophisticated, and
+                                fun” (Oprah Daily) novel from the author of Eligible, Rodham, and
+                                Prep. Sally Milz is a sketch writer for The Night Owls, a
+                                late-night live comedy show that airs every Saturday. With a
+                                couple of heartbreaks under her belt, she’s long abandoned the
+                                search for love, settling instead for the occasional hook-up,
+                                career success, and a close relationship with her stepfather to
+                                round out a satisfying life. But when Sally’s friend and fellow
+                                writer Danny Horst begins dating Annabel, a glamorous actress who
+                                guest-hosted the show, he joins the not-so-exclusive group of
+                                talented but average-looking and even dorky men at the show—and in
+                                society at large—who’ve gotten romantically involved with
+                                incredibly beautiful and accomplished women. Sally channels her
+                                annoyance into a sketch called the Danny Horst Rule, poking fun at
+                                this phenomenon while underscoring how unlikely it is that the
+                                reverse would ever happen for a woman. Enter Noah Brewster, a pop
+                                music sensation with a reputation for dating models, who signed on
+                                as both host and musical guest for this week’s show. Dazzled by
+                                his charms, Sally hits it off with Noah instantly, and as they
+                                collaborate on one sketch after another, she begins to wonder if
+                                there might actually be sparks flying. But this isn’t a romantic
+                                comedy—it’s real life. And in real life, someone like him would
+                                never date someone like her … right? With her keen observations
+                                and trademark ability to bring complex women to life on the page,
+                                Curtis Sittenfeld explores the neurosis-inducing and
+                                heart-fluttering wonder of love, while slyly dissecting the social
+                                rituals of romance and gender relations in the modern age.
+                            </p>
+                        </div>
+                    </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <div class="book_img">
+                                <img src="books_images/book-1.jpg" class="image" />
+                                </div>
+                                <div class="details">
+                                    <div class="book_title">
+                                    <p class="title_text">Romantic Comedy</p>
+                                    </div>
+                                    <div class="book_author">
+                                    <p class="author_text">sofa lotfy</p>
+                                    </div>
+                                    <div class="rate_value">
+                                        <div class="rate_icon">
+                                            <img src="icons/star-icon-png-2.png" class="image" />
+                                        </div>
+                                        <p class="rating"><span>4.3</span></p>
+                                    
+                                        <!----- use the id for the span of the number to call the variable -------------->
+                                    
+                                        
+                                        
+                                    </div>
+                                    <div class="book_price">
+                                    <p class="price_text">300$</p>
+                                    <div class="categorys">
+                                        <p class="category">comedy</p>
+                                        <p class="category">rommance</p>
+                                        <p class="category">none</p>
+                                        </div>
+                                        <div> 
+                                        <p class="intro">
+                                            NEW YORK TIMES BESTSELLER • REESE’S BOOK CLUB PICK • A comedy
+                                            writer thinks she’s sworn off love, until a dreamy pop star flips
+                                            the script on all her assumptions—a “smart, sophisticated, and
+                                            fun” (Oprah Daily) novel from the author of Eligible, Rodham, and
+                                            Prep. Sally Milz is a sketch writer for The Night Owls, a
+                                            late-night live comedy show that airs every Saturday. With a
+                                            couple of heartbreaks under her belt, she’s long abandoned the
+                                            search for love, settling instead for the occasional hook-up,
+                                            career success, and a close relationship with her stepfather to
+                                            round out a satisfying life. But when Sally’s friend and fellow
+                                            writer Danny Horst begins dating Annabel, a glamorous actress who
+                                            guest-hosted the show, he joins the not-so-exclusive group of
+                                            talented but average-looking and even dorky men at the show—and in
+                                            society at large—who’ve gotten romantically involved with
+                                            incredibly beautiful and accomplished women. Sally channels her
+                                            annoyance into a sketch called the Danny Horst Rule, poking fun at
+                                            this phenomenon while underscoring how unlikely it is that the
+                                            reverse would ever happen for a woman. Enter Noah Brewster, a pop
+                                            music sensation with a reputation for dating models, who signed on
+                                            as both host and musical guest for this week’s show. Dazzled by
+                                            his charms, Sally hits it off with Noah instantly, and as they
+                                            collaborate on one sketch after another, she begins to wonder if
+                                            there might actually be sparks flying. But this isn’t a romantic
+                                            comedy—it’s real life. And in real life, someone like him would
+                                            never date someone like her … right? With her keen observations
+                                            and trademark ability to bring complex women to life on the page,
+                                            Curtis Sittenfeld explores the neurosis-inducing and
+                                            heart-fluttering wonder of love, while slyly dissecting the social
+                                            rituals of romance and gender relations in the modern age.
+                                        </p>
+                                    </div>
+                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="book">
+                                        <div class="book_img">
+                                            <img src="books_images/book-1.jpg" class="image" />
+                                            </div>
+                                            <div class="details">
+                                                <div class="book_title">
+                                                <p class="title_text">Romantic Comedy</p>
+                                                </div>
+                                                <div class="book_author">
+                                                <p class="author_text">sofa lotfy</p>
+                                                </div>
+                                                <div class="rate_value">
+                                                    <div class="rate_icon">
+                                                        <img src="icons/star-icon-png-2.png" class="image" />
+                                                    </div>
+                                                    <p class="rating"><span>4.3</span></p>
+                                                
+                                                    <!----- use the id for the span of the number to call the variable -------------->
+                                                
+                                                    
+                                                    
+                                                </div>
+                                                <div class="book_price">
+                                                <p class="price_text">300$</p>
+                                                <div class="categorys">
+                                                    <p class="category">comedy</p>
+                                                    <p class="category">rommance</p>
+                                                    <p class="category">none</p>
+                                                    </div>
+                                                    <div> 
+                                                    <p class="intro">
+                                                        NEW YORK TIMES BESTSELLER • REESE’S BOOK CLUB PICK • A comedy
+                                                        writer thinks she’s sworn off love, until a dreamy pop star flips
+                                                        the script on all her assumptions—a “smart, sophisticated, and
+                                                        fun” (Oprah Daily) novel from the author of Eligible, Rodham, and
+                                                        Prep. Sally Milz is a sketch writer for The Night Owls, a
+                                                        late-night live comedy show that airs every Saturday. With a
+                                                        couple of heartbreaks under her belt, she’s long abandoned the
+                                                        search for love, settling instead for the occasional hook-up,
+                                                        career success, and a close relationship with her stepfather to
+                                                        round out a satisfying life. But when Sally’s friend and fellow
+                                                        writer Danny Horst begins dating Annabel, a glamorous actress who
+                                                        guest-hosted the show, he joins the not-so-exclusive group of
+                                                        talented but average-looking and even dorky men at the show—and in
+                                                        society at large—who’ve gotten romantically involved with
+                                                        incredibly beautiful and accomplished women. Sally channels her
+                                                        annoyance into a sketch called the Danny Horst Rule, poking fun at
+                                                        this phenomenon while underscoring how unlikely it is that the
+                                                        reverse would ever happen for a woman. Enter Noah Brewster, a pop
+                                                        music sensation with a reputation for dating models, who signed on
+                                                        as both host and musical guest for this week’s show. Dazzled by
+                                                        his charms, Sally hits it off with Noah instantly, and as they
+                                                        collaborate on one sketch after another, she begins to wonder if
+                                                        there might actually be sparks flying. But this isn’t a romantic
+                                                        comedy—it’s real life. And in real life, someone like him would
+                                                        never date someone like her … right? With her keen observations
+                                                        and trademark ability to bring complex women to life on the page,
+                                                        Curtis Sittenfeld explores the neurosis-inducing and
+                                                        heart-fluttering wonder of love, while slyly dissecting the social
+                                                        rituals of romance and gender relations in the modern age.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                                    </div>
+                                                </div>
+            
+            </div>
+    </body>
+</html>
