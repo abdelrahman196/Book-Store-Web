@@ -1,0 +1,114 @@
+.review_your_order
+{
+  background-color: rgba(213, 193, 170, 0.65);
+  color: #4a3728;
+  margin-top: 100px;
+  justify-self: center;
+  width: 300px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top
+{
+  background-color: rgba(213, 193, 170, 0.65);
+  color: #4a3728;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.order_details
+{
+  background-color: rgba(213, 193, 170, 0.65);
+  color: #4a3728;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.book_name{
+  display: inline-block;
+  justify-self: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size:xx-large;
+}
+.tag_name{
+  /* width: 20%; */
+  flex: 5;
+}
+.tag_author{
+  /* width: 5%; */
+  flex: 2;
+  margin-left: 5px;
+  margin-right: 5px;
+  align-content: center;
+}
+.price_details{
+  /* width: 5%; */
+  flex: 2;
+  padding-right: 5px;
+  padding-left: 5px;
+  align-content: center;
+}
+.x{
+  flex: 1;
+  padding-right: 5px;
+  padding-left: 5px;
+  align-content: center;
+}
+.delete_button{
+  font-size: 20px;
+  /* font-weight: 700; */
+  /* padding: 20px; */
+  /* padding-top: 5px; */
+  /* padding-bottom: 5px; */
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 3px solid white;
+  border-radius: 25px;
+  /* position: absolute; */
+  /* right: 0px; */
+  /* bottom: 20px; */
+}
+
+.order_details:hover
+{
+  margin-top: 36px;
+  margin-left: 0px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4);
+}
+
+.book_image
+{
+  width: 106px;
+  height: 160px;
+  display: inline-block;
+}
+
+
+.delete_button:hover
+{
+  color: rgb(162, 1, 1);
+  cursor: pointer;
+  border-color: rgb(162, 1, 1);
+}
+.delete_button:active
+{
+  opacity: 0.5;
+}
