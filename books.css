@@ -1,11 +1,12 @@
 body{
     width: 100%;
+    background-color: #1a2b4c;
     /* height: 200vh; */
 }
 .header{
     width: 100%;
     height: 50px;
-    background-color: red;
+    background-color: #afafaf;
     top: 0;
     left: 0;
     right: 0;
@@ -21,7 +22,7 @@ body{
     grid-template-columns: 1fr 1fr;
     row-gap: -1000px;
     margin-bottom: -1000px;
-    background-color: rgb(193, 193, 197);
+    background-color: #1a2b4c;
 }
 .book{
     width: 500px;
@@ -32,7 +33,7 @@ body{
     padding-right: 10px;
     padding-bottom: 10px;
     margin-top: 30px;
-    background-color: brown;
+    background-color: #f4f1ea;
 }
 .book_img{
     display: inline-block;
@@ -49,7 +50,7 @@ body{
     object-fit: cover;
 }
 .details{
-    background-color: aqua;
+    background-color: #cecece;
     display: inline-block;
     width: 270px;
     height: 385px;
@@ -60,7 +61,9 @@ body{
 }
 .category{
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid #f4f1ea;
+    background-color: #1a2b4c;
+    color: white;
     border-radius: 5px;
 }
 .book_title{
@@ -124,13 +127,13 @@ body{
     width: 250px;
     height: 165px;
     display: flex;
-    background-color: rgba(56, 33, 16, 0);
-    color: rgb(0, 0, 0);
+    background-color: rgba(56, 31, 16, 0);
+    color: royalblue;
     text-overflow: ellipsis;
     overflow: scroll;
     max-lines: 5;
     box-shadow: 0px -2px 5px inset;
-    border-top: 1px solid black;
+    border-top: 1px solid #1a2b4c;
     /* border-bottom: 1px solid black; */
     padding: 7px;
     padding-bottom: 10px;
@@ -145,6 +148,7 @@ body{
 .sort_filter{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #1a2b4c;
 
 }
 .sortby {
