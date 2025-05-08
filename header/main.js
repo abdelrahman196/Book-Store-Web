@@ -27,4 +27,15 @@ document.addEventListener("DOMContentLoaded", function () {
   prof.addEventListener("click", function () {
     window.location.href = "profile.php";
   });
+  const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', () => {
+  btn.classList.toggle('active');
+  const icon = btn.querySelector('.btn__icon');
+  icon.classList.add('animated');
+  // Remove animation class after it completes
+  setTimeout(() => {
+    icon.classList.remove('animated');
+  }, 500);
+});  
 });

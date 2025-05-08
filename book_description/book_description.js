@@ -10,6 +10,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const cat2 = document.querySelector("#cat2");
   const cat3 = document.querySelector("#cat3");
   const buy = document.querySelector("#buy");
+  const books = document.querySelectorAll(`.book_author`);
+  const booksA = books.length;
+  for (let i = 0; i < booksA; i++) {
+    books[i].addEventListener("click", function () {
+      let id = this.querySelector(`.recommend_book`).src;
+      id = id.replace(/\D/g, "");
+      $.ajax({
+        type: "POST",
+        url: "include/b_d.php",
+        data: {
+          b_id: id,
+        },
+        success: function (response) {
+          // do something on success response
+          window.location.href = "book_description.php";
+        },
+        error: function (response) {
+          // do something on error response
+        },
+      });
+    });
+  }
   const cart = Number(document.querySelector(`.cart`).textContent);
   if(cart){
     buy.style.backgroundColor = "#ba4828";

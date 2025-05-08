@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         success: function (response) {
           // do something on success response
-          window.location.href = "book_description.php";
+          window.location.href = "book_description 2.php";
         },
         error: function (response) {
           // do something on error response
