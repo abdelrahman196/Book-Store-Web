@@ -23,7 +23,7 @@
   
 
   body {
-    background-color:rgb(222, 223, 241);
+    background-color: #1a2b4c;
     font-family: 'Inter', sans-serif;
     min-height: 500vh;
     margin: 0;
@@ -38,7 +38,7 @@
   /* Top Barrrrrrrrr */
   
   .top-bar {
-    background-color:#4a3728;
+    background-color: #1a2b4c;
   }
   
   .top-bar__content {
@@ -61,7 +61,7 @@
   }
     /* Bottom Barrrrrrrrr */
   .bottom-bar {
-    background-color: rgb(213, 193, 170);
+    background-color: #afafaf;
     height: 65px;
   }
   
@@ -129,8 +129,8 @@
   }
 
   .search-container button {
-    background-color:#4a3728  ;
-    color: white;
+    background-color: #1A2B4C ;
+    color: #afafaf;
     border: none;
     padding: 13px 16px;
     cursor: pointer;
@@ -142,7 +142,7 @@
   }
 
   .search-container button:hover {
-    background-color: #732e0e;
+    background-color: #033187;
   }
   
   
@@ -316,7 +316,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     justify-self: center;
-
+    color: #afafaf;
 }
 
 .divider {
@@ -392,6 +392,7 @@
     width: 100%;
     display: flex;
     position: relative;
+    background-color: rgb(222, 223, 241);
 }
 
 .product-image {
@@ -419,6 +420,7 @@
     text-align: center;
     position: relative;
     top: 10px;
+    color: #afafaf;
 }
 .video-container {
     display: flex;
@@ -468,6 +470,7 @@
     padding: 20px;
     font-family: Arial, sans-serif;
     justify-content: center;
+    background: #afafaf;
 }
 
 .custom-button {
@@ -478,8 +481,8 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff8f8;
-    background-color: #ced5dc;
+    color: #1a2b4c;
+    background-color: rgb(222, 223, 241);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -501,7 +504,8 @@
 }
 
 .contact-btn {
-    background-color: #1A2B4C ;
+    background-color:  rgb(222, 223, 241);
+    color: #1A2B4C;
 }
 
 .contact-btn:hover {
@@ -509,7 +513,8 @@
 }
 
 .feedback-btn {
-    background-color:#1A2B4C ;
+    background-color:  rgb(222, 223, 241);
+    color: #1A2B4C;
 }
 
 .feedback-btn:hover {
@@ -526,12 +531,13 @@
 .why-us {
     text-align: center;
     padding: 60px 0;
+    background-color: #afafaf;
 }
 
 .why-us h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    color: #1A2B4C ;
+    color: #1A2B4C;
     text-transform: uppercase;
 }
 
@@ -546,7 +552,7 @@
     flex: 1;
     min-width: 250px;
     max-width: 300px;
-    background: white;
+    background: rgb(222, 223, 241);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -580,6 +586,7 @@
     align-items: center;
     font-family: Arial, sans-serif;
     justify-content: center;
+    background-color: #afafaf;
 }
 .social-item {
     display: flex;
