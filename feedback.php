@@ -104,10 +104,10 @@
           <button class="closepopupmenu" onclick="closepopupmenu('popup_pg1')">x</button>
           <div class="recommend_book_feedback">recommend book</div>
           <div class="font_feedback">Author
-            <input class="input_feedback" placeholder="Enter The Book's Author " type="text" title="hello">
+            <textarea class="input_feedback" placeholder="Enter The Book's Author " type="text" title="hello"></textarea>
           </div>
           <div class="font_feedback">Title
-            <input class="input_feedback" placeholder="Enter The Book's Name"type="text" title="hello">
+            <textarea class="input_feedback" placeholder="Enter The Book's Name"type="text" title="hello"></textarea>
           </div>
           <input type="reset" class="submit2_buttom" onclick="closepopupmenu('popup_pg1')" value="submit">
         </div>
@@ -116,7 +116,7 @@
           <div id="popup_main_div2">
             <button class="closepopupmenu" onclick="closepopupmenu('popup_pg2')">x</button>
             <div class="report_issue_feedback">report issue</div>
-            <input class="comment_feedback"placeholder="Enter Your Issue" type="text" title="hello">
+            <textarea class="comment_feedback"placeholder="Enter Your Issue" type="text" title="hello"></textarea>
             <input type="reset" class="submit1_buttom" onclick="closepopupmenu('popup_pg2')"value="submit">
           </div>
           </div>
@@ -124,7 +124,7 @@
             <div id="popup_main_div3">
               <button class="closepopupmenu" onclick="closepopupmenu('popup_pg3')">x</button>
               <div class="suggestion_feedback">suggestion</div>
-              <input class="comment_feedback" placeholder="Enter Your Suggestion" type="text" title="hello">
+              <textarea class="comment_feedback" placeholder="Enter Your Suggestion" type="text" title="hello"></textarea>
               <input type="reset" class="submit1_buttom" onclick="closepopupmenu('popup_pg3')" value="submit">
             </div>
           </div>

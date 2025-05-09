@@ -59,8 +59,8 @@
                 </div>
             </li>
             <li class="search-container">
-                <input class="search_text" type="text" placeholder="Search..." />
-                <button class="sub"type="submit">
+                <input type="text" placeholder="Search..." />
+                <button type="submit">
                    <i class="fas fa-search"></i>
                 </button>
                 <li class="btn">
@@ -68,8 +68,8 @@
                       <span class="btn__icon-container">
                         <i class="btn__icon fa-solid"></i>
                       </span>
-                  </span>
-                </li>     
+                    </span>
+                </li>   
             </li>
             <div class="profile-pic">
                 <img id="profile-img" src="icon.jpg" alt="Profile">

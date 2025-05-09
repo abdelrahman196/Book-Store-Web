@@ -383,3 +383,16 @@ body{
     color: rgb(244, 241, 234);
     cursor: pointer;
   }
+  .comment_feedback{
+  width: 500px;
+  font-size: large;
+  height: 160px;
+  margin-top: 10px;
+  margin-left: 50px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
+  vertical-align: top;
+  }
