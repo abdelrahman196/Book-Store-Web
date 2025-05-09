@@ -1,7 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("show").style.display="none";
 const data = document.querySelectorAll(`.data`);
 document.getElementById("logo").addEventListener("click", function () {
-  window.location.href = "./file.php";
+  window.location.href = "./file 2.php";
+});
+document.querySelector(`.home`).addEventListener("click", function () {
+  window.location.href = "./file 2.php";
+});
+
+document.querySelector(`.cart`).addEventListener("click", function () {
+  window.location.href = "./payment 2.php";
+});
+
+
+document.querySelector(`.books1`).addEventListener("click", function () {
+  window.location.href = "./booksPage 2.php";
 });
 
 document.querySelector(".signout-btn").addEventListener("click", () => {
@@ -31,42 +44,28 @@ document.querySelector(".delete-btn").addEventListener("click", () => {
     // actual deletion logic here
   }
 });
-
+  const sidebar = document.getElementById("sidebar");
+  sidebar.style.left = sidebar.style.left === "0px" ? "-220px" : "0px";
 document.querySelector(".history-btn").addEventListener("click", () => {
   const container = document.querySelector(".history-table-container");
   container.style.display =
     container.style.display === "none" ? "block" : "none";
 });
-
+document.getElementById("show").addEventListener("click", function () {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.style.left = sidebar.style.left === "0px" ? "-220px" : "0px";
+      document.getElementById("show").style.display="none";
+});
 document.getElementById("menu-toggle").addEventListener("click", function () {
   const sidebar = document.getElementById("sidebar");
   sidebar.style.left = sidebar.style.left === "0px" ? "-220px" : "0px";
-});
-document.getElementById("menu-toggle1").addEventListener("click", function () {
-  const sidebar = document.getElementById("sidebar");
-  sidebar.style.left = sidebar.style.left === "0px" ? "-220px" : "0px";
-});
-document.querySelector(`.home`).addEventListener("click", function () {
-  window.location.href = "./file.php";
-});
-document.querySelector(`.home1`).addEventListener("click", function () {
-  window.location.href = "./file.php";
-});
+    setTimeout(() => {
+      document.getElementById("show").style.display="block";
+  }, 200);
 
-document.querySelector(`.cart`).addEventListener("click", function () {
-  window.location.href = "./payment.php";
-});
-
-document.querySelector(`.books`).addEventListener("click", function () {
-  window.location.href = "./booksPage.php";
-});
-
-document.querySelector(`.books1`).addEventListener("click", function () {
-  window.location.href = "./booksPage.php";
 });
 
 document.querySelector(`.user`).placeholder = data[0].textContent;
 document.querySelector(`.email`).placeholder = data[2].textContent;
 document.querySelector(`.phone`).placeholder = data[1].textContent;
-document.querySelector(`.user-name`).textContent = data[0].textContent;
 });

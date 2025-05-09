@@ -2,7 +2,7 @@
 <html>
     <head>
     <link rel="stylesheet" href="book_description/general.css">
-    <link rel="stylesheet" href="header/header1.css" />
+    <link rel="stylesheet" href="header/file0.css" />
         <link rel="stylesheet" href="book_description/book_description 21.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -250,5 +250,66 @@
                         <div class="book_author_name" id="sbn4"></div>
                     </div>
                 </div>
+                                        <section class="why-us">
+      <div class="container">
+          <h2>WHY US?</h2>
+          <div class="features">
+              <div class="feature">
+                  <div class="feature-icon">
+                      <i class="fas fa-tags"></i>
+                  </div>
+                  <h3>Best Deals</h3>
+                  <p>Enjoy best deal on a variety of subjects like history and politics, science and technology, computer and medicine.</p>
+              </div>
+              
+              <div class="feature">
+                  <div class="feature-icon">
+                      <i class="fas fa-book-open"></i>
+                  </div>
+                  <h3>Wide Assortment</h3>
+                  <p>Whether reading is your passion or you read occasionally you can take your pick from the wide range of books.</p>
+              </div>
+              
+              <div class="feature">
+                  <div class="feature-icon">
+                      <i class="fas fa-credit-card"></i>
+                  </div>
+                  <h3>Easy Payment</h3>
+                  <p>We believe in making transactions accessible and convenient for everyone. That's why we have multiple payment channels available.</p>
+              </div>
+              
+              <div class="feature">
+                  <div class="feature-icon">
+                      <i class="fas fa-truck"></i>
+                  </div>
+                  <h3>On Time Delivery</h3>
+                  <p>Get ready to receive and enjoy your bundle of books. Our delivery schedule is pretty predictable and reliable.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+       <!-- button contact us and feedback   -->
+  <div class="button-container">
+  <a href="about 2.php" class="custom-button contact-btn">About US</a>
+  <a href="feedback 2.php" class="custom-button feedback-btn">FEEDBACK</a>
+  </div>
+  <div class="social-media">
+      <a href="#" class="social-item">
+          <i class="social-icon fab fa-youtube"></i>
+          <span class="social-username">@BookStore.com</span>
+      </a>
+      <a href="#" class="social-item">
+          <i class="social-icon fab fa-twitter"></i>
+          <span class="social-username">@BookStore.com</span>
+      </a>
+      <a href="#" class="social-item">
+          <i class="social-icon fab fa-facebook"></i>
+          <span class="social-username">@BookStore.com</span>
+      </a>
+      <a href="#" class="social-item">
+          <i class="social-icon fab fa-instagram"></i>
+          <span class="social-username">@BookStore.com</span>
+      </a>
+  </div>
     </body>
 </html>
