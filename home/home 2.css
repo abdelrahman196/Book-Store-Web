@@ -352,10 +352,12 @@
     /* position: absolute;
     top: 0px; */
   font-size: x-large;
+  margin-top: 10px;
 }
 .product-author{
   font-size: large;
   margin-bottom: 5px;
+  margin-top: 10px;
 }
 /* .product-rate{
   margin-bottom: 5px;
@@ -371,7 +373,7 @@
 } */
 .product-price {
     color: #333;
-    font-size: x-large;
+    font-size: 25px;
     position: absolute;
     bottom: 20px;
     right: 10px;
@@ -499,19 +501,19 @@
 }
 
 .contact-btn {
-    background-color: #4a3728 ;
+    background-color: #1A2B4C ;
 }
 
 .contact-btn:hover {
-    background-color:#50230d;
+    background-color:#2F4F4F;
 }
 
 .feedback-btn {
-    background-color:#4a3728 ;
+    background-color:#1A2B4C ;
 }
 
 .feedback-btn:hover {
-    background-color: #50230d;
+    background-color: #2F4F4F;
 }
 .container {
     width: 85%;
@@ -529,7 +531,7 @@
 .why-us h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    color: #4a3728 ;
+    color: #1A2B4C ;
     text-transform: uppercase;
 }
 
@@ -557,14 +559,14 @@
 
 .feature-icon {
     font-size: 2.5rem;
-    color:#4a3728 ;
+    color:#1A2B4C ;
     margin-bottom: 20px;
 }
 
 .feature h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #4a3728 ;
+    color: #1A2B4C ;
 }
 
 .feature p {
@@ -584,7 +586,7 @@
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #4a3728 ;
+    color: #1A2B4C ;
     transition: transform 0.3s;
 }
 .social-item:hover {
