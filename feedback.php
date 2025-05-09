@@ -3,12 +3,19 @@
   <head>
     <title>feedback</title>
     <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="footer/AboutUs1.css" rel="stylesheet" >
+    <link href="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/css/storyline-312089.webflow.7e60f716a.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link rel="stylesheet" href="footer/feedback2.css">
+        <link rel="stylesheet" href="header/header1.css"/>
   </head>
   <body>
-    <div class="feedback_header">
-      <button class="back_button"><span style="font-size: xxx-large; margin-right: 15px;color: black;">&#8678;</span> back</button>
-      <div class="title">Feedback</div>
+    <div class="header">
+        <a href="file.php" class="logo">
+          <img class="logo__img" src="books_images/Logo.png" alt="logo">
+        </a>
     </div>
     <div class="feedback_box">
       <form action="/action_page.php" target="_blank" method="POST" autocomplete="on" novalidate=""></form>
@@ -104,10 +111,10 @@
           <button class="closepopupmenu" onclick="closepopupmenu('popup_pg1')">x</button>
           <div class="recommend_book_feedback">recommend book</div>
           <div class="font_feedback">Author
-            <textarea class="input_feedback" placeholder="Enter The Book's Author " type="text" title="hello"></textarea>
+            <input class="input_feedback" placeholder="Enter The Book's Author " type="text" title="hello">
           </div>
           <div class="font_feedback">Title
-            <textarea class="input_feedback" placeholder="Enter The Book's Name"type="text" title="hello"></textarea>
+            <input class="input_feedback" placeholder="Enter The Book's Name"type="text" title="hello">
           </div>
           <input type="reset" class="submit2_buttom" onclick="closepopupmenu('popup_pg1')" value="submit">
         </div>
@@ -116,7 +123,7 @@
           <div id="popup_main_div2">
             <button class="closepopupmenu" onclick="closepopupmenu('popup_pg2')">x</button>
             <div class="report_issue_feedback">report issue</div>
-            <textarea class="comment_feedback"placeholder="Enter Your Issue" type="text" title="hello"></textarea>
+            <input class="comment_feedback"placeholder="Enter Your Issue" type="text" title="hello">
             <input type="reset" class="submit1_buttom" onclick="closepopupmenu('popup_pg2')"value="submit">
           </div>
           </div>
@@ -124,7 +131,7 @@
             <div id="popup_main_div3">
               <button class="closepopupmenu" onclick="closepopupmenu('popup_pg3')">x</button>
               <div class="suggestion_feedback">suggestion</div>
-              <textarea class="comment_feedback" placeholder="Enter Your Suggestion" type="text" title="hello"></textarea>
+              <input class="comment_feedback" placeholder="Enter Your Suggestion" type="text" title="hello">
               <input type="reset" class="submit1_buttom" onclick="closepopupmenu('popup_pg3')" value="submit">
             </div>
           </div>

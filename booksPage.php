@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="booksPage/side_bar.css" />
-    <link rel="stylesheet" href="booksPage/general1.css" />
+    <link rel="stylesheet" href="booksPage/general.css" />
     <link rel="stylesheet" href="booksPage/books_grid.css" />
     <link rel="stylesheet" href="header/header1.css" />
     <title>books</title>
@@ -21,7 +21,7 @@
       print '<p class="php s_t">' . $S_T . '</p>';
       unset($_SESSION['S_T']);
     ?>
-    <script src="booksPage/bookPage_script.js"></script>
+    <script src="booksPage/bookPage_script1.js"></script>
     <script src="header/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <div class="top-bar">

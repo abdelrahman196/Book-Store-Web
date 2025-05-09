@@ -296,19 +296,19 @@
   <div class="social-media">
       <a href="#" class="social-item">
           <i class="social-icon fab fa-youtube"></i>
-          <span class="social-username">@BookStore.com</span>
+          <span class="social-username">@youtube.com</span>
       </a>
       <a href="#" class="social-item">
           <i class="social-icon fab fa-twitter"></i>
-          <span class="social-username">@BookStore.com</span>
+          <span class="social-username">@twitter.com</span>
       </a>
       <a href="#" class="social-item">
           <i class="social-icon fab fa-facebook"></i>
-          <span class="social-username">@BookStore.com</span>
+          <span class="social-username">@facebook.com</span>
       </a>
       <a href="#" class="social-item">
           <i class="social-icon fab fa-instagram"></i>
-          <span class="social-username">@BookStore.com</span>
+          <span class="social-username">@instagram.com</span>
       </a>
   </div>
     </body>

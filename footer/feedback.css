@@ -1,0 +1,435 @@
+body{
+  margin-left:0px ;
+  background-color: rgb(244, 241, 234);
+  height: 1500px;
+  overflow-x: hidden;
+}
+.feedback_header{
+  background-color: rgb(213, 193, 170);
+  position: fixed;
+  margin-left: px;
+  top: 0;
+  display: block;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+  z-index: 400;
+}
+.back_button{
+  border: 2px solid black; 
+  text-align: left;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  font-size: xx-large;
+  width: 100px;
+  margin: 10px 0px 50px 10px;
+  display: none;
+}
+.back_button:hover{
+  background-color: rgb(244, 241, 234);
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 2px solid black;
+  box-shadow: 2px 2px 10px black;
+}
+.title{
+  background-color: rgb(244, 241, 234);
+  margin-top: 4px;
+  /* display: inline-block; */
+  border: 2px solid black;
+  padding: 8px;
+  width:12%;
+  height: 30px;
+  margin-left: 43%;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 6px;
+  color: rgb(56, 33, 16);
+  box-shadow: 2px 2px 10px black;
+}
+.feedback_box{
+  background-color: rgb(244, 241, 234);
+  margin-top: 80px;
+  margin-left: 0px;
+  width: 75%;
+}
+.feedback_question{
+  background-color: rgb(244, 241, 234);
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 60%;
+  height: auto;
+  min-height: 45px;
+  border: 2px solid black;
+  font-size: xx-large;
+  font-weight: 500;
+  border-right: none;
+  display: inline-block;
+  text-align: center;
+  color: rgb(56, 33, 16);
+  box-shadow: 0px 2px 10px black;
+}
+.feedback{
+  background-color:  rgba(56, 33, 16, 0.8);
+  display: block;
+  margin-top: 10px;
+  margin-left: 15%;
+  border: solid;
+  border-radius: 8px;
+  width: 65px;
+  height: 50px;
+  text-align: center;
+  /* padding-top: 10px; */
+  padding-left: 0px;
+  /* padding-right: 5px; */
+  /* font-size: 20px; */
+  /* padding-bottom: 10px; */
+}
+.feedback_e{
+  background-color:  rgba(56, 33, 16, 0);
+  display: inline-block;
+  /* margin-top: 50px; */
+  /* margin-right: 10px; */
+  /* border: solid; */
+  /* border-radius: 8px; */
+  /* width: 130px; */
+  /* height: 25px; */
+  width:100%;
+  height: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: 30px;
+  font-size: 15px;
+  color:rgb(244, 241, 234);
+  text-align: center;
+  cursor: pointer;
+
+}
+input[type="radio"]:checked + label {
+  background-color: rgb(213, 193, 170);
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.15s;
+}
+.feedback_answer{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.feedback_answer_btn{
+    background-color: rgb(244, 241, 234);
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 10%;
+  height: auto;
+  min-height: 45px;
+  border: 2px solid black;
+  font-size: xx-large;
+  font-weight: 500;
+  border-right: none;
+  display: inline-block;
+  text-align: center;
+  color: rgb(56, 33, 16);
+  box-shadow: 0px 2px 10px black;
+}
+
+
+.feedback_answer_lst{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.feedback_answer_lst a{
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+.feedback_answer_lst a:hover{
+  background-color: #ddd;
+}
+.feedback_answer:hover .feedback_answer_lst{
+  display: block;
+}
+.abdo{
+  display: none;
+}
+.button_e_div{
+  display: block;
+  padding-left: 20px;
+}
+.button_e{
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  background-color:  rgba(56, 33, 16,0.8);
+  width: 180px;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 0px;
+  display: block;
+  font-size: 20px;
+  color:rgb(244, 241, 234);
+  margin-right: 50px;
+}
+.button_e:hover{
+  cursor: pointer;
+}
+#popup_pg1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#popup_pg2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#popup_pg3{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#popup_main_div1{
+  position: fixed;
+  width: 600px;
+  height: 400px;
+  border: solid black;
+  border-radius: 5px;
+  background-color: rgb(213, 193, 170);
+  top: 60%;
+  left:55%;
+  margin-left: -400px;
+  margin-top: -250px;
+}
+#popup_main_div2{
+  position: fixed;
+  width: 600px;
+  height: 400px;
+  border: solid black;
+  border-radius: 5px;
+  background-color: rgb(213, 193, 170);
+  top: 60%;
+  left:55%;
+  margin-left: -400px;
+  margin-top: -250px;
+}
+#popup_main_div3{
+  position: fixed;
+  width: 600px;
+  height: 400px;
+  border: solid black;
+  border-radius: 5px;
+  background-color: rgb(213, 193, 170);
+  top: 60%;
+  left:55%;
+  margin-left: -400px;
+  margin-top: -250px;
+}
+#popup_pg4{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#popup_main_div4{
+  position: fixed;
+  width: 600px;
+  height: 400px;
+  border: solid black;
+  border-radius: 5px;
+  background-color: rgb(213, 193, 170);
+  top: 60%;
+  left:55%;
+  margin-left: -400px;
+  margin-top: -250px;
+}
+.closepopupmenu{
+  position: fixed;
+  color: rgb(244, 241, 234);
+  font-size: 20px;
+  margin-left: 545px;
+  width: 55px;
+  height: 30px;
+  border: none;
+  background-color: rgba(56, 33, 16,0.8);
+  /* border-top-left-radius: 5px; */
+  border-bottom-left-radius: 5px;
+  text-align: center;
+}
+.closepopupmenu:hover{
+  cursor: pointer;
+}
+.input_feedback{
+  position: fixed;
+  display: inline-block;
+  width: 300px;
+  font-size: large;
+  height: 35px;
+  margin-left: 98px;
+  margin-top: -10px;
+  background-color: rgb(165, 163, 161);
+}
+.recommend_book_feedback{
+  border-radius: 5px;
+  font-size: 26px;
+  width: 200px;
+  display: flex;
+  height: 30px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding-top: 5px;
+  padding-left: 8px;
+  background-color: rgba(56, 33, 16,0.8);
+  color: rgb(244, 241, 234);
+}
+.report_issue_feedback{
+  border-radius: 5px;
+  font-size: 26px;
+  width: 160px;
+  display: flex;
+  height: 40px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding-top: 5px;
+  padding-left: 32px;
+  background-color: rgba(56, 33, 16,0.8);
+  color: rgb(244, 241, 234);
+}
+.suggestion_feedback{
+  border-radius: 5px;
+  font-size: 26px;
+  width: 120px;
+  display: flex;
+  height: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: rgba(56, 33, 16,0.8);
+  color: rgb(244, 241, 234);
+}
+.submit_thanks{
+  font-size: 30px;
+  width: 500px;
+  display: flex;
+  height: 40px;
+  text-align: center;
+  margin-top: 130px;
+  margin-left: 120px;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: rgba(56, 33, 16,1);
+}
+.font_feedback{
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-size: 24px;
+  width: 100px;
+  display: flex;
+  height: 31px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 80px;
+  padding-top: 10px;
+  padding-left: 45px;
+  background-color: rgba(56, 33, 16,0.8);
+  color: white;
+}
+.comment_feedback{
+  width: 500px;
+  font-size: large;
+  height: 160px;
+  margin-top: 10px;
+  margin-left: 50px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
+  vertical-align: top;
+}
+.submit_buttom{
+  margin-top: 80px;
+  margin-left: 50%;
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  background-color:  rgba(56, 33, 16,0.8);
+  width: 200px;
+  height: 50px;
+  display: block;
+  font-size:25px ;
+  color: rgb(244, 241, 234);
+  cursor: pointer;
+
+}
+.submit1_buttom{
+  margin-top: 200px;
+  margin-left: 34%;
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  background-color:  rgba(56, 33, 16,0.8);
+  width: 180px;
+  height: 50px;
+  display: block;
+  font-size:25px ;
+  color: rgb(244, 241, 234);
+  cursor: pointer;
+}
+.submit2_buttom{
+  margin-top: 45px;
+  margin-left: 34%;
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  background-color:  rgba(56, 33, 16,0.8);
+  width: 180px;
+  height: 50px;
+  display: block;
+  font-size:25px ;
+  color: rgb(244, 241, 234);
+  cursor: pointer;
+}
+.ok_buttom{
+  margin-top: 100px;
+  margin-left: 34%;
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  background-color:  rgba(56, 33, 16,0.8);
+  width: 180px;
+  height: 50px;
+  display: block;
+  font-size:25px ;
+  color: rgb(244, 241, 234);
+  cursor: pointer;
+}

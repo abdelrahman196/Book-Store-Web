@@ -16,6 +16,7 @@
   position: relative;
   margin-right: 30px;
   cursor: pointer;
+  max-width: 400px;
 }
 
 .more_details {
@@ -55,12 +56,12 @@
 }
 @media (max-width: 1300px) {
   .books_grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: .33fr .33fr .33fr;
   }
 }
 @media (max-width: 1000px) {
   .books_grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .5fr .5fr;
   }
 }
 

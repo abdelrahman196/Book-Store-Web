@@ -1,0 +1,247 @@
+body{
+    width: 100%;
+    background-color: #1a2b4c;
+}
+.books_grid{
+  position: relative;
+  padding: 50px;
+  padding-top: 80px;
+    margin-top: 75px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    row-gap: 30px;
+    margin-bottom: 20px;
+    background-color: #093999;
+    column-gap: 20px;
+} 
+@media (max-width: 1450px) {
+  .books_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .books_grid {
+    grid-template-columns: 1fr;
+  }
+}
+.book{
+    cursor: pointer;
+  min-width: none;
+    aspect-ratio: 4/3;
+    display: flex;
+    background-color: #f4f1ea;
+}
+.book_img{
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+}
+.image{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: top;
+}
+.details{
+    background-color: #cecece;
+    display: inline-block;
+    width: 55%;
+    height: 100%;
+    padding-left: 5px;
+    font-size: x-large;
+}
+.category{
+    display: inline-block;
+    border: 2px solid #f4f1ea;
+    background-color: #093999;
+    color: white;
+    border-radius: 5px;
+}
+.book_title{
+    height: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.title_text{
+    margin-top: 8px;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.book_author{
+    margin-top: 0px;
+    height: 25px;
+}
+.author_text{
+    margin-top: 8px;
+}
+.rate_value{
+    height: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 26px;
+    position: relative;
+}
+.rating{
+    margin-top: 3px;
+    padding-top: -10px;
+    display: flex;
+}
+.rate_icon {
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    width: 24px;
+    display: inline-block;
+}
+
+.book_price{
+    height: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.price_text{
+    margin-top: 8px;
+}
+.categorys{
+    height: 25px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+}
+
+.intro{
+    font:bold;
+    font-size: 18px;
+    margin-left: -1px;
+    width: 100%;
+    height: 165px;
+    display: flex;
+    background-color: rgba(56, 31, 16, 0);
+    color: #093999; 
+    text-overflow: ellipsis;
+    overflow: scroll;
+    box-shadow: 0px -2px 5px inset;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    border-top: 1px solid #1a2b4c;
+    /* border-bottom: 1px solid black; */
+    padding: 7px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.intro::-webkit-scrollbar{
+    display: none;
+}
+.pos{
+  position: absolute;
+}
+.sort_filter{
+  padding-left: 10px;
+  padding-top: 10px;
+    height: 50px;
+    position: relative;
+}
+  .sortby {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .sortby_btn{
+    border-radius: 10px;
+        padding:12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .sortby_lst {
+    display: none;
+    position: absolute;
+    background-color:#1a2b4c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .sortby_lst a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .sortby_lstt a:hover {
+    background-color: #ddd;
+  }
+  
+  .sortby:hover .sortby_lst {
+    display: block;
+  }
+  
+  .sortby:hover .sortby_btn {
+    background-color: #2980b9;
+  }
+  .filter {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .filter_btn{
+        border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    font-size: 30px;
+    width: 80px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid black;
+  }
+  
+  .filter_lst {
+    display: none;
+    position: absolute;
+    background-color: #1a2b4c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .filter_lst a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .filter_lstt a:hover {
+    background-color: #ddd;
+  }
+  
+  .filter:hover .filter_lst {
+    display: block;
+  }
+  
+  .filter:hover .filter_btn {
+    background-color: #2980b9;
+  }
+  .category{
+    padding: 2px;
+    font-size: 20px;
+  }
+  .side_check{
+    display: inline-block;
+  }
+  .check_text{
+    display: inline-block;
+  }
+  .check_text{
+    color: white;
+  }

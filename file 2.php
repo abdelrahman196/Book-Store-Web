@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="header/file0.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <title>book store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homePage/home 2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>book store</title>
 </head>
 <body>
-<?php
+    <body>
+    <?php
       session_start();
       print '<p class="php cart_ad">' . $_SESSION["CART_A"] . '</P>';
 ?>
-<script src="homePage/home.js"></script>
-<script src="header/main.js"></script>
+<script src="homePage/home 2.js"></script>
+<script src="header/main 21.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <header class="header">
+
+    <header class="header">
     <div class="top-bar">
-      <div class="top-bar__content">
-        <section class="phone">
-          <i class="fa-solid fa-phone icon"></i>
-          <span>111-222-3333</span>
+        <div class="top-bar__content">
+            <section class="phone">
+            <i class="fa-solid fa-phone icon"></i>
+            <span>111-222-3333</span>
         </section>
         <section class="email">
-          <i class="fa-solid fa-envelope icon"></i>
-          <span>info@bookstore.com</span>
+            <i class="fa-solid fa-envelope icon"></i>
+            <span>info@bookstore.com</span>
         </section>
-      </div>
+        </div>
     </div>
 
     <div class="bottom-bar">
-      <div class="bottom-bar__content">
-        <a href="#" class="logo">
-          <img class="logo__img" src="books_images/Logo.png" alt="logo">
+        <div class="bottom-bar__content">
+        <a href="home.html" class="logo">
+            <img class="logo__img" src="books_images/Logo_2.png" alt="logo">
         
         </a>
-    
+        
         <nav class="nav">
-          <ul class="nav__list">
-           
+            <ul class="nav__list">
+            
             <li class="nav__item">
-              <a class="nav__link" href="file.php">Home</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="booksPage.php">Books</a>
-            </li>
+                <a id="nav__link" href="file 2.php">Home</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="events.php">Events</a>
+                <a id="nav__link" href="booksPage 2.php">Categories</a>
             </li>
-            <li id="cart_li" class="nav__item">
-                <a class="nav__link" href="payment.php">Cart</a>
+            </li>
+            <li class="nav__item">
+                <a id="nav__link" href="Events 2.php">Events</a>
+            </li>
+            <li class="nav__item">
+                <a id="nav__link" href="payment 2.php">Cart</a>
                 <div class="cart_a">
                   3
                 </div>
@@ -69,25 +71,25 @@
                         <i class="btn__icon fa-solid"></i>
                       </span>
                   </span>
-                </li>     
+                </li>   
             </li>
-            <div class="profile-pic">
-                <img id="profile-img" src="icon.jpg" alt="Profile">
-            </div>
-          </ul>
+            <li class="profile-pic">
+                <img id="profile-img" src="books_images/icon.jpg" alt="Profile">
+            </li>
+            </ul>
         
         </nav>
-  
+
         <div class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-      </div>
+        </div>
     </div>
     <div id="slider">
         <figure>
-        <img src="https://s3-us-west-2.amazonaws.com/artifactuprising/magento/blog/articles/2016-04-18-10-book-covers-youll-love/2016-04-18-10-book-titles-01.jpg">
+            <img src="https://s3-us-west-2.amazonaws.com/artifactuprising/magento/blog/articles/2016-04-18-10-book-covers-youll-love/2016-04-18-10-book-titles-01.jpg">
             <img src="https://i0.wp.com/calmatters.org/wp-content/uploads/2023/11/091223-Fresno-Library-LV_CM-07.jpg?fit=1200%2C800&ssl=1">
             <img src="https://ca-times.brightspotcdn.com/dims4/default/8d75bfd/2147483647/strip/true/crop/4200x2800+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F50%2Fde%2F95f2d9f34ea892116fde0fb606e1%2Fla-photos-1staff-647820-la-et-jc-burbank-unified-district-removes-books-2-ajs.jpg">
             <img src="https://tint.creativemarket.com/es3IqJPY1fPyamwh2c3lDbdCE35BJ490Q29oK8640mY/width:1200/height:800/gravity:nowe/rt:fill-down/el:1/czM6Ly9maWxlcy5jcmVhdGl2ZW1hcmtldC5jb20vaW1hZ2VzL3NjcmVlbnNob3RzL3Byb2R1Y3RzLzI3NzAvMjc3MDIvMjc3MDIxMzQvY3JlYXRpdmUtbWFya2V0X21pbmltYWxpc3QtYm9vay10ZW1wbGF0ZV90aHVtYm5haWwtby5qcGc?1687198189">
@@ -95,139 +97,9 @@
         <div class="arrow prev" onclick="moveSlide(-1)">&#10094;</div>
         <div class="arrow next" onclick="moveSlide(1)">&#10095;</div>
     </div>
-    <!-- Books sliding -->
-    <section class="picked-for-you">
-        <div class="category-header">
-            <h1 class="category-title">Picked for you</h1>
-            <hr class="divider">
-            <div class="subcategory"></div>
-        </div>
-        
-        <div class="products-grid">
-            <!-- Product cards will be generated here -->
-            <!-- This example shows 6 products, but you can add as many as you need -->
-            <div class="product-card">
-                <img src="books_images/book-11.jpg" alt="Book Title 1" class="product-image">
-                <div class="product-name">Marvel Action: Avengers 3</div>
-                <div class="product-price">$25.00</div>
-            </div>
-            <div class="product-card">
-                <img src="books_images/book-14.jpg" alt="Book Title 1" class="product-image">
-                <div class="product-name">Awareness To Action</div>
-                <div class="product-price">$30.00</div>
-            </div>
-            <div class="product-card">
-                <img src="books_images/book-16.jpg" alt="Book Title 1" class="product-image">
-                <div class="product-name">Fragonard</div>
-                <div class="product-price">$10.00</div>
-            </div>
-            <div class="product-card">
-                <img src="books_images/book-19.jpg" alt="Book Title 1" class="product-image">
-
-                <div class="product-name">The Gilded Ones</div>
-                <div class="product-price">$30.00</div>
-            </div>
-            <div class="product-card">
-                <img src="books_images/book-21.jpg" alt="Book Title 1" class="product-image">
-                <div class="product-name">Battles That Changed History</div>
-                <div class="product-price">$20.00</div>
-            </div>
-            <div class="product-card">
-                <img src="books_images/book-22.jpg" alt="Book Title 1" class="product-image">
-                <div class="product-name">A Short History Of The Train</div>
-                <div class="product-price">$16.00</div>
-            </div>
-        </div>
-        <section class="Best-Sellers">
-            <div class="category-header">
-                <h1 class="category-title">Best Sellers</h1>
-                <hr class="divider">
-                <div class="subcategory"></div>
-            </div>
-            
-            <div class="products-grid">
-                <!-- Product cards will be generated here -->
-                <!-- This example shows 6 products, but you can add as many as you need -->
-                <div class="product-card">
-                    <img src="books_images/book-25.jpg" alt="Book Title 1" class="product-image">
-                    <div class="product-name">No drama discipline</div>
-                    <div class="product-price">$10.00</div>
-                </div>
-                <div class="product-card">
-                    <img src="books_images/book-18.jpg" alt="Book Title 1" class="product-image">
-                    <div class="product-name">Beast made of night</div>
-                    <div class="product-price">$50.00</div>
-                </div>
-                <div class="product-card">
-                    <img src="books_images/book-10.jpg" alt="Book Title 1" class="product-image">
-                    <div class="product-name">Bridgerton</div>
-                    <div class="product-price">$60.00</div>
-                </div>
-                <div class="product-card">
-                    <img src="books_images/book-1.jpg" alt="Book Title 1" class="product-image">
-    
-                    <div class="product-name">Romantic Comedy</div>
-                    <div class="product-price">$30.00</div>
-                </div>
-                <div class="product-card">
-                    <img src="books_images/book-24.jpg" alt="Book Title 1" class="product-image">
-                    <div class="product-name">What is history now?</div>
-                    <div class="product-price">$30.00</div>
-                </div>
-                <div class="product-card">
-                    <img src="books_images/book-15.jpg" alt="Book Title 1" class="product-image">
-                    <div class="product-name">The light of all that falls</div>
-                    <div class="product-price">$50.00</div>
-                </div>
-            </div> 
-            <section class="Last-Relases">
-                <div class="category-header">
-                    <h1 class="category-title">Last Released</h1>
-                    <hr class="divider">
-                    <div class="subcategory"></div>
-                </div>
-                
-                <div class="products-grid">
-                    <!-- Product cards will be generated here -->
-                    <!-- This example shows 6 products, but you can add as many as you need -->
-                    <div class="product-card">
-                        <img src="books_images/book-23.jpg" alt="Book Title 1" class="product-image">
-                        <div class="product-name">Making History</div>
-                        <div class="product-price">$20.00</div>
-                    </div>
-                    <div class="product-card">
-                        <img src= "books_images/book-13.jpg" alt="Book Title 1" class="product-image">
-                        <div class="product-name"> Marvel Action: Avengers 3</div>
-                        <div class="product-price">$25.00</div>
-                    </div>
-                    <div class="product-card">
-                        <img src="books_images/book-26.jpg" alt="Book Title 1" class="product-image">
-                        <div class="product-name">Drama Free</div>
-                        <div class="product-price">$18.00</div>
-                    </div>
-                    <div class="product-card">
-                        <img src="books_images/book-6.jpg" alt="Book Title 1" class="product-image">
-        
-                        <div class="product-name">The Bromance Book Club</div>
-                        <div class="product-price">$35.00</div>
-                    </div>
-                    <div class="product-card">
-                        <img src="books_images/book-17.jpg"alt="Book Title 1" class="product-image">
-                        <div class="product-name">The black prism</div>
-                        <div class="product-price">$80.00</div>
-                    </div>
-                    <div class="product-card">
-                        <img src= "books_images/book-2.jpg"alt="Book Title 1" class="product-image">
-                        <div class="product-name">The Divine Comedy</div>
-                        <div class="product-price">$10.00</div>
-                    </div>
-                </div>
-
-                <h1 class="video-header">Videos</h1>
+    <h1 class="video-header">Videos</h1>
     
                 <div class="video-container">
-                    <!-- Video 1 - Embedded YouTube/Vimeo -->
-                    <div class="video-container">
                     <!-- Video 1 - Embedded YouTube/Vimeo -->
                     <div class="video-item">
                         <div class="video-wrapper">
@@ -268,8 +140,122 @@
                         </div>
                     </div>
                 </div>
+    <!-- Books sliding -->
+    <section class="picked-for-you">
+        <div class="category-header">
+            <h1 class="category-title">Picked for you</h1>
+            <hr class="divider">
+            <div class="subcategory"></div>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Product cards will be generated here -->
+            <!-- This example shows 6 products, but you can add as many as you need -->
+            <div class="product-card">
+                <img src="books_images/book-11.jpg" alt="Book Title 1" class="product-image">
+                <div class="book_det">
+                <div class="product-name">Marvel Action: Avengers 4</div>
+                <div class="product-author"> Hany Ashraf</div>
+                <!-- <div class="product-rate">
+                    <img class="rate_star" src="icons/star-icon-png-2.png" alt="star">
+                    <div class="rate_value" >5</div>
+                </div> -->
+                <div class="product-price">$5.00</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="books_images/book-14.jpg" alt="Book Title 1" class="product-image">
+                <div class="book_det">
+                <div class="product-name">Awareness To Action</div>
+                <div class="product-author">Yousef Elgendy</div>
+                <div class="product-price">$6.00</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="books_images/book-16.jpg" alt="Book Title 1" class="product-image">
+                <div class="book_det">
+                <div class="product-name">Fragonard</div>
+                <div class="product-author">Mariam Tarek</div>
+                <div class="product-price">$7.00</div>
+                </div>
+            </div>
+            
+        </div>
+        <section class="Best-Sellers">
+            <div class="category-header">
+                <h1 class="category-title">Best Sellers</h1>
+                <hr class="divider">
+                <div class="subcategory"></div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product cards will be generated here -->
+                <!-- This example shows 6 products, but you can add as many as you need -->
+                <div class="product-card">
+                    <img src="books_images/book-25.jpg" alt="Book Title 1" class="product-image">
+                    <div class="book_det">
+                    <div class="product-name">What Is History, Now?</div>
+                    <div class="product-author">Mariam Tarek</div>
+                    <div class="product-price">$16.00</div>
+                </div>
+                </div>
+                <div class="product-card">
+                    <img src="books_images/book-18.jpg" alt="Book Title 1" class="product-image">
+                    <div class="book_det">
+                    <div class="product-name">Beast made of night</div>
+                    <div class="product-author">sofa lotfy</div>
+                    <div class="product-price">$10.00</div>
+                </div>
+                </div>
+                <div class="product-card">
+                    <img src="books_images/book-10.jpg" alt="Book Title 1" class="product-image">
+                    <div class="book_det">
+                    <div class="product-name">Bridgerton</div>
+                    <div class="product-author">Abdallah Ayman</div>
+                    <div class="product-price">$6.00</div>
+                </div>
+                </div>
+                
+            </div> 
+            <section class="Last-Relases">
+                <div class="category-header">
+                    <h1 class="category-title">Last Released</h1>
+                    <hr class="divider">
+                    <div class="subcategory"></div>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product cards will be generated here -->
+                    <!-- This example shows 6 products, but you can add as many as you need -->
+                    <div class="product-card">
+                        <img src="books_images/book-23.jpg" alt="Book Title 1" class="product-image">
+                        <div class="book_det">
+                        <div class="product-name">The Girl from Greenwich Street</div>
+                        <div class="product-author">Mariam Tarek</div>
+                        <div class="product-price">$11.00</div>
+                    </div>
+                    </div>
+                    <div class="product-card">
+                        <img src= "books_images/book-13.jpg" alt="Book Title 1" class="product-image">
+                        <div class="book_det">
+                        <div class="product-name"> Marvel Action: Avengers 3</div>
+                        <div class="product-author">Abdelrahman Helmy</div>
+                        <div class="product-price">$15.00</div>
+                    </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="books_images/book-26.jpg" alt="Book Title 1" class="product-image">
+                        <div class="book_det">
+                        <div class="product-name">No Drama Discipline</div>
+                        <div class="product-author">sofa lotfy</div>
+                        <div class="product-price">$21.00</div>
+                    </div>
+                    </div>
+                    
+                </div>
 
-                      <!--         WHY US PARAGRAPH      -->
+                
+                    <!--         WHY US PARAGRAPH      -->
                 <section class="why-us">
                     <div class="container">
                         <h2>WHY US?</h2>
@@ -308,27 +294,27 @@
                         </div>
                     </div>
                 </section>
-                     <!-- button contact us and feedback   -->
+                    <!-- button contact us and feedback   -->
                 <div class="button-container">
-                <a href="about.php" class="custom-button contact-btn">About US</a>
-                <a href="feedback.php" class="custom-button feedback-btn">FEEDBACK</a>
+                <a href="AboutUs.html" class="custom-button contact-btn">About US</a>
+                <a href="feedback.html" class="custom-button feedback-btn">FEEDBACK</a>
                 </div>
                 <div class="social-media">
                     <a href="#" class="social-item">
                         <i class="social-icon fab fa-youtube"></i>
-                        <span class="social-username">@youtube.com</span>
+                        <span class="social-username">@BookStore.com</span>
                     </a>
                     <a href="#" class="social-item">
                         <i class="social-icon fab fa-twitter"></i>
-                        <span class="social-username">@twitter.com</span>
+                        <span class="social-username">@BookStore.com</span>
                     </a>
                     <a href="#" class="social-item">
                         <i class="social-icon fab fa-facebook"></i>
-                        <span class="social-username">@facebook.com</span>
+                        <span class="social-username">@BookStore.com</span>
                     </a>
                     <a href="#" class="social-item">
                         <i class="social-icon fab fa-instagram"></i>
-                        <span class="social-username">@.instagram</span>
+                        <span class="social-username">@BookStore.com</span>
                     </a>
                 </div>
 
@@ -340,8 +326,8 @@
             </body>
             </html>
                 
-      
-  </header>
+    
+    </header>
 
 </body>
 </html>
