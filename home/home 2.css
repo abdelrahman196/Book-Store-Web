@@ -588,9 +588,11 @@
     text-decoration: none;
     color: #1A2B4C ;
     transition: transform 0.3s;
+    margin-bottom: 20px;
 }
 .social-item:hover {
     transform: translateY(-3px);
+    color: #2F4F4F;
 }
 .social-icon {
     font-size: 24px;
