@@ -1,16 +1,19 @@
 body{
-  margin-left:30px ;
+  margin-left:0px ;
   background-color: rgb(244, 241, 234);
   height: 1500px;
+  overflow-x: hidden;
 }
 .feedback_header{
   background-color: rgb(213, 193, 170);
   position: fixed;
+  margin-left: px;
   top: 0;
-  display: flex;
+  display: block;
   flex-direction: row;
   width: 100%;
   height: 70px;
+  z-index: 400;
 }
 .back_button{
   border: 2px solid black; 
@@ -62,25 +65,29 @@ body{
   width: 60%;
   height: auto;
   min-height: 45px;
-  border-radius: 6px;
+  border: 2px solid black;
   font-size: xx-large;
   font-weight: 500;
+  border-right: none;
+  display: inline-block;
   text-align: center;
   color: rgb(56, 33, 16);
-  text-align: center;
-  box-shadow: 2px 2px 10px black;
+  box-shadow: 0px 2px 10px black;
 }
 .feedback{
   background-color:  rgba(56, 33, 16, 0.8);
-  display: inline-block;
-  margin-top: 50px;
-  margin-right: 20px;
+  display: block;
+  margin-top: 10px;
+  margin-left: 15%;
   border: solid;
   border-radius: 8px;
-  width: 180px;
+  width: 65px;
   height: 50px;
-  /* padding-top: 15px; */
-  font-size: 20px;
+  text-align: center;
+  /* padding-top: 10px; */
+  padding-left: 0px;
+  /* padding-right: 5px; */
+  /* font-size: 20px; */
   /* padding-bottom: 10px; */
 }
 .feedback_e{
@@ -94,10 +101,10 @@ body{
   /* height: 25px; */
   width:100%;
   height: 20px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: 30px;
-  font-size: 2opx;
+  font-size: 15px;
   color:rgb(244, 241, 234);
   text-align: center;
   cursor: pointer;
@@ -106,20 +113,56 @@ body{
 input[type="radio"]:checked + label {
   background-color: rgb(213, 193, 170);
   color: white;
+  width: 100%;
   border-radius: 5px;
   transition: 0.15s;
 }
 .feedback_answer{
-  margin-left: 5px;
+  position: relative;
+  display: inline-block;
+}
+.feedback_answer_btn{
+  background-color: #3498db;
+  color: white;
+  margin-left: -4px;
   display: flex;
-  flex-direction: row;
-  /*justify-content: space-evenly; */
-  /* align-items: center; */
-  padding-left: 0px;
-  width: 100%;
+  height: 50px;
+  padding-top: 3px;
+  border: 2px solid black;
+  border-left: none;
+  padding: 12px;
+  margin-top: -20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom-right-radius:8px ;
+  border-top-right-radius:8px ;
+}
+.feedback_answer_lst{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.feedback_answer_lst a{
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+.feedback_answer_lst a:hover{
+  background-color: #ddd;
+}
+.feedback_answer:hover .feedback_answer_lst{
+  display: block;
 }
 .abdo{
   display: none;
+}
+.button_e_div{
+  display: block;
+  padding-left: 20px;
 }
 .button_e{
   border: solid;
@@ -130,6 +173,7 @@ input[type="radio"]:checked + label {
   height: 50px;
   margin-top: 50px;
   margin-left: 0px;
+  display: block;
   font-size: 20px;
   color:rgb(244, 241, 234);
   margin-right: 50px;
@@ -317,14 +361,17 @@ input[type="radio"]:checked + label {
   color: white;
 }
 .comment_feedback{
-  position: fixed;
-  display: inline-block;
   width: 500px;
   font-size: large;
   height: 160px;
   margin-top: 10px;
   margin-left: 50px;
   background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
+  vertical-align: top;
 }
 .submit_buttom{
   margin-top: 80px;

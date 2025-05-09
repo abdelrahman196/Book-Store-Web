@@ -14,9 +14,12 @@
       <form action="/action_page.php" target="_blank" method="POST" autocomplete="on" novalidate=""></form>
       <div class="feedback_question">how much do u like the design?</div>
       <div class="feedback_answer">
+          <button class="feedback_answer_btn">rate</button>
+          <div class="feedback_answer_lst">
           <div class="feedback">
             <input class="abdo" type="radio" id="badd" name="liked" value="badd" >
-          <label class="feedback_e" for="badd" >bad</label></div>
+          <label class="feedback_e" for="badd" >bad</label>
+        </div>
           <div class="feedback">
             <input class="abdo" type="radio" id="not badd" name="liked" value="not badd">
           <label class="feedback_e" for="not badd">not bad</label>
@@ -32,7 +35,7 @@
           <div class="feedback">
           <input class="abdo" type="radio" id="excellentd" name="liked" value="excellentd">
           <label class="feedback_e" for="excellentd">excellent</label>
-          
+          </div>
         </div>
         </form>
       </div>
@@ -40,6 +43,8 @@
     <div class="feedback_box">
       <div class="feedback_question">how much do u like the prices?</div>
       <div class="feedback_answer">
+        <button class="feedback_answer_btn">rate</button>
+          <div class="feedback_answer_lst">
         <div class="feedback">
           <input class="abdo" type="radio" id="badp" name="likep" value="badp">
         <label class="feedback_e" for="badp">bad</label></div>
@@ -59,12 +64,15 @@
         <input class="abdo" type="radio" id="excellentp" name="likep" value="excellentp">
         <label class="feedback_e" for="excellentp">excellent</label>
       </div>
+      </div>
       </form>
       </div>
     </div>
     <div class="feedback_box">
       <div class="feedback_question">how much do u like the content?</div>
       <div class="feedback_answer">
+        <button class="feedback_answer_btn">rate</button>
+          <div class="feedback_answer_lst">
         <div class="feedback">
           <input class="abdo" type="radio" id="badc" name="likec" value="badc">
           <label class="feedback_e" for="badc">bad</label>
@@ -88,6 +96,7 @@
       <label class="feedback_e" for="excellentc">excellent</label>
     </div>
     </div>
+    </div>
     <!-- <input type="reset" class="submit_buttom" value="submit"> -->
 
     <button class="submit_buttom" id="reset" onclick="openpopupmenu('popup_pg4')" >submit</button>
@@ -95,7 +104,7 @@
     </form></div>
     <div class="feedback_box">
       <div class="feedback_question">Leave your opinion</div>
-      <div class="feedback_answer">
+      <div class="button_e_div">
       <button class="button_e" onclick="openpopupmenu('popup_pg1')">recommend book</button>
       <button class="button_e" onclick="openpopupmenu('popup_pg2')">report issue</button>
       <button class="button_e" onclick="openpopupmenu('popup_pg3')">suggestion</button>
@@ -104,10 +113,10 @@
           <button class="closepopupmenu" onclick="closepopupmenu('popup_pg1')">x</button>
           <div class="recommend_book_feedback">recommend book</div>
           <div class="font_feedback">Author
-            <input class="input_feedback" placeholder="Enter The Book's Author " type="text" title="hello">
+            <textarea class="input_feedback" placeholder="Enter The Book's Author " type="text" title="hello"></textarea>
           </div>
           <div class="font_feedback">Title
-            <input class="input_feedback" placeholder="Enter The Book's Name"type="text" title="hello">
+            <textarea class="input_feedback" placeholder="Enter The Book's Name"type="text" title="hello"></textarea>
           </div>
           <input type="reset" class="submit2_buttom" onclick="closepopupmenu('popup_pg1')" value="submit">
         </div>
@@ -116,7 +125,7 @@
           <div id="popup_main_div2">
             <button class="closepopupmenu" onclick="closepopupmenu('popup_pg2')">x</button>
             <div class="report_issue_feedback">report issue</div>
-            <input class="comment_feedback"placeholder="Enter Your Issue" type="text" title="hello">
+            <textarea class="comment_feedback"placeholder="Your Issue" type="text" title="hello"></textarea>
             <input type="reset" class="submit1_buttom" onclick="closepopupmenu('popup_pg2')"value="submit">
           </div>
           </div>
@@ -124,7 +133,7 @@
             <div id="popup_main_div3">
               <button class="closepopupmenu" onclick="closepopupmenu('popup_pg3')">x</button>
               <div class="suggestion_feedback">suggestion</div>
-              <input class="comment_feedback" placeholder="Enter Your Suggestion" type="text" title="hello">
+              <textarea class="comment_feedback" placeholder="Enter Your Suggestion" type="text" title="hello"></textarea>
               <input type="reset" class="submit1_buttom" onclick="closepopupmenu('popup_pg3')" value="submit">
             </div>
           </div>
