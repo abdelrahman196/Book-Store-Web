@@ -14,13 +14,6 @@
     color: inherit;
   }
   
-  button {
-    background: none;
-    border: none;
-    font: inherit;
-    color: inherit;
-  }
-  
  
   body {
     background-color:rgb(244, 241, 234);
@@ -35,7 +28,6 @@
     width: 100%;;
   }
   /* Top Barrrrrrrrr */
-  
   .top-bar {
     background-color:#4a3728;
   }
@@ -56,10 +48,6 @@
     overflow: hidden;
   }
   
-  .icon {
-    margin-right: 3px;
-    color: rgba(255, 255, 255, 0.17);
-  }
     /* Bottom Barrrrrrrrr */
   .bottom-bar {
     background-color: rgb(213, 193, 170);
@@ -76,7 +64,6 @@
     align-items: center;
     position: relative;
   }
-  
   .logo {
     vertical-align: sub;
     display: flex;
@@ -84,7 +71,6 @@
     align-items: right;
     
   }
-  
   .logo__img {
     height: 60px;
     border-radius: 20px;
@@ -99,13 +85,6 @@
     top:8px;
 
   }
-  
-
-  
-  .nav {
-    transition: all 0.3s ease-in-out;
-  }
-  
   .nav__list {
     display: flex;
     column-gap: 40px;
@@ -146,11 +125,9 @@
     justify-content: center;
     gap: 5px;
   }
-
   .search-container button:hover {
     background-color: #732e0e;
   }
-  
   /* -------------- BUTTON -------------- */
   .btn {
     background-color:rgb(244, 241, 234);
@@ -167,7 +144,6 @@
     align-items: center;
     cursor: pointer;
   }
-  
   .btn__indicator {
     background-color: #fff;
     width: 1.5em;
@@ -183,18 +159,9 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
   
-  
-  /* -------------- ANIMATION ------------ */
+/* -------------- ANIMATION ------------ */
   .btn.active .btn__indicator {
     transform: translateX(1.7em);
-  }
-  
-  
-  
-  .nav__link {
-    color: #4a3728 ;
-    margin-top: 80%;
-    transition: all 0.2s;
   }
   
   .nav__link:hover,
@@ -202,16 +169,12 @@
     color: black; 
     
   }
-  
-
   #profile-img
   {
     width: 36px;
     border-radius: 20px;
     top: 20px;
   }
-  
-  
   /* MEDIA QUERIES */
   @media (max-width: 650px) {
     .nav {
@@ -239,9 +202,6 @@
       padding: 7px 17px;
     }
   
-    .hamburger {
-      display: block;
-    }
   }
   
   @media (max-width: 300px) {
@@ -387,8 +347,6 @@
 }
 
 /* videoo contenttttttttttttt */
-
-
 .video-header {
     font-size: 1.8rem;
     font-weight: bold;
@@ -439,8 +397,6 @@
         width: 100%;
     }
 }
-
-
 .button-container {
     display: flex;
     gap: 20px;
@@ -448,7 +404,6 @@
     font-family: Arial, sans-serif;
     justify-content: center;
 }
-
 .custom-button {
     display: inline-block;
     padding: 12px 30px;
