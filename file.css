@@ -204,19 +204,6 @@
   }
   
 
-  .hamburger {
-    cursor: pointer;
-    display: none;
-  }
-  
-  .bar {
-    height: 2px;
-    width: 27px;
-    background-color: #fff;
-    margin: 5px 0;
-    opacity: 0.8;
-    transition: all 0.3s ease-in-out;
-  }
   #profile-img
   {
     width: 36px;
