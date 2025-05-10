@@ -203,7 +203,7 @@
                 </div>
                 <div class="comment_text"> I regret buying this book </div>
             </div>
-                <div class="author_books">author books</div>
+                <div class="author_books">Same Author</div>
                 <div class="author_books_div">
                     <div class="book_author">
                         <div class="book_author_image"><img id="abi1" class="recommend_book" src="" alt="recommended-book"></div>
@@ -219,7 +219,7 @@
                         <div class="book_author_name" id="abn4"></div>
                     </div>
                 </div>
-                <div class="author_books">categorie books</div>
+                <div class="author_books">Same Category</div>
                 <div class="author_books_div">
                     <div class="book_author">
                         <div class="book_author_image"><img id="sbi1" class="recommend_book" src="" alt="recommended-book"></div>

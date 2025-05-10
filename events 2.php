@@ -10,7 +10,7 @@
     <link href="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/css/storyline-312089.webflow.7e60f716a.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect">
-        <link rel="stylesheet" href="header/file1.css" />
+        <link rel="stylesheet" href="header/file1_theme2.css" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>BookStore</title>
 </head>
@@ -39,7 +39,7 @@
     <div class="bottom-bar">
       <div class="bottom-bar__content">
         <a href="#" class="logo">
-          <img class="logo__img" src="books_images/Logo.png" alt="logo">
+          <img class="logo__img" src="profile_logo.png" alt="logo">
         
         </a>
       

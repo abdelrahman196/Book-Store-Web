@@ -48,7 +48,7 @@
                 <a id="nav__link" href="file 2.php">Home</a>
             </li>
             <li class="nav__item">
-                <a id="nav__link" href="booksPage 2.php">Categories</a>
+                <a id="nav__link" href="booksPage 2.php">Books</a>
             </li>
             </li>
             <li class="nav__item">
@@ -74,7 +74,7 @@
                 </li>   
             </li>
             <li class="profile-pic">
-                <img id="profile-img" src="books_images/icon.jpg" alt="Profile">
+                <img id="profile-img" src="icon.jpg" alt="Profile">
             </li>
             </ul>
         
@@ -256,7 +256,7 @@
 
                 
                     <!--         WHY US PARAGRAPH      -->
-                <section class="why-us">
+                <section class="why-us" style="margin-top: 50px;">
                     <div class="container">
                         <h2>WHY US?</h2>
                         <div class="features">
@@ -296,8 +296,8 @@
                 </section>
                     <!-- button contact us and feedback   -->
                 <div class="button-container">
-                <a href="AboutUs.html" class="custom-button contact-btn">About US</a>
-                <a href="feedback.html" class="custom-button feedback-btn">FEEDBACK</a>
+                <a href="about 2.php" class="custom-button contact-btn">About US</a>
+                <a href="feedback 2.php" class="custom-button feedback-btn">FEEDBACK</a>
                 </div>
                 <div class="social-media">
                     <a href="#" class="social-item">

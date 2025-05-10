@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="payment/gneral.css" />
     <link rel="stylesheet" href="payment/check2.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="header/header1.css" />
+    <link rel="stylesheet" href="header/file_theme2.css" />
   </head>
-  <body style="background-color: #6b7aa1;">
+  <body>
   <script src="payment/payment_script 2.js"></script>
   <script src="header/main 21.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -53,7 +53,7 @@
     <div class="bottom-bar">
       <div class="bottom-bar__content">
         <a href="#" class="logo">
-          <img class="logo__img" src="books_images/Logo.png" alt="logo">
+          <img class="logo__img" src="Logo_2.png" alt="logo">
         
         </a>
     

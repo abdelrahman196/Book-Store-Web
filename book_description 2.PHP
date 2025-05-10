@@ -2,7 +2,7 @@
 <html>
     <head>
     <link rel="stylesheet" href="book_description/general.css">
-    <link rel="stylesheet" href="header/file0.css" />
+        <link rel="stylesheet" href="header/file_theme2.css" />
         <link rel="stylesheet" href="book_description/book_description 21.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -12,7 +12,7 @@
     height: 300vh;
     background-color: rgb(244, 241, 234);
     margin-top: 130px;
-    background-image: url('background1.jpg');
+    background-image: url('book_description_backgroud.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;">
@@ -75,7 +75,7 @@
     <div class="bottom-bar">
       <div class="bottom-bar__content">
         <a href="#" class="logo">
-          <img class="logo__img" src="books_images/Logo.png" alt="logo">
+          <img class="logo__img" src="Logo_2.png" alt="logo">
         
         </a>
     
@@ -134,14 +134,14 @@
                 <div class="top">
                     <img class="book_img" id="bi" src="" alt="book-img">
                 </div>
-                <div class="book_price">
+                <div class="book_price" style="margin-right: 105px;">
                     <pre style="margin-top: 0 px;"><span id="bp"></span>$</pre>
                 </div>
                 <div class="buy">
                     <button class="buy_button" id="buy">Add to cart</button>
                 </div>
             </div>
-            <div class="book_details">
+            <div class="book_details" style="background-color: rgb(222, 223, 241);">
                     <div class="book_name" ><span id="bn"></span></div>
                     
                     <div class="auther" >Author: <span id="ba"></span></div>
@@ -152,19 +152,19 @@
                         <div id="rate" class="rate_progress1">
 
                         <div class="rate_star">
-                            <img class="img_star" src="icons1/tstar.png" alt="star">
-                            <img class="img_star" src="icons1/tstar.png" alt="star">
-                            <img class="img_star" src="icons1/tstar.png" alt="star">
-                            <img class="img_star" src="icons1/tstar.png" alt="star">
-                            <img class="img_star" src="icons1/tstar.png" alt="star">
+                            <img class="img_star" src="tstar2.png" alt="star">
+                            <img class="img_star" src="tstar2.png" alt="star">
+                            <img class="img_star" src="tstar2.png" alt="star">
+                            <img class="img_star" src="tstar2.png" alt="star">
+                            <img class="img_star" src="tstar2.png" alt="star">
                         </div></div></div>
 
 
                     </div>
-                    <div class="more_info">
-                        <div class="categories" id="cat1"></div>
-                        <div class="categories" id="cat2"></div>
-                        <div class="categories" id="cat3"></div>
+                    <div class="more_info" >
+                        <div class="categories" id="cat1" style="background-color: #1a2b4c; margin-left: 20px;"></div>
+                        <div class="categories" id="cat2" style="background-color: #1a2b4c; margin-left: 20px;"></div>
+                        <div class="categories" id="cat3" style="background-color: #1a2b4c; margin-left: 20px;"></div>
                         <div class="book_stat">
                             <div class="publisher">Publisher: IT team</div>
                             <div class="date">Date: 2025</div>
@@ -175,10 +175,10 @@
             </div>
         </div>
         <div class="comment_box">
-            <div class="comment">
-                <div class="comment_head">
+            <div class="comment" style="border: none;">
+                <div class="comment_head" style="background: rgb(222, 223, 241);">
                     <div class="comment_pic"><img class="comment_pp" src="profile_images/pp1.jpeg" alt="pp1"></div>
-                    <div class="comment_name">Hany </div>
+                    <div class="comment_name" style="color: #1a2b4c">Hany </div>
                     <div class="comment_rate">
                         <span style="color: gold;font-size: xxx-large;">&#9733;</span>
                         <span style="color: gold;font-size: xxx-large;">&#9733;</span>
@@ -187,12 +187,12 @@
                         <span style="color: gold;font-size: xxx-large;">&#9733;</span>
                     </div>
                 </div>
-                <div class="comment_text">fantastic </div>
+                <div class="comment_text" style="background: #1a2b4c;">fantastic </div>
             </div>
-            <div class="comment">
-                <div class="comment_head">
+            <div class="comment" style="border: none;">
+                <div class="comment_head" style="background: rgb(222, 223, 241);">
                     <div class="comment_pic"><img class="comment_pp" src="profile_images/download.png" alt="pp1"></div>
-                    <div class="comment_name">abdelrahman</div>
+                    <div class="comment_name" style="color: #1a2b4c">abdelrahman</div>
                     <div class="comment_rate">
                         <span style="color: gold;font-size: xxx-large;">&#9733;</span>
                         <span style="color: gold;font-size: xxx-large;">&#9733;</span>
@@ -201,12 +201,12 @@
                         <span style="color: gold;font-size: xxx-large;">&#9733;</span>
                     </div>
                 </div>
-                <div class="comment_text">I greatly recommend this book</div>
+                <div class="comment_text" style="background: #1a2b4c;">I greatly recommend this book</div>
             </div>
-            <div class="comment">
-                <div class="comment_head">
+            <div class="comment" style="border: none;">
+                <div class="comment_head" style="background: rgb(222, 223, 241);">
                     <div class="comment_pic"><img class="comment_pp" src="profile_images/images.png" alt="pp1"></div>
-                    <div class="comment_name">sama</div>
+                    <div class="comment_name" style="color: #1a2b4c">sama</div>
                     <div class="comment_rate">
                         <span style="color: gold;font-size: xxx-large;">&#9733;</span>
                         <span style="color: black;font-size: xxx-large;">&#9733;</span>
@@ -215,42 +215,42 @@
                         <span style="color: black;font-size: xxx-large;">&#9733;</span>
                     </div>
                 </div>
-                <div class="comment_text"> I regret buying this book </div>
+                <div class="comment_text" style="background: #1a2b4c;"> I regret buying this book </div>
             </div>
         <!-- </div> -->
-                <div class="author_books">author books</div>
-                <div class="author_books_div">
-                    <div class="book_author">
+                <div class="author_books" style="background-color: #afafaf; justify-self: center;">Same Author</div>
+                <div class="author_books_div" style="background-color: rgb(222, 223, 241);">
+                    <div class="book_author" style="background-color: #1a2b4c;">
                         <div class="book_author_image"><img id="abi1" class="recommend_book" src="" alt="recommended-book"></div>
                         <div class="book_author_name" id="abn1"></div>
-                    </div><div class="book_author">
+                    </div><div class="book_author" style="background-color: #1a2b4c;">
                         <div class="book_author_image"><img id="abi2" class="recommend_book" src="" alt="recommended-book"></div>
                         <div class="book_author_name" id="abn2"></div>
-                    </div><div class="book_author">
+                    </div><div class="book_author" style="background-color: #1a2b4c;">
                         <div class="book_author_image"><img id="abi3" class="recommend_book" src="" alt="recommended-book"></div>
                         <div class="book_author_name" id="abn3"></div>
-                    </div><div class="book_author">
+                    </div><div class="book_author" style="background-color: #1a2b4c;">
                         <div class="book_author_image"><img id="abi4" class="recommend_book" src="" alt="recommended-book"></div>
                         <div class="book_author_name" id="abn4"></div>
                     </div>
                 </div>
-                <div class="author_books">categorie books</div>
-                <div class="author_books_div">
-                    <div class="book_author">
+                <div class="author_books" style="background-color: #afafaf; justify-self: center;">Same Category</div>
+                <div class="author_books_div" style="background-color: rgb(222, 223, 241);">
+                    <div class="book_author" style="background-color: #1a2b4c;">
                         <div class="book_author_image"><img id="sbi1" class="recommend_book" src="" alt="recommended-book"></div>
                         <div class="book_author_name" id="sbn1"></div>
-                    </div><div class="book_author">
+                    </div><div class="book_author" style="background-color: #1a2b4c;">
                         <div class="book_author_image"><img id="sbi2" class="recommend_book" src="" alt="recommended-book"></div>
                         <div class="book_author_name" id="sbn2"></div>
-                    </div><div class="book_author">
+                    </div><div class="book_author" style="background-color: #1a2b4c;">
                         <div class="book_author_image"><img id="sbi3" class="recommend_book" src="" alt="recommended-book"></div>
                         <div class="book_author_name" id="sbn3"></div>
-                    </div><div class="book_author">
+                    </div><div class="book_author" style="background-color: #1a2b4c;">
                         <div class="book_author_image"><img id="sbi4" class="recommend_book" src="" alt="recommended-book"></div>
                         <div class="book_author_name" id="sbn4"></div>
                     </div>
                 </div>
-                                        <section class="why-us">
+    <section class="why-us" style="margin-top: 50px;" >
       <div class="container">
           <h2>WHY US?</h2>
           <div class="features">

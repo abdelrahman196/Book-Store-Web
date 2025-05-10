@@ -133,7 +133,7 @@
                                             <div class="event4_item-content-left">
                                                 <div class="event4_item-content-top">
                                                     <div class="event4_date-wrapper">
-                                                        <div class="text-size-small event-date">Abril 29, 2025</div>
+                                                        <div class="text-size-small event-date">APril 29, 2025</div>
                                                         <div class="div-block-6">
                                                             <div class="text-size-small">6:00 pm</div>
                                                             <div class="text-size-small"> - </div>

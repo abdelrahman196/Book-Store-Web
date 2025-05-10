@@ -43,7 +43,7 @@
 <aside class="sidebar" id="sidebar">
             <i class="fas fa-bars" id="show"></i>
     <i class="fas fa-bars" id="menu-toggle"></i>
-    <img src="logo c.jpg" id="logo" alt="Book Store Logo">
+    <img src="Logo_2.png" id="logo" alt="Book Store Logo" style = "width: 161px; height: 50px;">
     <ul>
     <li><i class="fas fa-wallet" ></i>fund wallet</li>
     <li><i class="fas fa-bell" ></i>notifications</li>
@@ -100,7 +100,6 @@
     <button type="button" class="delete-btn">Delete Account</button>
     </div>
 </form>
-
 
 
 <button class="history-btn">Show Purchase History</button>

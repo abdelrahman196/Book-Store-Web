@@ -133,6 +133,9 @@ body {
   outline: none;
   font-size: 14px;
 }
+.search_text{
+  color: black;
+}
 
 .search-container button {
   background-color: #4a3728;

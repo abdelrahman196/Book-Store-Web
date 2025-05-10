@@ -12,7 +12,7 @@ body{
     grid-template-columns:1fr 1fr 1fr;
     row-gap: 30px;
     margin-bottom: 20px;
-    background-color: #093999;
+    background-color: #1a2b4c;
     column-gap: 20px;
 } 
 @media (max-width: 1450px) {
@@ -31,7 +31,6 @@ body{
   min-width: none;
     aspect-ratio: 4/3;
     display: flex;
-    background-color: #f4f1ea;
 }
 .book_img{
     display: inline-block;
@@ -45,7 +44,7 @@ body{
         object-position: top;
 }
 .details{
-    background-color: #cecece;
+    background-color: rgb(222,223,241);
     display: inline-block;
     width: 55%;
     height: 100%;
@@ -54,8 +53,7 @@ body{
 }
 .category{
     display: inline-block;
-    border: 2px solid #f4f1ea;
-    background-color: #093999;
+    background-color: #1a2b4c;
     color: white;
     border-radius: 5px;
 }
@@ -75,6 +73,7 @@ body{
 }
 .author_text{
     margin-top: 8px;
+    color: royalblue;
 }
 .rate_value{
     height: 25px;
@@ -118,14 +117,11 @@ body{
     height: 165px;
     display: flex;
     background-color: rgba(56, 31, 16, 0);
-    color: #093999; 
+    color: black; 
     text-overflow: ellipsis;
     overflow: scroll;
-    box-shadow: 0px -2px 5px inset;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-
-    border-top: 1px solid #1a2b4c;
+  
+    border: 1px solid #1a2b4c;
     /* border-bottom: 1px solid black; */
     padding: 7px;
     padding-bottom: 10px;
@@ -154,7 +150,7 @@ body{
   .sortby_btn{
     border-radius: 10px;
         padding:12px;
-    background-color: #3498db;
+    background-color:  royalblue;
     color: white;
     font-size: 16px;
     border: 2px solid black;
@@ -186,7 +182,7 @@ body{
   }
   
   .sortby:hover .sortby_btn {
-    background-color: #2980b9;
+    background-color: #215e86;
   }
   .filter {
     position: relative;
@@ -195,7 +191,7 @@ body{
   
   .filter_btn{
         border-radius: 10px;
-    background-color: #3498db;
+    background-color: royalblue;
     color: white;
     font-size: 30px;
     width: 80px;
@@ -230,7 +226,7 @@ body{
   }
   
   .filter:hover .filter_btn {
-    background-color: #2980b9;
+    background-color: #215e86;
   }
   .category{
     padding: 2px;

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>book store</title>
 </head>
-<body>
+<body style = "overflow-x: hidden;">
 <?php
       session_start();
       print '<p class="php cart_ad">' . $_SESSION["CART_A"] . '</P>';

@@ -16,9 +16,9 @@
 
 
 <body class="body">
-<div class="header">
+<div class="header" style="background-color: #afafaf;">
         <a href="file 2.php" class="logo">
-          <img class="logo__img" src="books_images/Logo.png" alt="logo">
+          <img class="logo__img" src="Logo_2.png" alt="logo">
         </a>
     </div>
     <div class="page-wrapper">
@@ -53,8 +53,8 @@
             </div>
         </header>
 
-        <header class="section_about-quote">
-            <div class="padding-global">
+        <header class="section_about-quote" style="background-color: rgb(222, 223, 241);">
+            <div class="padding-global" >
                 <div class="container-small">
                     <div class="about-quote_content">
                         <div class="padding-section-large">
@@ -77,8 +77,8 @@
             <div class="about-quote_background-image-wrapper">
                 <div class="about-quote_image-overlay-layer">
                 </div>
-                <img src="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/65f065895111cce8f8373d43_Isolation_Mode%20(1).webp" class="about-quote_background-image-top" loading="eager" alt="" >
-                <img src="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/65f0651d153c03fb025924e1_Isolation_Mode.webp" class="about-quote_background-image-bottom" loading="eager" alt="" >
+                <img src="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/65f065895111cce8f8373d43_Isolation_Mode%20(1).webp" class="about-quote_background-image-top" loading="eager" alt="">
+                <img src="https://cdn.prod.website-files.com/65e8fb628c240d731351cd61/65f0651d153c03fb025924e1_Isolation_Mode.webp" class="about-quote_background-image-bottom" loading="eager" alt="">
             </div>
         </header>
 
@@ -94,7 +94,7 @@
                                 <p class="text-size-medium text-color-primary" style="color: white">Abdallah Ayman is the Founder and Owner of Bookstore. As a devoted reader and lifelong storyteller, Abdallah dreamed of one day opening a neighborhood bookstore where bibliophiles could get lost in aisles of books and find community within the walls. When the perfect space became available in the Tremont Center in 2025, Abdallah knew it was time to make that dream come true, and that’s when Bookstore came to life.<br><br>Abdallah resides in Upper Arlington . His favorite genres include literary fiction, contemporary romance, upmarket fiction, memoir, and poetry. He is interested in books that spark debate, push boundaries, and create an immersive reading experience.</p>
                             </div>
                             <div class="about-founder_image-wrapper">
-                                <img src="books_images/about-man1.jpg" loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 43vw, 42vw" srcset="books_images/about-man1.jpg" 500w,>
+                                <img src="founder_2.png" loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 43vw, 42vw" srcset="founder_2.png" 500w,>
                             </div>
                         </div>
                     </div>

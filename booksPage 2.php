@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="booksPage/books1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="header/file0.css" />
+        <link rel="stylesheet" href="header/file_theme2.css" />
         <title>books</title>
     </head>
     <body>
@@ -38,7 +38,7 @@
     <div class="bottom-bar">
       <div class="bottom-bar__content">
         <a href="#" class="logo">
-          <img class="logo__img" src="books_images/Logo.png" alt="logo">
+          <img class="logo__img" src="Logo_2.png" alt="logo">
         
         </a>
     

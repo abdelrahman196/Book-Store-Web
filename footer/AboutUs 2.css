@@ -292,7 +292,7 @@ h2 {
 
 .about-quote_image-overlay-layer {
     z-index: 1;
-    background-color:white!important;
+    background-color:white;
     position: absolute;
 }
 
