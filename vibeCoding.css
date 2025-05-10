@@ -83,8 +83,7 @@ background-image: url('blue bg.png');
     top: 56px;
     right: -4px;
     border-top:none;
-    display: none;
-    
+    display: block;
 }
 .rate{
     font-style:italic;
