@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="login_signup/general.css" />
     <script src="login_signup/signup.js"></script>
   </head>
-  <body>
+  <body style="overflow-x: hidden; overflow-y: hidden;">
 
 
     <div class="wrapper fadeInDown">
-      <div class="formContent">
+      <div class="formContent" style="background-color: rgb(213, 193, 170); margin-bottom: 50px; margin-right: 35px;">
         <div>
           <h2 align="center" style="color: rgb(56, 33, 16)">Signup</h2>
           <center>
-            <img class="imagesize" src="images/icon.logo.2.jpg " />
+            <img class="imagesize" src="Logo.png "/>
           </center>
         </div>
 
@@ -57,7 +57,7 @@
             style="color: rgb(56, 33, 16)"
             onkeypress="allowOnlyNumbers(event)"
           />
-          <input type="submit" class="fadeIn_fourth" value="Sign up" />
+          <input type="submit" class="fadeIn_fourth" value="Sign up" style=" box-shadow: 0 5px 15px 0 rgba(0,0,0,0.4);" />
           <button>
             <a href="index.php" target="_self">back to login -></a>
           </button>

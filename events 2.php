@@ -400,7 +400,7 @@
        <!-- button contact us and feedback   -->
   <div class="button-container">
   <a href="about 2.php" class="custom-button contact-btn">About US</a>
-  <a href="feedback 2.php" class="custom-button feedback-btn">FEEDBACK</a>
+  <a href="feedback_theme2.html" class="custom-button feedback-btn">FEEDBACK</a>
   </div>
   <div class="social-media">
       <a href="#" class="social-item">

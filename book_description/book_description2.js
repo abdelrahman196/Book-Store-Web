@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         buy.textContent = "Add to cart";
       } else {
         if (buy.textContent === "Add to cart") {
-          buy.style.backgroundColor = "#ba4828";
+          buy.style.backgroundColor = "#1a2b4c";
           // buy.style.backgroundColor="rgb(105, 28, 28)";
           buy.textContent = "Remove from cart";
           const id = Number(data[8].textContent);

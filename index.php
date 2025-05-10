@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="login_signup/general.css" />
     <script src="login_signup/login.js"></script>
   </head>
-  <body>
+  <body style="overflow-x: hidden; overflow-y: hidden;">
     <div class="wrapper fadeInDown">
-      <div class="formContent">
+      <div class="formContent" style="background-color: rgb(213, 193, 170); margin-bottom: 50px; margin-right: 35px;">
         <div>
-          <h2 align="center" style="color: rgb(56, 33, 16)">Login</h2>
+          <h2 align="center" style="color: rgb(56, 33, 16)" >Login</h2>
           <center>
-            <img class="imagesize" src="images/icon.logo.2.jpg " />
+            <img class="imagesize" src="Logo.png " />
           </center>
         </div>
         <form method="POST" action="include/login-inc.php" onsubmit="return log()">
@@ -35,7 +35,7 @@
             placeholder="password"
             style="color: rgb(56, 33, 16)"
           />
-          <input type="submit" class="fadeIn_fourth" value="Log In" />
+          <input type="submit" class="fadeIn_fourth" value="Log In" style=" box-shadow: 0 5px 15px 0 rgba(0,0,0,0.4);"/>
           <h3>
             Don't have an account?<a href="signup.php" target="_self"
               >... Signup!</a
